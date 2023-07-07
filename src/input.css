@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: "Mentra";
+    src: url("../src/assets/fonts/MENTRA.otf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Webcomic";
+    src: url("../src/assets/fonts/Webcomic.otf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Xtreem";
+    src: url("../src/assets/fonts/XtreemFat_PERSONAL_USE.ttf");
+    font-display: swap;
+}

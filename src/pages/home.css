@@ -1,0 +1,7 @@
+.grass {
+    background: url("../assets/images/nkmask.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .8;
+}
