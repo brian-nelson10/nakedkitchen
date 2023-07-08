@@ -1,9 +1,12 @@
 import React from "react";
+import { motion } from 'framer-motion';
 import IntroAnimation from "../components/IntroAnimation";
-import "./home.css";
+import Carousel from "../components/Carousel";
 import Hamburger from "../components/Hamburger";
 import nklogo from "../assets/images/nkwhite.png"
 import WritingText from "../components/WritingText";
+import "./home.css";
+import Marquee from "../components/Marquee";
 
 const Home = () => {
     return (
@@ -23,11 +26,20 @@ const Home = () => {
             </section>
             <section className="relative h-[200rem] overflow-hidden">
             <hr className="border-black border-b-2 pt-[6.6rem] mx-[2rem]"/>
-            <section className="w-screen h-screen  absolute inset-0">
-                <div className="mx-[5rem] my-[15rem] pt-[55rem] justify-center text-center flex">
+            <motion.section className="w-screen h-screen absolute inset-0"
+             initial={{ y: 0 }}
+             animate={{ y: '10%' }}
+             transition={{ ease: 'linear', duration: .5 }}>
+                <div>
+                    <Carousel className="" />
+                </div>
+                <div className="top-0 z-50">
+                    <Marquee/>
+                </div>
+                <div className="mx-[5rem] my-[1rem] pt-[1rem] justify-center text-center flex">
                <WritingText/>
                </div>
-            </section>
+            </motion.section>
             </section>
         </main>
     );

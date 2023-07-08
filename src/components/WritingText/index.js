@@ -8,7 +8,7 @@ const WritingText = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY -2;
+      const scrollPosition = window.scrollY ;
       const textLength = text.length;
       const visibleTextLength = Math.floor((scrollPosition / window.innerHeight) * textLength);
       const visibleText = text.slice(0, visibleTextLength);
@@ -22,7 +22,7 @@ const WritingText = () => {
   }, []);
 
   return (
-    <div className="h-[200vh] w-[58rem] justify-center text-center bg-white">
+    <div className=" w-[58rem] justify-center text-center bg-white">
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
