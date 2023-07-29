@@ -16,3 +16,8 @@
     src: url("../src/assets/fonts/XtreemFat_PERSONAL_USE.ttf");
     font-display: swap;
 }
+@font-face {
+    font-family: "Poppins";
+    src: url("../src/assets/fonts/Poppins-Light.ttf");
+    font-display: swap;
+}
