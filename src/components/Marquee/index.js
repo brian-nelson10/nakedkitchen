@@ -1,39 +1,37 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import "./styles.css"
+import { motion } from "framer-motion";
+
+
+// 2. Defining Variants
+const marqueeVariants = {
+  animate: {
+    x: [-300, -1050],
+    transition: {
+      x: {
+        repeat: Infinity,
+        repeatType: "loop",
+        duration: 100,
+        ease: "linear",
+      },
+    },
+  },
+};
 
 const Marquee = () => {
-  const [direction, setDirection] = useState('right');
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setDirection(window.scrollY > 100 ? 'left' : 'right');
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
-    <div className="marquee-container">
-      <motion.div
-        className="marquee"
-        style={{
-          flexDirection: direction === 'right' ? 'row' : 'row-reverse',
-        }}
-        animate={{ x: direction === 'right' ? '-100%' : '100%' }}
-        transition={{
-          duration: 20,
-          repeat: Infinity,
-          ease: 'linear',
-        }}
-      >
-        <div className="font-mentra text-[9.5rem] -mt-[19rem] text-white pl-[] text-end">
-          {/* Place your marquee content here */}
-          Naked Kitchen
-        </div>
-      </motion.div>
+    <div> 
+      <div className="marquee relative h-[210px]" >
+        <motion.div
+          className="track overflow-hidden"
+          variants={marqueeVariants}
+          animate="animate"
+        >
+          <div className="font-gt text-[9rem] uppercase text-[#1b3d38]">
+            Our Menu. Our Menu. Our Menu. Our Menu. Our Menu. Our Menu. Our Menu. Our Menu. Our Menu. Our Menu.
+          </div>
+        </motion.div>
+      </div>
     </div>
   );
 };

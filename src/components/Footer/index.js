@@ -6,14 +6,14 @@ import { FaInstagram } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 const Footer = () => {
   return (
-    <footer className="bg-[#386641] py-4">
+    <footer className="bg-[#1b3d38] py-4 text-[#dbe7e8] bottom-0">
       {/* First Row */}
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 border-b-2 border-t-2 border-black py-[3rem]">
+        <div className="grid grid-cols-1 md:grid-cols-3 border-b-2 border-t-2 border-[#dbe7e8] py-[3rem]">
           {/* First Column */}
-          <div className="flex flex-col pt-[4rem] border-r-2 border-black">
+          <div className="flex flex-col pt-[4rem] border-r-2 border-[#dbe7e8]">
             <div className='justify-items-start'>
-            <h3 className="text-[2rem] font-mentra mb-2 tracking-widest">Naked Kitchen</h3>
+            <h3 className="text-[3rem] font-gt uppercase mb-2 tracking-widest">Naked Kitchen</h3>
             {/* <img
               src={logo} 
               alt="Company Logo"
@@ -42,8 +42,8 @@ const Footer = () => {
           
 
           {/* Second Column */}
-          <div className="grid grid-rows-4 px-4 gap-4 border-r-2 border-black font-poppins">
-            <div className="border-b-2 border-black border-t-2 pt-6 pb-2 grid grid-cols-2 gap-[25rem]">
+          <div className="grid grid-rows-4 px-4 gap-4 border-r-2 border-[#dbe7e8] font-poppins">
+            <div className="border-b-2 border-[#dbe7e8] border-t-2 pt-6 pb-2 grid grid-cols-2 gap-[25rem]">
                 <div className=''>
               <a href="#">Menu</a>
               </div>
@@ -51,7 +51,7 @@ const Footer = () => {
                 <img src={arrow} alt="arrow" className=''/>
               </div>
             </div>
-            <div className="border-b-2 border-black pt-6 pb-2 grid grid-cols-2 gap-[25rem]">
+            <div className="border-b-2 border-[#dbe7e8] pt-6 pb-2 grid grid-cols-2 gap-[25rem]">
                 <div className=''>
               <a href="#">Gallery</a>
               </div>
@@ -59,7 +59,7 @@ const Footer = () => {
                 <img src={arrow} alt="arrow" className=''/>
               </div>
             </div>
-            <div className="border-b-2 border-black pt-6 pb-2 grid grid-cols-2 gap-[25rem]">
+            <div className="border-b-2 border-[#dbe7e8] pt-6 pb-2 grid grid-cols-2 gap-[25rem]">
                 <div className='text-start'>
               <a href="#">Jobs</a>
               </div>
@@ -67,7 +67,7 @@ const Footer = () => {
                 <img src={arrow} alt="arrow" className=''/>
               </div>
             </div>
-            <div className="border-b-2 border-black pt-6 pb-2 grid-cols-2 grid gap-[25rem]">
+            <div className="border-b-2 border-[#dbe7e8] pt-6 pb-2 grid-cols-2 grid gap-[25rem]">
                 <div className='text-start'>
               <a href="#">Contact</a>
               </div>

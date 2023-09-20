@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState} from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from 'framer-motion';
 import IntroAnimation from "../components/IntroAnimation";
 import Carousel from "../components/Carousel";
@@ -14,6 +14,8 @@ import BoxTwo from "../components/About/boxTwo";
 import MenuImages from "../components/MenuImages";
 import Footer from "../components/Footer";
 import useWindowSize from "../components/hooks/useWindowSize";
+import Navbar from "../components/Navbar";
+import hero from "../assets/images/wall5.jpg"
 
 const Home = () => {
     const myRef = useRef(null);
@@ -25,72 +27,99 @@ const Home = () => {
     React.useEffect(() => {
         const handleWindowResize = () => setWidth(window.innerWidth)
         window.addEventListener("resize", handleWindowResize);
-   // Return a function from the effect that removes the event listener
-         return () => window.removeEventListener("resize", handleWindowResize);
+        // Return a function from the effect that removes the event listener
+        return () => window.removeEventListener("resize", handleWindowResize);
     }, []);
-        useEffect(() => {
-            if (menuState) {
-                myRef.current.scrollIntoView({ behavior: "smooth" });
-            }
-        }, [menuState]);
-        React.useState(() => {
-            typeof windows !== "undefined" && window.scrollTo(0, 0);
-        }, []);
-  //Hook to grab window size
-  const size = useWindowSize();
-  // Ref for parent div and scrolling div
-  const app = useRef();
-  const scrollContainer = useRef();
+    useEffect(() => {
+        if (menuState) {
+            myRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+    }, [menuState]);
+    React.useState(() => {
+        typeof windows !== "undefined" && window.scrollTo(0, 0);
+    }, []);
+    //Hook to grab window size
+    const size = useWindowSize();
+    // Ref for parent div and scrolling div
+    const app = useRef();
+    const scrollContainer = useRef();
 
-  // Configs
-  const data = {
-    ease: 0.1,
-    current: 0,
-    previous: 0,
-    rounded: 0
-  };
+    // Configs
+    const data = {
+        ease: 0.1,
+        current: 0,
+        previous: 0,
+        rounded: 0
+    };
 
-  // Run scrollrender once page is loaded.
-  useEffect(() => {
-    requestAnimationFrame(() => skewScrolling());
-  }, []);
+    // Run scrollrender once page is loaded.
+    useEffect(() => {
+        requestAnimationFrame(() => skewScrolling());
+    }, []);
 
-  //set the height of the body.
-  useEffect(() => {
-    setBodyHeight();
-  }, [size.height]);
+    //set the height of the body.
+    useEffect(() => {
+        setBodyHeight();
+    }, [size.height]);
 
-  //Set the height of the body to the height of the scrolling div
-  const setBodyHeight = () => {
-    document.body.style.height = `${
-      scrollContainer.current.getBoundingClientRect().height
-    }px`;
-  };
+    //Set the height of the body to the height of the scrolling div
+    const setBodyHeight = () => {
+        document.body.style.height = `${scrollContainer.current.getBoundingClientRect().height
+            }px`;
+    };
 
-  // Scrolling
-  const skewScrolling = () => {
-    //Set Current to the scroll position amount
-    data.current = window.scrollY;
-    // Set Previous to the scroll previous position
-    data.previous += (data.current - data.previous) * data.ease;
-    // Set rounded to
-    data.rounded = Math.round(data.previous * 100) / 100;
-    // Difference between
-    const difference = data.current - data.rounded;
-    const acceleration = difference / size.width;
-    const velocity = +acceleration;
-    const skew = velocity * .5;
-    //Assign skew and smooth scrolling to the scroll container
-    scrollContainer.current.style.transform = `translate3d(0, -${data.rounded}px, 0) skewY(${skew}deg)`;
-    //loop vai raf
-    requestAnimationFrame(() => skewScrolling());
-  };
+    // Scrolling
+    const skewScrolling = () => {
+        //Set Current to the scroll position amount
+        data.current = window.scrollY;
+        // Set Previous to the scroll previous position
+        data.previous += (data.current - data.previous) * data.ease;
+        // Set rounded to
+        data.rounded = Math.round(data.previous * 100) / 100;
+        // Difference between
+        const difference = data.current - data.rounded;
+        const acceleration = difference / size.width;
+        const velocity = +acceleration;
+        const skew = velocity * .5;
+        //Assign skew and smooth scrolling to the scroll container
+        scrollContainer.current.style.transform = `translate3d(0, -${data.rounded}px, 0) skewY(${skew}deg)`;
+        //loop vai raf
+        requestAnimationFrame(() => skewScrolling());
+    };
     return (
         <main className="bg-white">
-             <div ref={app} className="h-[100%] w-[100%] overflow-hidden">
-      <div ref={scrollContainer} className="scroll h-[100%] w-[100%] overflow-hidden "> 
-            <section ref={myRef} className="grid grid-cols-3 w-screen z-50 fixed px-[2rem]">
-                <div className="grid items-center mb-4 z-40">
+            <div ref={app} className="h-[100%] w-[100%] overflow-hidden">
+                <div ref={scrollContainer} className="scroll h-[100%] w-[100%] overflow-hidden ">
+                    <section className="z-50">
+                        <Navbar />
+                    </section>
+                    <section ref={myRef} className="grid grid-rows-2 w-screen h-[68rem] z-40 px-[2rem] pt-[25rem] bg-fixed grass">
+                        <div className="grid grid-cols-2 items-end">
+                            <div className="text-start text-[#dbe7e8] items-end ml-[1rem] font-gt text-[3rem] uppercase">
+                                <motion.p
+                                    initial={{ y: -310, opacity: 0 }}
+                                    animate={{ y: 0, opacity: 1 }}
+                                    transition={{ duration: .5, delay: .8 }}>
+                                    Eat Balanced. Achieve Wellness. Live Fully.</motion.p>
+                            </div>
+                            <div></div>
+                        </div>
+                        <div className="font-gt text-[#dbe7e8] text-center text-[19rem] -mt-20 flex-row flex">
+                            <motion.p
+                                initial={{ y: -300, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ duration: .5, delay: .7 }}>
+                                NAKED
+                            </motion.p>
+                            <motion.p
+                                className="ml-12"
+                                initial={{ y: 300, opacity: 0 }}
+                                animate={{ y: 0, opacity: 1 }}
+                                transition={{ duration: .5, delay: .9 }}>
+                                KITCHEN
+                            </motion.p>
+                        </div>
+                        {/* <div className="grid items-center mb-4 z-40">
                     <IntroAnimation />
                 </div>
 
@@ -100,55 +129,98 @@ const Home = () => {
                 </div>
                 <div className="grid items-center justify-end text-end items-end z-50 mb-4">
                     <Hamburger />
-                </div>
-            </section>
-            <section className="relative h-[342rem] overflow-hidden">
-                <hr className="border-black border-b-2 pt-[6.6rem] mx-[2rem]" />
-                <motion.section className="w-screen h-screen absolute inset-0"
-                    initial={{ y: 0 }}
-                    animate={{ y: '10%' }}
-                    transition={{ ease: 'linear', duration: .5 }}>
-                    <div>
+                </div> */}
+                    </section>
+                    <section className="relative h-[342rem] overflow-hidden bg-[#dbe7e8]">
+                        {/* <hr className="border-black border-b-2 pt-[6.6rem] mx-[2rem]" /> */}
+                        <motion.section className="w-screen h-screen absolute inset-0"
+                            initial={{ y: 0 }}
+                            animate={{ y: '10%' }}
+                            transition={{ ease: 'linear', duration: .5 }}>
+                            {/* <div>
                         <Carousel className="" />
                     </div>
                     <div className="top-0 z-50">
                         <Marquee />
-                    </div>
-                    <div className="grid grid-cols-11 mt-[15rem] mb-[6rem] card col col-auto splitContent container px-[4rem] flex flex-col">
-                        <div className="col-span-5">
-                            <Box />
-                        </div>
-                        <div className="col col-auto mx-[4rem] relative" id="dividerWrap">
-                            <div className="contentDivider ">
-                                <div className="dividedText "><strong>NAKED</strong></div>
+                    </div> */}
+                            <div className="grid grid-cols-11 mt-[1rem] mb-[6rem] card col col-auto splitContent container px-[4rem] flex flex-col">
+                                <div className="col-span-5">
+                                    <Box />
+                                </div>
+                                <div className="col col-auto mx-[4rem] relative" id="dividerWrap">
+                                    <div className="contentDivider ">
+                                        <div className="dividedText text-[#1b3d38]"><strong>NAKED</strong></div>
+                                    </div>
+                                </div>
+                                <div className="mt-[4rem] col-span-5">
+                                    <ImageBox />
+                                </div>
                             </div>
-                        </div>
-                        <div className="mt-[4rem] col-span-5">
-                            <ImageBox />
-                        </div>
-                    </div>
-                    <hr className="border-black border-b-1 mx-[6rem] mb-[8rem]" />
+                            <hr className="border-black border-b-1 mx-[6rem] mb-[8rem]" />
 
-                    {/* <div className="h-[34rem] mx-[5rem] my-[1rem] -pt-[1rem] justify-center text-center flex grass">
+                            {/* <div className="h-[34rem] mx-[5rem] my-[1rem] -pt-[1rem] justify-center text-center flex grass">
                <WritingText/>
                </div> */}
-                    <div>
+                            <div className="grid grid-cols-3 mt-[1rem] mb-[6rem] card col col-auto splitContent container px-[4rem] flex flex-col">
+                                <div className="w-[45rem] h-[57rem] border border-black">
+                                    <motion.img
+                                        initial={{ opacity: 0, x: -200 }}
+                                        whileInView={{ opacity: 1, x: 0, transition: { duration: .8, delay: .2 } }}
+                                        src={hero} alt="a cool of food" className="w-[45rem] h-[57rem]" />
+                                </div>
+                                <div className="col col-auto mx-[4rem] relative" id="dividerWrap2">
+                                    <div className="contentDivider ">
+                                        <div className="dividedText text-[#1b3d38]"><strong>KITCHEN</strong></div>
+                                    </div>
+                                </div>
+                                <div className="mt-[3rem] w-full md:w-1/2 -p-1 items-center">
+                                    <motion.p
+                                        initial={{ opacity: 0, x: 200 }}
+                                        whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
+                                        className='font-gt text-[#1b3d38] uppercase text-[8rem] -mb-[4rem]'>Cooking</motion.p>
+                                        <motion.p
+                                        initial={{ opacity: 0, x: 200 }}
+                                        whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
+                                        className='font-gt text-[#1b3d38] uppercase text-[8rem] -mb-[4rem]'>With</motion.p>
+                                    <motion.p
+                                        initial={{ opacity: 0, x: 200 }}
+                                        whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
+                                        className='font-gt uppercase text-[#1b3d38] text-[8rem]'>conscious</motion.p>
+                                    <motion.div 
+                                        initial={{opacity: 0}}
+                                        whileInView={{opacity: 1, transition: {duration: 1, delay: .2}}}
+                                        className="text-lg border border-black p-6 m-4 w-[32rem] h-[20rem] font-poppins">
+                                            <motion.p
+                                            initial={{opacity: 0}}
+                                            whileInView={{opacity: 1, transition: {duration: 1, delay: .4}}}>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                                        euismod urna ut sagittis efficitur. Fusce eu mauris eu metus
+                                        sollicitudin luctus nec at massa. Integer vitae velit sit amet mi
+                                        fringilla varius nec in libero. Phasellus in justo eu sem dictum
+                                        rhoncus.
+                                        </motion.p>
+                                    </motion.div>
+                                </div>
+                            </div>
+                            <hr className="border-black border-b-1 mx-[6rem] mb-[8rem]" />
+                            {/* <div>
                         <TwoColumn />
                     </div>
                     <hr className="border-black border-b-1 mx-[6rem] mt-[5rem] mb-[8rem]" />
-                    <div>
-                        <BoxTwo />
-                    </div>
-                    <div>
-                        <MenuImages />
-                    </div>
-                    <div>
-                        <Footer />
-                    </div>
-                </motion.section>
+                   */}
+                            <div>
+                                <BoxTwo />
+                            </div>
+                            <div>
+                                <MenuImages />
+                            </div>
+                            <div>
+                                <Footer />
+                            </div>
+                        </motion.section>
 
-            </section>
-            </div>
+                    </section>
+                </div>
             </div>
         </main>
     );

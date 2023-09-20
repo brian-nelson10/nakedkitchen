@@ -2,8 +2,9 @@
     background: url("../assets/images/veggies.jpeg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    opacity: .8;
+    opacity: 1;
 }
 
 .splitContent {
@@ -28,6 +29,11 @@
         flex-grow: 1;
         min-width: 90%;
    }
+   #dividerWrap2 {
+    flex-basis: 0;
+    flex-grow: 1;
+    min-width: 90%;
+}
     .item {
         display: block;
         min-width: 300;
