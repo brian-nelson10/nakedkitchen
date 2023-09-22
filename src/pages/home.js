@@ -1,21 +1,22 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from 'framer-motion';
-import IntroAnimation from "../components/IntroAnimation";
-import Carousel from "../components/Carousel";
-import Hamburger from "../components/Hamburger";
-import nklogo from "../assets/images/nkwhite.png"
+// import IntroAnimation from "../components/IntroAnimation";
+// import Carousel from "../components/Carousel";
+// import Hamburger from "../components/Hamburger";
+// import nklogo from "../assets/images/nkwhite.png"
 // import WritingText from "../components/WritingText";
 import "./home.css";
-import Marquee from "../components/Marquee";
 import Box from "../components/About";
 import ImageBox from "../components/ImageBox";
-import TwoColumn from "../components/TwoColumn";
 import BoxTwo from "../components/About/boxTwo";
 import MenuImages from "../components/MenuImages";
 import Footer from "../components/Footer";
 import useWindowSize from "../components/hooks/useWindowSize";
 import Navbar from "../components/Navbar";
 import hero from "../assets/images/wall5.jpg"
+import Marquee1 from "../components/Marquee/marquee1";
+import TwoColumn from "../components/TwoColumn";
+import Button from "../components/Button/button";
 
 const Home = () => {
     const myRef = useRef(null);
@@ -87,7 +88,7 @@ const Home = () => {
         requestAnimationFrame(() => skewScrolling());
     };
     return (
-        <main className="bg-white">
+        <main className="bg-[#dbe7e8]">
             <div ref={app} className="h-[100%] w-[100%] overflow-hidden">
                 <div ref={scrollContainer} className="scroll h-[100%] w-[100%] overflow-hidden ">
                     <section className="z-50">
@@ -131,18 +132,11 @@ const Home = () => {
                     <Hamburger />
                 </div> */}
                     </section>
-                    <section className="relative h-[342rem] overflow-hidden bg-[#dbe7e8]">
-                        {/* <hr className="border-black border-b-2 pt-[6.6rem] mx-[2rem]" /> */}
+                    <section className="relative h-[393rem] overflow-hidden bg-[#dbe7e8]">
                         <motion.section className="w-screen h-screen absolute inset-0"
                             initial={{ y: 0 }}
-                            animate={{ y: '10%' }}
-                            transition={{ ease: 'linear', duration: .5 }}>
-                            {/* <div>
-                        <Carousel className="" />
-                    </div>
-                    <div className="top-0 z-50">
-                        <Marquee />
-                    </div> */}
+                            whileInView={{ y: '10%' }}
+                            transition={{ ease: 'linear', duration: .5, delay: .1 }}>
                             <div className="grid grid-cols-11 mt-[1rem] mb-[6rem] card col col-auto splitContent container px-[4rem] flex flex-col">
                                 <div className="col-span-5">
                                     <Box />
@@ -161,6 +155,8 @@ const Home = () => {
                             {/* <div className="h-[34rem] mx-[5rem] my-[1rem] -pt-[1rem] justify-center text-center flex grass">
                <WritingText/>
                </div> */}
+                            {/* <div className="-mt-10 pb-10 ml-[4rem] text-start font-gt uppercase text-[5rem] text-[#1b3d38]">our mission</div> */}
+                            <div className="-mt-10"><Marquee1 /></div>
                             <div className="grid grid-cols-3 mt-[1rem] mb-[6rem] card col col-auto splitContent container px-[4rem] flex flex-col">
                                 <div className="w-[45rem] h-[57rem] border border-black">
                                     <motion.img
@@ -178,7 +174,7 @@ const Home = () => {
                                         initial={{ opacity: 0, x: 200 }}
                                         whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
                                         className='font-gt text-[#1b3d38] uppercase text-[8rem] -mb-[4rem]'>Cooking</motion.p>
-                                        <motion.p
+                                    <motion.p
                                         initial={{ opacity: 0, x: 200 }}
                                         whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
                                         className='font-gt text-[#1b3d38] uppercase text-[8rem] -mb-[4rem]'>With</motion.p>
@@ -186,33 +182,36 @@ const Home = () => {
                                         initial={{ opacity: 0, x: 200 }}
                                         whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
                                         className='font-gt uppercase text-[#1b3d38] text-[8rem]'>conscious</motion.p>
-                                    <motion.div 
-                                        initial={{opacity: 0}}
-                                        whileInView={{opacity: 1, transition: {duration: 1, delay: .2}}}
-                                        className="text-lg border border-black p-6 m-4 w-[32rem] h-[20rem] font-poppins">
-                                            <motion.p
-                                            initial={{opacity: 0}}
-                                            whileInView={{opacity: 1, transition: {duration: 1, delay: .4}}}>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                                        euismod urna ut sagittis efficitur. Fusce eu mauris eu metus
-                                        sollicitudin luctus nec at massa. Integer vitae velit sit amet mi
-                                        fringilla varius nec in libero. Phasellus in justo eu sem dictum
-                                        rhoncus.
+                                    <motion.div
+                                        initial={{ opacity: 0 }}
+                                        whileInView={{ opacity: 1, transition: { duration: 1, delay: .2 } }}
+                                        className="text-lg border-2 border-black p-6 m-4 w-[32rem] h-[20rem] font-poppins">
+                                        <motion.p
+                                            initial={{ opacity: 0 }}
+                                            whileInView={{ opacity: 1, transition: { duration: 1, delay: .4 } }}>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                                            euismod urna ut sagittis efficitur. Fusce eu mauris eu metus
+                                            sollicitudin luctus nec at massa. Integer vitae velit sit amet mi
+                                            fringilla varius nec in libero. Phasellus in justo eu sem dictum
+                                            rhoncus.
                                         </motion.p>
+                                        <div className="text-center mt-8 text-[4.5rem] text-[#1b3d38]">
+                                        <Button className="uppercase text-center" children="LEARN MORE"/>
+                                        </div>
                                     </motion.div>
                                 </div>
                             </div>
                             <hr className="border-black border-b-1 mx-[6rem] mb-[8rem]" />
-                            {/* <div>
-                        <TwoColumn />
-                    </div>
-                    <hr className="border-black border-b-1 mx-[6rem] mt-[5rem] mb-[8rem]" />
-                   */}
+
                             <div>
                                 <BoxTwo />
                             </div>
                             <div>
                                 <MenuImages />
+                            </div>
+                            <hr className="border-black border-b-1 mx-[6rem] mt-[5rem] mb-[8rem]" />
+                            <div>
+                                <TwoColumn />
                             </div>
                             <div>
                                 <Footer />

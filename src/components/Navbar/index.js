@@ -6,7 +6,7 @@ const Navbar = () => {
   const controls = useAnimation();
   const [isTransparent, setIsTransparent] = useState(false);
   const handleScroll = () => {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 315) {
       setScrolling(true);
     } else {
       setScrolling(false);
@@ -37,33 +37,36 @@ const Navbar = () => {
     <AnimatePresence mode="wait">
     <motion.nav
         style={{
-            backgroundColor: isTransparent ? "transparent" : "white",
-            color: isTransparent ? "#dbe7e8" : "black" 
+            backgroundColor: isTransparent ? "transparent" : "#dbe7e8",
+            color: isTransparent ? "#dbe7e8" : "#1b3d38" 
         }}
-      className={`fixed top-0 left-0 w-full bg-white p-4 shadow-lg flex items-center justify-between transition-all duration-300 font-gt uppercase text-[2rem] ${
+      className={`fixed top-0 left-0 w-full bg-white p-4 flex items-center justify-between transition-all duration-300 font-gt uppercase ${
         scrolling ? 'opacity-0' : 'opacity-100'
       }`}
       initial={{ opacity: 1, y: -100 }}
       animate={controls}
       exit={{ opacity: 0, y: -100}}
     >
-      <div className="grid grid-cols-3 w-full flex items-center space-x-4">
-        <div>
-        <p>Naked Kitchen</p>
+      <div className="grid grid-cols-3 w-full flex items-center space-between-2">
+        <div >
+        <p className={isTransparent ? 'font-summer text-[5rem] text-[#e3b505]' : 'font-summer text-[5rem]'}>Naked Kitchen</p>
         </div>
-        <div className='text-center space-x-8'>
-        <a href="/" className="hover:text-blue-700">
-          Home
+        <div className='text-center space-x-[12rem] text-[3rem] flex flex-row'>
+          <div className='w-[2rem] h-[2rem]'>
+        <a href="/" className="hover:text-[#e3b505] hover:font-summer hover:text-[3.2rem]">
+          Menu
         </a>
-        <a href="/about" className="hover:text-blue-700">
+        </div>
+        <div className='w-[2rem] h-[2rem]'>
+        <a href="/about" className="hover:text-[#e3b505] hover:font-summer hover:text-[3.2rem]">
           About
         </a>
-        <a href="/services" className="hover:text-blue-700">
-          Services
-        </a>
-        <a href="/contact" className="hover:text-blue-700">
+        </div>
+        <div className='w-[2rem] h-[2rem]'>
+        <a href="/contact" className="hover:text-[#e3b505] hover:font-summer hover:text-[3.2rem]">
           Contact
         </a>
+        </div>
         </div>
         <div className='items-end text-end justify-end flex'>
         <img

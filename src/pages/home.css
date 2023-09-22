@@ -7,6 +7,33 @@
     opacity: 1;
 }
 
+.menu1 {
+    background: url("../assets/images/veggies.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+.menu2 {
+    background: url("../assets/images/veggies.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+.menu {
+    background: url("../assets/images/veggies.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
 .splitContent {
     justify-content: space-between;
     min-width: 50%;
@@ -98,3 +125,33 @@
         margin-top: 20px;
    }
 }
+
+.button-background-move-menu {
+    letter-spacing: 1px;
+    padding: 35px 40px 12px;
+    outline: 0;
+    border: 2px solid #e3b505;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+ 
+  .button-background-move-menu:after {
+    content: "";
+    border: 2px solid #e3b505;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.5s;
+  }
+  
+  .button-background-move-menu:hover:after {
+    top: 0px;
+    left: 0px;
+  }

@@ -8,7 +8,8 @@ module.exports = {
       comic: ['Webcomic', "cursive"],
       xtreem: ['Xtreem', 'sans-serif'],
       poppins: ['Poppins', 'sans-serif'],
-      gt: ['GT Flexa','sans-serif']
+      gt: ['GT Flexa','sans-serif'],
+      summer: ['Summer Loving', 'cursive']
     },
     },
   },

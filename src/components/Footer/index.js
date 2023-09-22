@@ -1,9 +1,12 @@
 import React from 'react';
 import logo from "../../assets/images/nkgold.png";
-import arrow from "../../assets/images/arrow.png";
+import arrow from "../../assets/images/arrowGreen.png";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
+import { motion } from "framer-motion";
+import white from "../../assets/images/white.png"
+import "./styles.css";
 const Footer = () => {
   return (
     <footer className="bg-[#1b3d38] py-4 text-[#dbe7e8] bottom-0">
@@ -13,7 +16,7 @@ const Footer = () => {
           {/* First Column */}
           <div className="flex flex-col pt-[4rem] border-r-2 border-[#dbe7e8]">
             <div className='justify-items-start'>
-            <h3 className="text-[3rem] font-gt uppercase mb-2 tracking-widest">Naked Kitchen</h3>
+            <h3 className="text-[5rem] font-gt uppercase mb-2 tracking-widest">Naked Kitchen</h3>
             {/* <img
               src={logo} 
               alt="Company Logo"
@@ -42,28 +45,132 @@ const Footer = () => {
           
 
           {/* Second Column */}
-          <div className="grid grid-rows-4 px-4 gap-4 border-r-2 border-[#dbe7e8] font-poppins">
-            <div className="border-b-2 border-[#dbe7e8] border-t-2 pt-6 pb-2 grid grid-cols-2 gap-[25rem]">
+          <div className="grid grid-rows-4 px-4 gap-4 border-r-2 border-[#dbe7e8] font-gt uppercase text-[3rem]">
+          <motion.div 
+        initial={{opacity: 0, y: 200}}
+        whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .1}}}
+        viewport={{ once: true }}
+        className="flip-containerFoot border-black border-b-[1px] w-full hover:cursor-pointer">
+        <div className='flip-innerFoot'>
+          <div className='flip-frontFoot grid grid-cols-2 mx-4 mt-4 p-'>
+        <div>
+        <h2 className="text-[4.5rem] font-bold text-[#dbe7e8]">MENU</h2>
+        </div>
+        
+        <div className="flex justify-end items-center text-end">
+            <img src={white} alt="arrow" className='w-[6rem] justify-end items-center'/>
+        </div>
+        </div>
+        <div className='flip-backFoot bg-black grid grid-cols-2 -mt-20 mx-4'>
+          <div>
+        <h2 className="text-[4.5rem] font-bold">MENU</h2>
+        </div>
+        
+        <div className="flex justify-end items-center text-end">
+            <img src={arrow} alt="arrow" className='w-[6rem] justify-end items-center mr-1 mt-1'/>
+        </div>
+        </div>
+        </div>
+      </motion.div>
+      <motion.div 
+        initial={{opacity: 0, y: 200}}
+        whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .1}}}
+        viewport={{ once: true }}
+        className="flip-containerFoot border-black border-b-[1px] w-full hover:cursor-pointer">
+        <div className='flip-innerFoot'>
+          <div className='flip-frontFoot grid grid-cols-2 mx-4 mt-4 p-'>
+        <div>
+        <h2 className="text-[4.5rem] font-bold text-[#dbe7e8]">Gallery</h2>
+        </div>
+        
+        <div className="flex justify-end items-center text-end">
+            <img src={white} alt="arrow" className='w-[6rem] justify-end items-center'/>
+        </div>
+        </div>
+        <div className='flip-backFoot bg-black grid grid-cols-2 -mt-20 mx-4'>
+          <div>
+        <h2 className="text-[4.5rem] font-bold">Gallery</h2>
+        </div>
+        
+        <div className="flex justify-end items-center text-end">
+            <img src={arrow} alt="arrow" className='w-[6rem] justify-end items-center mr-1 mt-1'/>
+        </div>
+        </div>
+        </div>
+      </motion.div>
+      <motion.div 
+        initial={{opacity: 0, y: 200}}
+        whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .1}}}
+        viewport={{ once: true }}
+        className="flip-containerFoot border-black border-b-[1px] w-full hover:cursor-pointer">
+        <div className='flip-innerFoot'>
+          <div className='flip-frontFoot grid grid-cols-2 mx-4 mt-4 p-'>
+        <div>
+        <h2 className="text-[4.5rem] font-bold text-[#dbe7e8]">About</h2>
+        </div>
+        
+        <div className="flex justify-end items-center text-end">
+            <img src={white} alt="arrow" className='w-[6rem] justify-end items-center'/>
+        </div>
+        </div>
+        <div className='flip-backFoot bg-black grid grid-cols-2 -mt-20 mx-4'>
+          <div>
+        <h2 className="text-[4.5rem] font-bold">About</h2>
+        </div>
+        
+        <div className="flex justify-end items-center text-end">
+            <img src={arrow} alt="arrow" className='w-[6rem] justify-end items-center mr-1 mt-1'/>
+        </div>
+        </div>
+        </div>
+      </motion.div>
+      <motion.div 
+        initial={{opacity: 0, y: 200}}
+        whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .1}}}
+        viewport={{ once: true }}
+        className="flip-containerFoot border-black border-b-[1px] w-full hover:cursor-pointer">
+        <div className='flip-innerFoot'>
+          <div className='flip-frontFoot grid grid-cols-2 mx-4 mt-4 p-'>
+        <div>
+        <h2 className="text-[4.5rem] font-bold text-[#dbe7e8]">Contact</h2>
+        </div>
+        
+        <div className="flex justify-end items-center text-end">
+            <img src={white} alt="arrow" className='w-[6rem] justify-end items-center'/>
+        </div>
+        </div>
+        <div className='flip-backFoot bg-black grid grid-cols-2 -mt-20 mx-4'>
+          <div>
+        <h2 className="text-[4.5rem] font-bold">Contact</h2>
+        </div>
+        
+        <div className="flex justify-end items-center text-end">
+            <img src={arrow} alt="arrow" className='w-[6rem] justify-end items-center mr-1 mt-1'/>
+        </div>
+        </div>
+        </div>
+      </motion.div>
+            {/* <div className="border-b-2 border-[#dbe7e8] border-t-2 pt-6 pb-2 grid grid-cols-2 gap-[25rem] -space-x-8">
                 <div className=''>
               <a href="#">Menu</a>
               </div>
-              <div className='h-[2rem] w-[2rem]'>
+              <div className='h-[3rem] w-[3rem] pt-2'>
                 <img src={arrow} alt="arrow" className=''/>
               </div>
             </div>
-            <div className="border-b-2 border-[#dbe7e8] pt-6 pb-2 grid grid-cols-2 gap-[25rem]">
+            <div className="border-b-2 border-[#dbe7e8] pt-6 pb-2 grid grid-cols-2 gap-[25rem] -space-x-8">
                 <div className=''>
               <a href="#">Gallery</a>
               </div>
-              <div className='h-[2rem] w-[2rem]'>
+              <div className='h-[2rem] w-[3rem]'>
                 <img src={arrow} alt="arrow" className=''/>
               </div>
             </div>
-            <div className="border-b-2 border-[#dbe7e8] pt-6 pb-2 grid grid-cols-2 gap-[25rem]">
+            <div className="border-b-2 border-[#dbe7e8] pt-6 pb-2 grid grid-cols-2 gap-[25rem] -space-x-8">
                 <div className='text-start'>
               <a href="#">Jobs</a>
               </div>
-              <div className='h-[2rem] w-[2rem]'>
+              <div className='h-[2rem] w-[3rem]'>
                 <img src={arrow} alt="arrow" className=''/>
               </div>
             </div>
@@ -71,22 +178,22 @@ const Footer = () => {
                 <div className='text-start'>
               <a href="#">Contact</a>
               </div>
-              <div className='h-[2rem] w-[2rem]'>
+              <div className='h-[2rem] w-[3rem]'>
                 <img src={arrow} alt="arrow" className=''/>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Third Column */}
           <div className="grid grid-cols-3 px-6 justify-items-center items-center">
             <div className=''>
-              <FaFacebook className='h-[4rem] w-[4rem]'/>
+              <FaFacebook className='h-[4rem] w-[4rem] hover:text-[#e3b505] hover:cursor-pointer'/>
             </div>
             <div>
-              <FaInstagram className='h-[4rem] w-[4rem]'/>
+              <FaInstagram className='h-[4rem] w-[4rem] hover:text-[#e3b505] hover:cursor-pointer'/>
             </div>
             <div>
-              <FaTwitter className='h-[4rem] w-[4rem]'/>
+              <FaTwitter className='h-[4rem] w-[4rem] hover:text-[#e3b505] hover:cursor-pointer'/>
             </div>
           </div>
         </div>

@@ -26,3 +26,8 @@
     src: url("../src/assets/fonts/GT-Flexa-Compressed-Bold-Trial.otf");
     font-display: swap;
 }
+@font-face {
+    font-family: "Summer Loving";
+    src: url("../src/assets/fonts/summer-loving-solid-regular.otf");
+    font-display: swap;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import arrow from "../../assets/images/arrow.png"
+import arrow from "../../assets/images/arrowGreen.png"
 import white from "../../assets/images/white.png"
 import "./styles.css"
 const Box = () => {
@@ -10,29 +10,29 @@ const Box = () => {
         <div>
         <motion.p 
           initial={{opacity: 0, x: -200}}
-          whileInView={{opacity: 1, x: 0, transition: {duration: .8}}}
+          whileInView={{opacity: 1, x: 0, transition: {duration: .8, delay: .4}}}
           className='font-gt text-[#1b3d38] uppercase text-[8rem] -mb-[4rem]'>Food in the</motion.p>
           <motion.p 
           initial={{opacity: 0, x: -200}}
-          whileInView={{opacity: 1, x: 0, transition: {duration: .8}}}
+          whileInView={{opacity: 1, x: 0, transition: {duration: .8, delay: .5}}}
           className='font-gt uppercase text-[#1b3d38] text-[8rem]'>Nude.</motion.p>
         </div>
         <div className='font-poppins text-[#1b3d38] text-[1.4rem]'>
             <motion.p
               initial={{opacity: 0}}
-              whileInView={{opacity: 1, transition: {duration: 1, delay: .2}}}
+              whileInView={{opacity: 1, transition: {duration: 1, delay: .3}}}
               className=''>At Naked Kitchen, we do everything possible</motion.p>
             <motion.p 
               initial={{opacity: 0}}
-              whileInView={{opacity: 1, transition: {duration: 1, delay: .3}}}
+              whileInView={{opacity: 1, transition: {duration: 1, delay: .4}}}
               className='mb-10'>to offer healthy, balanced, and sustainable food.</motion.p>
               <motion.p 
               initial={{opacity: 0}}
-              whileInView={{opacity: 1, transition: {duration: 1, delay: .4}}}
-              className='flex flex-row'>Our food is <p className='font-bold'>&nbsp;naked</p>, using unprocessed ingredients,</motion.p>
+              whileInView={{opacity: 1, transition: {duration: 1, delay: .5}}}
+              className='flex flex-row'>Our food is <p className='text-[2.2rem] -mt-3 nake'>&nbsp;naked&nbsp;</p> ,using unprocessed ingredients,</motion.p>
               <motion.p 
               initial={{opacity: 0}}
-              whileInView={{opacity: 1, transition: {duration: 1, delay: .5}}}
+              whileInView={{opacity: 1, transition: {duration: 1, delay: .6}}}
               className=''>for a genuine and wholesome dining experience.</motion.p>
         </div>
         </div>
@@ -48,14 +48,13 @@ const Box = () => {
       </motion.div> */}
       <motion.div 
         initial={{opacity: 0, y: 200}}
-        whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .1}}}
+        whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .7}}}
         viewport={{ once: true }}
         className="flip-container border-black border-b-[1px] w-full hover:cursor-pointer">
         <div className='flip-inner'>
           <div className='flip-front grid grid-cols-2 mx-4 mt-4 p-'>
         <div>
         <h2 className="text-[4.5rem] font-bold">MENU</h2>
-        {/* <p>Checkout where we are & where we will be.</p> */}
         </div>
         
         <div className="flex justify-end items-center text-end">
@@ -65,35 +64,6 @@ const Box = () => {
         <div className='flip-back bg-black grid grid-cols-2 -mt-20 mx-4'>
           <div>
         <h2 className="text-[4.5rem] font-bold">MENU</h2>
-        {/* <p>Checkout where we are & where we will be.</p> */}
-        </div>
-        
-        <div className="flex justify-end items-center text-end">
-            <img src={white} alt="arrow" className='w-[6rem] justify-end items-center mr-1 mt-1'/>
-        </div>
-        </div>
-        </div>
-      </motion.div>
-      <motion.div 
-        initial={{opacity: 0, y: 200}}
-        whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .5}}}
-        viewport={{ once: true }}
-        className="flip-container border-black border-b-[1px] w-full hover:cursor-pointer">
-        <div className='flip-inner'>
-          <div className='flip-front grid grid-cols-2 mx-4 mt-4 p-'>
-        <div>
-        <h2 className="text-[4.5rem] font-bold">RESERVE</h2>
-        
-        </div>
-        
-        <div className="flex justify-end items-center text-end">
-            <img src={arrow} alt="arrow" className='w-[6rem] justify-end items-center'/>
-        </div>
-        </div>
-        <div className='flip-back bg-black grid grid-cols-2 -mt-20 mx-4'>
-          <div>
-        <h2 className="text-[4.5rem] font-bold">RESERVE</h2>
-        
         </div>
         
         <div className="flex justify-end items-center text-end">
@@ -105,6 +75,34 @@ const Box = () => {
       <motion.div 
         initial={{opacity: 0, y: 200}}
         whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .8}}}
+        viewport={{ once: true }}
+        className="flip-container border-black border-b-[1px] w-full hover:cursor-pointer">
+        <div className='flip-inner'>
+          <div className='flip-front grid grid-cols-2 mx-4 mt-4 p-'>
+        <div>
+        <h2 className="text-[4.5rem] font-bold">RESERVE</h2>
+        
+        </div>
+        
+        <div className="flex justify-end items-center text-end">
+            <img src={arrow} alt="arrow" className='w-[6rem] justify-end items-center -rotate-[45deg]'/>
+        </div>
+        </div>
+        <div className='flip-back bg-black grid grid-cols-2 -mt-20 mx-4'>
+          <div>
+        <h2 className="text-[4.5rem] font-bold">RESERVE</h2>
+        
+        </div>
+        
+        <div className="flex justify-end items-center text-end">
+            <img src={white} alt="arrow" className='w-[6rem] justify-end items-center mr-1 mt-1 -rotate-[45deg]'/>
+        </div>
+        </div>
+        </div>
+      </motion.div>
+      <motion.div 
+        initial={{opacity: 0, y: 200}}
+        whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .9}}}
         viewport={{ once: true }}
         className='flip-container border-black border-b-[1px] w-full hover:cursor-pointer'>
       <div className='flip-inner'>
