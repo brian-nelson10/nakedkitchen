@@ -1,9 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import arrow from "../../assets/images/arrowGreen.png"
 import white from "../../assets/images/white.png"
 import "./styles.css"
 const Box = () => {
+  const navigate = useNavigate();
+  function handleMenu() {
+    navigate("/menus");
+  }
   return (
     <div>
         <div className='mx-[1rem] mb-[5rem]'>
@@ -29,7 +34,7 @@ const Box = () => {
               <motion.p 
               initial={{opacity: 0}}
               whileInView={{opacity: 1, transition: {duration: 1, delay: .5}}}
-              className='flex flex-row'>Our food is <p className='text-[2.2rem] -mt-3 nake'>&nbsp;naked&nbsp;</p> ,using unprocessed ingredients,</motion.p>
+              className='flex flex-row'>Our food is <span className='text-[2.2rem] -mt-3'>&nbsp;naked&nbsp;</span> ,using unprocessed ingredients,</motion.p>
               <motion.p 
               initial={{opacity: 0}}
               whileInView={{opacity: 1, transition: {duration: 1, delay: .6}}}
@@ -37,19 +42,11 @@ const Box = () => {
         </div>
         </div>
     <div className="w-full max-w-[50rem] mx-auto border-[1px] border-black font-gt">
-      {/* <motion.div 
-        initial={{opacity: 0, y: 200}}
-        whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .1}}}
-        viewport={{ once: true }}
-        className="border-black border-b-[1px] w-full px-4 py-10">
-        <h2 className="text-lg font-bold">Phoenix Arts District.</h2>
-        <p></p>
-        <p>123 Liberty Street.</p>
-      </motion.div> */}
       <motion.div 
         initial={{opacity: 0, y: 200}}
         whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .7}}}
         viewport={{ once: true }}
+        onClick={handleMenu}
         className="flip-container border-black border-b-[1px] w-full hover:cursor-pointer">
         <div className='flip-inner'>
           <div className='flip-front grid grid-cols-2 mx-4 mt-4 p-'>
