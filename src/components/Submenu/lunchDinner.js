@@ -41,6 +41,84 @@ const menuItems = {
     </div></>,
     // Add more snack items as needed
   ],
+  handhelds: [
+    <>
+    <div className='p-1'>
+    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>item 1</div>
+    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Lorem epsum, menu item descriptions. Yum Yum. Lorem, lorem epsum. Lorem</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>12$</div>
+    </div></>,
+    <>
+    <div className='p-1'>
+    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>item 2</div>
+    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Lorem epsum, menu item descriptions. Yum Yum. Lorem, lorem epsum. Lorem</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>12$</div>
+    </div></>,
+    <>
+    <div className='p-1'>
+    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>item 3</div>
+    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Lorem epsum, menu item descriptions. Yum Yum. Lorem, lorem epsum. Lorem</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>12$</div>
+    </div></>,
+    <>
+    <div className='p-1'>
+    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>item 4</div>
+    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Lorem epsum, menu item descriptions. Yum Yum. Lorem, lorem epsum. Lorem</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>12$</div>
+    </div></>,
+    <>
+    <div className='p-1'>
+    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>item 5</div>
+    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Lorem epsum, menu item descriptions. Yum Yum. Lorem, lorem epsum. Lorem</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>12$</div>
+    </div></>,
+    <>
+    <div className='p-1'>
+    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>item 6</div>
+    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Lorem epsum, menu item descriptions. Yum Yum. Lorem, lorem epsum. Lorem</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>12$</div>
+    </div></>,
+    // Add more snack items as needed
+  ],
+  salads: [
+    <>
+    <div className='p-1'>
+    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>item 1</div>
+    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Lorem epsum, menu item descriptions. Yum Yum. Lorem, lorem epsum. Lorem</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>12$</div>
+    </div></>,
+    <>
+    <div className='p-1'>
+    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>item 2</div>
+    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Lorem epsum, menu item descriptions. Yum Yum. Lorem, lorem epsum. Lorem</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>12$</div>
+    </div></>,
+    <>
+    <div className='p-1'>
+    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>item 3</div>
+    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Lorem epsum, menu item descriptions. Yum Yum. Lorem, lorem epsum. Lorem</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>12$</div>
+    </div></>,
+    <>
+    <div className='p-1'>
+    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>item 4</div>
+    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Lorem epsum, menu item descriptions. Yum Yum. Lorem, lorem epsum. Lorem</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>12$</div>
+    </div></>,
+    <>
+    <div className='p-1'>
+    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>item 5</div>
+    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Lorem epsum, menu item descriptions. Yum Yum. Lorem, lorem epsum. Lorem</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>12$</div>
+    </div></>,
+    <>
+    <div className='p-1'>
+    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>item 6</div>
+    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Lorem epsum, menu item descriptions. Yum Yum. Lorem, lorem epsum. Lorem</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>12$</div>
+    </div></>,
+    // Add more snack items as needed
+  ],
   entrees: [
    <><div className='p-1'>
     <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>item a</div>
@@ -99,18 +177,18 @@ const LunchDinnerSubmenu = () => {
         <div className='text-[#dbe7e8] pb-2'>|</div>
         <div
           className={`cursor-pointer text-[#dbe7e8] ${
-            activeMenu === 'entrees' ? 'text-[#e3b505]' : ''
+            activeMenu === 'handhelds' ? 'text-[#e3b505]' : ''
           }`}
-          onClick={() => handleMenuClick('entrees')}
+          onClick={() => handleMenuClick('handhelds')}
         >
           Handhelds
         </div>
         <div className='text-[#dbe7e8] pb-2'>|</div>
         <div
           className={`cursor-pointer text-[#dbe7e8] ${
-            activeMenu === 'entrees' ? 'text-[#e3b505]' : ''
+            activeMenu === 'salads' ? 'text-[#e3b505]' : ''
           }`}
-          onClick={() => handleMenuClick('entrees')}
+          onClick={() => handleMenuClick('salads')}
         >
           Salads & Bowls
         </div>

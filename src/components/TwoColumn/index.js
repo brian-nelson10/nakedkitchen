@@ -12,7 +12,7 @@ const TwoColumn = () => {
           whileInView={{ opacity: 1, x: 0, transition: { duration: .8, delay: .2 } }}
           src={hero} alt="a cool of food" className="w-[45rem] h-[57rem]" />
       </div>
-      <div className="w-full md:w-1/2 text-end items-center">
+      <div className="w-full md:w-1/2 text-end -ml-8 items-center">
         <div>
           <motion.p
             initial={{ opacity: 0, x: -200 }}
@@ -49,17 +49,17 @@ const TwoColumn = () => {
         </div>
         <motion.div
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, transition: { duration: 1, delay: .6 } }} className="text-lg border border-black p-6 m-4 w-[32rem] h-[20rem] font-poppins">
+          whileInView={{ opacity: 1, transition: { duration: 1, delay: .6 } }} className="text-lg border border-black p-6 m-4 w-[33rem] h-[32rem] text-center font-poppins">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, transition: { duration: 1, delay: .7 } }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            euismod urna ut sagittis efficitur. Fusce eu mauris eu metus
-            sollicitudin luctus nec at massa. Integer vitae velit sit amet mi
-            fringilla varius nec in libero. Phasellus in justo eu sem dictum
-            rhoncus.
+            
+Wholesome, Honest Cooking: Our cuisine is meticulously crafted from scratch, using only real, unprocessed ingredients, for a wholesome dining experience. 
+Our diverse menu thoughtfully caters to various dietary preferences, highlighting an array of plant-based components used seemlessly with your usual favorites. 
+We wholeheartedly embrace a holistic approach to dining that reflects our deep respect for the environment. At our restaurant, 
+our identity is defined by our commitment to offering nourishing, sustainable, and naturally delectable food choices.
           </motion.p>
-          <div className="text-center mt-8 text-[4.5rem] text-[#1b3d38]">
+          <div className="text-center mt-12 text-[4.5rem] text-[#1b3d38]">
             <Button className="uppercase text-center" children="RESERVE" />
           </div>
         </motion.div>

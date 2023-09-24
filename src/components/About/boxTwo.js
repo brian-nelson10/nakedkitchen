@@ -1,22 +1,34 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import arrow from "../../assets/images/arrowGreen.png"
 import white from "../../assets/images/white.png"
 import "./styles.css"
 import Marquee from "../Marquee";
 
 const BoxTwo = () => {
+    const navigate = useNavigate();
+    function handleBreakfast() {
+        navigate("/breakfast");
+    };
+    function handleLunchDinner() {
+        navigate("/lunch&dinner");
+    };
+    function handleDrinks() {
+        navigate("/drinks");
+    };
     return (
         <>
-        <div className="font-mentra text-[6rem] mx-[16rem] my-[1rem] tracking-wide">
-        <Marquee/>
-        </div>
-        <div className="w-full max-w-[72rem] mx-auto border-[3px] border-black font-gt uppercase">
-        <motion.div
+            <div className="font-mentra text-[6rem] mx-[16rem] my-[1rem] tracking-wide">
+                <Marquee />
+            </div>
+            <div className="w-full max-w-[72rem] mx-auto border-[3px] border-black font-gt uppercase">
+                <motion.div
                     initial={{ opacity: 0, y: 200 }}
                     whileInView={{ opacity: 1, y: 0, transition: { duration: .5, delay: .5 } }}
                     viewport={{ once: true }}
-                    className="flip-container border-black border-b-[3px] w-full hover:cursor-pointer">
+                    className="flip-container border-black border-b-[3px] w-full hover:cursor-pointer"
+                    onClick={handleBreakfast}>
                     <div className='flip-inner'>
                         <div className='flip-front grid grid-cols-2 mx-4 px-4'>
                             <div>
@@ -43,7 +55,8 @@ const BoxTwo = () => {
                     initial={{ opacity: 0, y: 200 }}
                     whileInView={{ opacity: 1, y: 0, transition: { duration: .5, delay: .5 } }}
                     viewport={{ once: true }}
-                    className="flip-container border-black border-b-[3px] w-full hover:cursor-pointer">
+                    className="flip-container border-black border-b-[3px] w-full hover:cursor-pointer"
+                    onClick={handleLunchDinner}>
                     <div className='flip-inner'>
                         <div className='flip-front grid grid-cols-2 mx-4 px-4'>
                             <div>
@@ -70,7 +83,8 @@ const BoxTwo = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 200 }}
                     whileInView={{ opacity: 1, y: 0, transition: { duration: .5, delay: .5 } }}
-                    className="flip-container border-black w-full hover:cursor-pointer">
+                    className="flip-container border-black w-full hover:cursor-pointer"
+                    onClick={handleLunchDinner}>
                     <div className='flip-inner'>
                         <div className='flip-front grid grid-cols-2 mx-4 px-4'>
                             <div>
@@ -94,6 +108,7 @@ const BoxTwo = () => {
                         </div>
                     </div>
                 </motion.div>
+                
             </div></>
     )
 };

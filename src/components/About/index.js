@@ -8,7 +8,13 @@ const Box = () => {
   const navigate = useNavigate();
   function handleMenu() {
     navigate("/menus");
-  }
+  };
+  function handleAbout() {
+    navigate("/about");
+  };
+  function handleReserve() {
+    navigate("/reservations");
+  };
   return (
     <div>
         <div className='mx-[1rem] mb-[5rem]'>
@@ -73,7 +79,8 @@ const Box = () => {
         initial={{opacity: 0, y: 200}}
         whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .8}}}
         viewport={{ once: true }}
-        className="flip-container border-black border-b-[1px] w-full hover:cursor-pointer">
+        className="flip-container border-black border-b-[1px] w-full hover:cursor-pointer"
+        onClick={handleReserve}>
         <div className='flip-inner'>
           <div className='flip-front grid grid-cols-2 mx-4 mt-4 p-'>
         <div>
@@ -101,7 +108,8 @@ const Box = () => {
         initial={{opacity: 0, y: 200}}
         whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .9}}}
         viewport={{ once: true }}
-        className='flip-container border-black border-b-[1px] w-full hover:cursor-pointer'>
+        className='flip-container border-black border-b-[1px] w-full hover:cursor-pointer'
+        onClick={handleAbout}>
       <div className='flip-inner'>
       <div className="flip-front w-full mx-4 mt-4 grid grid-cols-2">
         <div>

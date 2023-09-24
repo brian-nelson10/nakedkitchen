@@ -1,10 +1,5 @@
 import React from "react";
 import { motion } from 'framer-motion';
-// import IntroAnimation from "../components/IntroAnimation";
-// import Carousel from "../components/Carousel";
-// import Hamburger from "../components/Hamburger";
-// import nklogo from "../assets/images/nkwhite.png"
-// import WritingText from "../components/WritingText";
 import "./home.css";
 import Box from "../components/About";
 import ImageBox from "../components/ImageBox";
@@ -18,7 +13,6 @@ import TwoColumn from "../components/TwoColumn";
 import Button from "../components/Button/button";
 
 const Home = () => {
-  
     return (
         <main className="bg-[#dbe7e8]">
             <div className="h-[100%] w-[100%] overflow-hidden">
@@ -64,7 +58,7 @@ const Home = () => {
                     <Hamburger />
                 </div> */}
                     </section>
-                    <section className="relative h-[393rem] overflow-hidden bg-[#dbe7e8]">
+                    <section className="relative h-[410rem] overflow-hidden bg-[#dbe7e8]">
                         <motion.section className="w-screen h-screen absolute inset-0"
                             initial={{ y: 0 }}
                             whileInView={{ y: '10%' }}
@@ -83,11 +77,6 @@ const Home = () => {
                                 </div>
                             </div>
                             <hr className="border-black border-b-1 mx-[6rem] mb-[8rem]" />
-
-                            {/* <div className="h-[34rem] mx-[5rem] my-[1rem] -pt-[1rem] justify-center text-center flex grass">
-               <WritingText/>
-               </div> */}
-                            {/* <div className="-mt-10 pb-10 ml-[4rem] text-start font-gt uppercase text-[5rem] text-[#1b3d38]">our mission</div> */}
                             <div className="-mt-10"><Marquee1 /></div>
                             <div className="grid grid-cols-3 mt-[1rem] mb-[6rem] card col col-auto splitContent container px-[4rem] flex flex-col">
                                 <div className="w-[45rem] h-[57rem] border border-black">
@@ -117,18 +106,19 @@ const Home = () => {
                                     <motion.div
                                         initial={{ opacity: 0 }}
                                         whileInView={{ opacity: 1, transition: { duration: 1, delay: .2 } }}
-                                        className="text-lg border-2 border-black p-6 m-4 w-[32rem] h-[20rem] font-poppins">
+                                        className="text-lg border-2 border-black p-6 m-4 w-[32rem] h-[30rem] font-poppins">
                                         <motion.p
                                             initial={{ opacity: 0 }}
                                             whileInView={{ opacity: 1, transition: { duration: 1, delay: .4 } }}>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                                            euismod urna ut sagittis efficitur. Fusce eu mauris eu metus
-                                            sollicitudin luctus nec at massa. Integer vitae velit sit amet mi
-                                            fringilla varius nec in libero. Phasellus in justo eu sem dictum
-                                            rhoncus.
+                                            Alongside a warm, inviting and social
+                                            atmosphere our guests will enjoy comforting, healthy, and delicious scratch food from a
+                                            menu of traditional favorites done in a nourishing health-conscious manner. Taking
+                                            ingredients from around the world and accessing a “food is medicine” mentality, we
+                                            have created a vision to deliver a truly unique experience for our community. “Cooking
+                                            with Conscience” is the forefront of our brand’s standard.
                                         </motion.p>
-                                        <div className="text-center mt-8 text-[4.5rem] text-[#1b3d38]">
-                                        <Button className="uppercase text-center" children="LEARN MORE"/>
+                                        <div className="text-center my-[4rem] text-[4.5rem] text-[#1b3d38]">
+                                            <Button className="uppercase text-center" children="LEARN MORE" />
                                         </div>
                                     </motion.div>
                                 </div>
@@ -149,12 +139,10 @@ const Home = () => {
                                 <Footer />
                             </div>
                         </motion.section>
-
                     </section>
                 </div>
             </div>
         </main>
     );
 };
-
 export default Home;
