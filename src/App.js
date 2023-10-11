@@ -7,14 +7,15 @@ import Menu from './pages/menu';
 import MenuLunchDinner from './pages/menuLunchDinner';
 import MenuDrinks from './pages/menuDrinks';
 import About from './pages/about';
-import Contact from './pages/contact';
+import MenuCatering from './pages/menuCatering';
+// import Contact from './pages/contact';
 // import ScrollTop from './components/ScrollTop';
 
 function App() {
 
   return (
 
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router >
       <Routes>
         <Route
           path="/"
@@ -44,10 +45,22 @@ function App() {
           path='/drinks'
           element={<MenuDrinks />}
         />
-        <Route
+         <Route
+          path='/catering'
+          element={<MenuCatering />}
+        />
+        {/* <Route
             path="/contact"
             exact element={<Contact />}
-            />
+            /> */}
+            {/* <Route
+            path='/reservations'
+            element={<Reservations />}
+            /> */}
+            {/* <Route
+            path='/merch'
+            element={<Merch />}
+            /> */}
       </Routes>
     </Router>
 

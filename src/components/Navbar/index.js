@@ -62,13 +62,13 @@ const Navbar = () => {
         </a>
         </div>
         <div className='w-[2rem] h-[2rem]'>
-        <a href="/about" className="hover:text-[#e3b505] hover:font-summer hover:text-[3.2rem]">
-          About
+        <a href="/catering" className="hover:text-[#e3b505] hover:font-summer hover:text-[3.2rem]">
+          Catering
         </a>
         </div>
         <div className='w-[2rem] h-[2rem]'>
-        <a href="/contact" className="hover:text-[#e3b505] hover:font-summer hover:text-[3.2rem]">
-          Contact
+        <a href="/merch" className="hover:text-[#e3b505] hover:font-summer hover:text-[3.2rem]">
+          Merch
         </a>
         </div>
         </div>
