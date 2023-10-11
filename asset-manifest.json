@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/nakedkitchen/static/css/main.4a45819a.css",
-    "main.js": "/nakedkitchen/static/js/main.845d319e.js",
-    "static/media/veggies.jpeg": "/nakedkitchen/static/media/veggies.4cacbaeafdd4a757a128.jpeg",
-    "static/media/wall5.jpg": "/nakedkitchen/static/media/wall5.a6b945db762a3bb09ef0.jpg",
-    "static/media/Poppins-Light.ttf": "/nakedkitchen/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
-    "static/media/summer-loving-solid-regular.otf": "/nakedkitchen/static/media/summer-loving-solid-regular.adcd2e59c1b030b46f44.otf",
-    "static/media/XtreemFat_PERSONAL_USE.ttf": "/nakedkitchen/static/media/XtreemFat_PERSONAL_USE.4c565a209d8cc0aafdae.ttf",
-    "static/media/nkgold.png": "/nakedkitchen/static/media/nkgold.cb452c70ecae5c3cdcc2.png",
-    "static/media/Webcomic.otf": "/nakedkitchen/static/media/Webcomic.eb1cd5b948409c2c597b.otf",
-    "static/media/MENTRA.otf": "/nakedkitchen/static/media/MENTRA.f61234c63642448c98f9.otf",
-    "static/media/GT-Flexa-Compressed-Bold-Trial.otf": "/nakedkitchen/static/media/GT-Flexa-Compressed-Bold-Trial.e6c8727b542022c95730.otf",
-    "index.html": "/nakedkitchen/index.html",
-    "main.4a45819a.css.map": "/nakedkitchen/static/css/main.4a45819a.css.map",
-    "main.845d319e.js.map": "/nakedkitchen/static/js/main.845d319e.js.map"
+    "main.css": "/static/css/main.99618dff.css",
+    "main.js": "/static/js/main.4816f974.js",
+    "static/media/veggies.jpeg": "/static/media/veggies.773d77f0e823ccba38b1.jpeg",
+    "static/media/wall5.jpg": "/static/media/wall5.a6b945db762a3bb09ef0.jpg",
+    "static/media/Poppins-Light.ttf": "/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
+    "static/media/summer-loving-solid-regular.otf": "/static/media/summer-loving-solid-regular.adcd2e59c1b030b46f44.otf",
+    "static/media/XtreemFat_PERSONAL_USE.ttf": "/static/media/XtreemFat_PERSONAL_USE.4c565a209d8cc0aafdae.ttf",
+    "static/media/nkgold.png": "/static/media/nkgold.cb452c70ecae5c3cdcc2.png",
+    "static/media/Webcomic.otf": "/static/media/Webcomic.eb1cd5b948409c2c597b.otf",
+    "static/media/MENTRA.otf": "/static/media/MENTRA.f61234c63642448c98f9.otf",
+    "static/media/GT-Flexa-Compressed-Bold-Trial.otf": "/static/media/GT-Flexa-Compressed-Bold-Trial.e6c8727b542022c95730.otf",
+    "index.html": "/index.html",
+    "main.99618dff.css.map": "/static/css/main.99618dff.css.map",
+    "main.4816f974.js.map": "/static/js/main.4816f974.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a45819a.css",
-    "static/js/main.845d319e.js"
+    "static/css/main.99618dff.css",
+    "static/js/main.4816f974.js"
   ]
 }
