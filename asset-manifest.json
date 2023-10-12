@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2c8c2a7e.css",
-    "main.js": "/static/js/main.9e6bd1c9.js",
+    "main.js": "/static/js/main.fe7b7fb7.js",
     "static/media/veggies.jpeg": "/static/media/veggies.773d77f0e823ccba38b1.jpeg",
     "static/media/wall5.jpg": "/static/media/wall5.a6b945db762a3bb09ef0.jpg",
     "static/media/Poppins-Light.ttf": "/static/media/Poppins-Light.7641a0f76ca9ef6c252c.ttf",
@@ -13,10 +13,10 @@
     "static/media/GT-Flexa-Compressed-Bold-Trial.otf": "/static/media/GT-Flexa-Compressed-Bold-Trial.e6c8727b542022c95730.otf",
     "index.html": "/index.html",
     "main.2c8c2a7e.css.map": "/static/css/main.2c8c2a7e.css.map",
-    "main.9e6bd1c9.js.map": "/static/js/main.9e6bd1c9.js.map"
+    "main.fe7b7fb7.js.map": "/static/js/main.fe7b7fb7.js.map"
   },
   "entrypoints": [
     "static/css/main.2c8c2a7e.css",
-    "static/js/main.9e6bd1c9.js"
+    "static/js/main.fe7b7fb7.js"
   ]
 }
