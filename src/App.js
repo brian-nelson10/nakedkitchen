@@ -15,7 +15,7 @@ function App() {
 
   return (
 
-    <Router basename="nakedkitchenjax.com/">
+    <Router basename="www.nakedkitchenjax.com/">
       <Routes>
         <Route
           path="/"
