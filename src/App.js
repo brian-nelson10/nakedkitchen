@@ -8,6 +8,7 @@ import MenuLunchDinner from './pages/menuLunchDinner';
 import MenuDrinks from './pages/menuDrinks';
 import About from './pages/about';
 import MenuCatering from './pages/menuCatering';
+import NotFound from './pages/NotFound';
 // import Contact from './pages/contact';
 // import ScrollTop from './components/ScrollTop';
 
@@ -15,7 +16,7 @@ function App() {
 
   return (
 
-    <Router basename="www.nakedkitchenjax.com/">
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route
           path="/"
@@ -61,6 +62,10 @@ function App() {
             path='/merch'
             element={<Merch />}
             /> */}
+            <Route
+                    path="*"
+                    element={<NotFound />}
+                />
       </Routes>
     </Router>
 
