@@ -51,19 +51,19 @@ const Navbar = () => {
       animate={controls}
      
     >
-      <div className="grid grid-cols-3 w-full flex items-center space-between-2">
+      <div className="grid grid-cols-3 md:space-x-4 md:pt-2 mt-2 text-2xl md:text-[3rem] w-full flex items-center">
         <div className=''>
-        <p onClick={handleHome} className={isTransparent ? 'font-summer text-[5rem] text-[#e3b505] hover:cursor-pointer' : 'font-summer text-[5rem] hover:cursor-pointer'}>Naked Kitchen</p>
+        <p onClick={handleHome} className={isTransparent ? 'font-summer -mt-6 w-[1rem] md:w-max text-2xl md:text-[5rem] text-[#e3b505] hover:cursor-pointer' : 'font-summer -mt-3 w-[1rem] md:w-max text-2xl md:text-[5rem] hover:cursor-pointer'}>Naked Kitchen</p>
         </div>
-        <div className='text-center space-x-[12rem] text-[3rem] flex flex-row'>
+        <div className='md:text-center text-start space-x-6 md:space-x-[12rem] text-xl md:text-[3rem] flex flex-row'>
           <div className='w-[2rem] h-[2rem]'>
         <a href="/menus" className="hover:text-[#e3b505] hover:font-summer hover:text-[3.2rem]">
           Menu
         </a>
         </div>
         <div className='w-[2rem] h-[2rem]'>
-        <a href="/catering" className="hover:text-[#e3b505] hover:font-summer hover:text-[3.2rem]">
-          Catering
+        <a href="/about" className="hover:text-[#e3b505] hover:font-summer hover:text-[3.2rem]">
+          About
         </a>
         </div>
         <div className='w-[2rem] h-[2rem]'>

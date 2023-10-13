@@ -10,8 +10,8 @@ const BreakfastNext = () => {
     };
     return (
         <>
-        <div className="h-full flex flex-col justify-center items-center menu p-8" >
-        <div className="text-[#dbe7e8] items-end font-gt text-[8rem] uppercase">
+        <div className="h-full flex flex-col justify-center items-center menu md:p-8" >
+        <div className="text-[#dbe7e8] items-end font-gt text-[3rem] md:text-[8rem] uppercase">
             <motion.p
                 initial={{ y: 310, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
@@ -19,7 +19,7 @@ const BreakfastNext = () => {
                 viewport={{ once: true }}>
                 Breakfast</motion.p>
         </div>
-        <div className="font-gt text-[#dbe7e8] text-center text-[5rem]">
+        <div className="font-gt text-[#dbe7e8] text-center md:text-[5rem]">
                 <motion.p
                     initial={{ y: 320, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
