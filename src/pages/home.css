@@ -6,7 +6,12 @@
     background-repeat: no-repeat;
     opacity: 1;
 }
-
+@media only screen and (max-width: 600px) {
+    .grass {
+      background-size: 150rem;
+    }
+  }
+  
 .menu1 {
     background: url("../assets/images/veggies.jpeg");
     background-size: cover;
