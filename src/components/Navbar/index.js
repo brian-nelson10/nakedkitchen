@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useAnimation, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import logo from "../../assets/images/OrangeDudeSmall.png"
 
 const Navbar = () => {
   const [scrolling, setScrolling] = useState(false);
@@ -55,15 +56,15 @@ const Navbar = () => {
         <div className=''>
         <p onClick={handleHome} className={isTransparent ? 'font-summer -mt-6 w-[1rem] md:w-max text-2xl md:text-[5rem] text-[#e3b505] hover:cursor-pointer' : 'font-summer -mt-3 w-[1rem] md:w-max text-2xl md:text-[5rem] hover:cursor-pointer'}>Naked Kitchen</p>
         </div>
-        <div className='md:text-center text-start space-x-6 md:space-x-[12rem] text-xl md:text-[3rem] flex flex-row'>
-          <div className='w-[2rem] h-[2rem]'>
+        <div className='text-start -ml-7 md:ml-0 space-x-12 md:space-x-[12rem] text-xl md:text-[3rem] flex flex-row'>
+          <div className='w-[1rem] md:w-[2rem] h-[2rem]'>
         <a href="/menus" className="hover:text-[#e3b505] hover:font-summer hover:text-[3.2rem]">
           Menu
         </a>
         </div>
         <div className='w-[2rem] h-[2rem]'>
-        <a href="/about" className="hover:text-[#e3b505] hover:font-summer hover:text-[3.2rem]">
-          About
+        <a href="/catering" className="hover:text-[#e3b505] hover:font-summer hover:text-[3.2rem]">
+          Catering
         </a>
         </div>
         <div className='w-[2rem] h-[2rem]'>
@@ -74,9 +75,9 @@ const Navbar = () => {
         </div>
         <div className='items-end text-end justify-end flex'>
         <img
-        src="/path-to-your-icon.png"
+        src={logo}
         alt="Icon"
-        className="w-8 h-8 object-contain items-end text-end justify-end"
+        className="w-[3rem] h-[3rem] md:w-[5rem] md:h-[5rem] object-contain items-end text-end justify-end"
       />
       </div>
       </div>

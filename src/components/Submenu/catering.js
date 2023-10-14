@@ -56,7 +56,7 @@ const menuItems = {
     </div></>,
     <>
     <div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[4rem] text-[#47b9c3]'>Kimchi Grilled Cheese</div>
+    <div className='font-gt uppercase mb-2 text-[3rem] text-[#47b9c3]'>Kimchi Grilled Cheese</div>
     <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Olive my Pickle Kimchi, Gochujang Aioli, Mozzarella, Gruyere</div>
     <div className='font-summer text-[3rem] text-[#47b9c3]'>Protein Choice </div>
     </div></>,
@@ -119,9 +119,9 @@ const menuItems = {
     // Add more snack items as needed
   ],
   entrees: [
-   <><div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[3.1rem] text-[#47b9c3]'>North Africa Spiced Salmon</div>
-    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Wild Caught Salmon, Saffron Chermoula Sauce, over Creamy Cauliflower with Nigella Seeds</div>
+    <><div className='p-1'>
+    <div className='font-gt uppercase mb-2 text-[2rem] text-[#47b9c3]'>Kabocha Squash Bolognese</div>
+    <div className='font-poppins mb-1 text-[1.2rem] text-[#dbe7e8]'>Japanese Kabocha Squash Sauce with Grass Fed Ground Beef & Azar Ground Sausage, Pappardelle, Parmigiano Reggiano</div>
     <div className='font-summer text-[3rem] text-[#47b9c3]'>Protein Choice</div>
     </div></>,
     <><div className='p-1'>
@@ -148,6 +148,11 @@ const menuItems = {
     <div className='font-gt uppercase mb-2 text-[3.1rem] text-[#47b9c3]'>Cauliflower Steak Au Poivre</div>
     <div className='font-poppins mb-1 text-[1.2rem] text-[#dbe7e8]'>Vegan Peppercorn & Brandy "Cream" Sauce, Almond Gremolata, Garlic Confit, Chili Crunch, Herbs. Served over Rosemary Fingerling Potatoes.</div>
     <div className='font-summer text-[3rem] text-[#e3b505]'>Vegan Option</div>
+    </div></>,
+    <><div className='p-1'>
+    <div className='font-gt uppercase mb-2 text-[3.1rem] text-[#47b9c3]'>North Africa Spiced Salmon</div>
+    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Wild Caught Salmon, Saffron Chermoula Sauce, over Creamy Cauliflower with Nigella Seeds</div>
+    <div className='font-summer text-[3rem] text-[#47b9c3]'>Protein Choice</div>
     </div></>,
     // Add more entree items as needed
   ],
@@ -230,7 +235,7 @@ const CateringSubmenu = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
-              className="w-full border border-[2px] border-[#e3b505] my-5 mx-2 md:w-[36rem] lg:w-[36rem] text-center items-center p-2"
+              className=" border border-[2px] border-[#e3b505] my-5 mx-1 md:w-[36rem] lg:w-[36rem] text-center items-center p-2"
             >
               {item}
             </motion.div>
