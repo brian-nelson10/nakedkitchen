@@ -58,17 +58,17 @@ const Navbar = () => {
         </div>
         <div className='text-start -ml-7 md:ml-0 space-x-12 md:space-x-[12rem] text-xl md:text-[3rem] flex flex-row'>
           <div className='w-[1rem] md:w-[2rem] h-[2rem]'>
-        <a href="/menus" className="hover:text-[#e3b505] hover:font-summer hover:text-[3.2rem]">
+        <a href="/menus" className="md:hover:text-[#e3b505] md:hover:font-summer md:hover:text-[3.2rem]">
           Menu
         </a>
         </div>
         <div className='w-[2rem] h-[2rem]'>
-        <a href="/catering" className="hover:text-[#e3b505] hover:font-summer hover:text-[3.2rem]">
+        <a href="/catering" className="md:hover:text-[#e3b505] md:hover:font-summer md:hover:text-[3.2rem]">
           Catering
         </a>
         </div>
         <div className='w-[2rem] h-[2rem]'>
-        <a href="/merch" className="hover:text-[#e3b505] hover:font-summer hover:text-[3.2rem]">
+        <a href="/merch" className="md:hover:text-[#e3b505] md:hover:font-summer md:hover:text-[3.2rem]">
           Merch
         </a>
         </div>

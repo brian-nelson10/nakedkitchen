@@ -26,7 +26,7 @@ const Footer = () => {
             Taking ingredients from around the world and accessing a “food is medicine” mentality, we have created a vision to deliver a truly unique experience for our community. “Cooking with Conscience” is the forefront of our brand’s standard.
             </p>
             </div>
-            <div className='flex justify-items-center font-poppins mt-5 gap-5 mx-[5rem]'>
+            <div className='flex justify-items-center font-poppins mt-5 gap-5 md:mx-[5rem]'>
             <img
               src={logo} 
               alt="Company Logo"
@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
         
         <div className="flex justify-end items-center text-end">
-            <img src={white} alt="arrow" className='w-[6rem] justify-end items-center'/>
+            <img src={white} alt="arrow" className='md:w-[6rem] w-[4rem] justify-end items-center'/>
         </div>
         </div>
         <div className='flip-backFoot bg-black grid grid-cols-2 -mt-20 mx-4'>
@@ -76,16 +76,16 @@ const Footer = () => {
         <div className='flip-innerFoot'>
           <div className='flip-frontFoot grid grid-cols-2 mx-4 mt-4 p-'>
         <div>
-        <h2 className="md:text-\[4\.5rem\] font-bold text-[#dbe7e8]">Gallery</h2>
+        <h2 className="md:text-\[4\.5rem\] font-bold text-[#dbe7e8]">Catering</h2>
         </div>
         
         <div className="flex justify-end items-center text-end">
-            <img src={white} alt="arrow" className='w-[6rem] justify-end items-center'/>
+            <img src={white} alt="arrow" className='md:w-[6rem] w-[4rem] justify-end items-center'/>
         </div>
         </div>
         <div className='flip-backFoot bg-black grid grid-cols-2 -mt-20 mx-4'>
           <div>
-        <h2 className="md:text-\[4\.5rem\] font-bold">Gallery</h2>
+        <h2 className="md:text-\[4\.5rem\] font-bold">Catering</h2>
         </div>
         
         <div className="flex justify-end items-center text-end">
@@ -106,7 +106,7 @@ const Footer = () => {
         </div>
         
         <div className="flex justify-end items-center text-end">
-            <img src={white} alt="arrow" className='w-[6rem] justify-end items-center'/>
+            <img src={white} alt="arrow" className='md:w-[6rem] w-[4rem] justify-end items-center'/>
         </div>
         </div>
         <div className='flip-backFoot bg-black grid grid-cols-2 -mt-20 mx-4'>
@@ -132,7 +132,7 @@ const Footer = () => {
         </div>
         
         <div className="flex justify-end items-center text-end">
-            <img src={white} alt="arrow" className='w-[6rem] justify-end items-center'/>
+            <img src={white} alt="arrow" className='md:w-[6rem] w-[4rem] justify-end items-center'/>
         </div>
         </div>
         <div className='flip-backFoot bg-black grid grid-cols-2 -mt-20 mx-4'>
@@ -181,15 +181,15 @@ const Footer = () => {
           </div>
 
           {/* Third Column */}
-          <div className="grid grid-cols-3 px-6 justify-items-center items-center">
+          <div className="grid grid-cols-3 px-6 mt-5 md:mt-0 justify-items-center items-center">
             <div className=''>
-              <FaFacebook className='h-[4rem] w-[4rem] hover:text-[#e3b505] hover:cursor-pointer'/>
+              <FaFacebook className='md:h-[4rem] md:w-[4rem] h-[3rem] w-[3rem] hover:text-[#e3b505] hover:cursor-pointer'/>
             </div>
             <div>
-              <FaInstagram className='h-[4rem] w-[4rem] hover:text-[#e3b505] hover:cursor-pointer'/>
+              <FaInstagram className='md:h-[4rem] md:w-[4rem] h-[3rem] w-[3rem] hover:text-[#e3b505] hover:cursor-pointer'/>
             </div>
             <div>
-              <FaTwitter className='h-[4rem] w-[4rem] hover:text-[#e3b505] hover:cursor-pointer'/>
+              <FaTwitter className='md:h-[4rem] md:w-[4rem] h-[3rem] w-[3rem] hover:text-[#e3b505] hover:cursor-pointer'/>
             </div>
           </div>
         </div>

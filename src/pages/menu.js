@@ -28,7 +28,7 @@ const Menu = () => {
         navigate(link);
     };
   return (
-    <div className="flex h-screen overflow-hidden">
+    <div className="flex flex-col h-screen overflow-hidden">
       {columns.map((column, index) => (
         <motion.div
           key={index}

@@ -8,10 +8,16 @@
 }
 @media only screen and (max-width: 600px) {
     .grass {
-      background-size: contain;
+      background-size: 80 80;
     }
   }
-  
+
+  @media only screen and (max-width: 600px) {
+    .menu1 {
+      background-size: 80 80;
+    }
+  }
+
 .menu1 {
     background: url("../assets/images/veggies.jpeg");
     background-size: cover;
