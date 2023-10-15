@@ -8,13 +8,13 @@
 }
 @media only screen and (max-width: 600px) {
     .grass {
-      background-size: 80 80;
+      background-size: 650%;
     }
   }
 
   @media only screen and (max-width: 600px) {
     .menu1 {
-      background-size: 80 80;
+      background-size: 600%;
     }
   }
 
