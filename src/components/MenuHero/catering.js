@@ -1,8 +1,13 @@
 import React from "react";
 import { motion } from 'framer-motion';
 import Button from "../Button/button";
+import { useNavigate } from "react-router-dom";
 
 const CateringHero = () => {
+    const navigate = useNavigate();
+    function handleContact() {
+        navigate("/contact")
+    }
     return (
         <><div className="text-[#dbe7e8] items-end font-gt text-[5rem] md:text-[8rem] uppercase">
             <motion.p
@@ -21,7 +26,7 @@ const CateringHero = () => {
                     initial={{ y: -320, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: .5, delay: .6 }}>
-                    <Button className="" children="CONTACT US" />
+                    <Button className="" children="CONTACT US" onClick={handleContact}/>
                 </motion.p>
             </div></>
     )

@@ -9,7 +9,7 @@ import MenuDrinks from './pages/menuDrinks';
 import About from './pages/about';
 import MenuCatering from './pages/menuCatering';
 import NotFound from './pages/NotFound';
-// import Contact from './pages/contact';
+import Contact from './pages/contact';
 // import ScrollTop from './components/ScrollTop';
 
 function App() {
@@ -50,10 +50,10 @@ function App() {
           path='/catering'
           element={<MenuCatering />}
         />
-        {/* <Route
+        <Route
             path="/contact"
             exact element={<Contact />}
-            /> */}
+            />
             {/* <Route
             path='/reservations'
             element={<Reservations />}
