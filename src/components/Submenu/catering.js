@@ -7,37 +7,37 @@ const menuItems = {
     <div className='p-1'>
     <div className='font-gt uppercase mb-2 text-[4rem] text-[#47b9c3]'>Crispy Deviled Eggs</div>
     <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Crispy Egg White, Chili Crunch, Chives</div>
-    <div className='font-summer text-[3rem] text-[#47b9c3]'>12$</div>
+    <div className='font-summer text-[3rem] text-[#47b9c3]'>Vegetarian</div>
     </div></>,
     <>
     <div className='p-1'>
     <div className='font-gt uppercase mb-2 text-[3.5rem] text-[#47b9c3]'>Winter Forager Crostini</div>
     <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Son & Skye Mushroom Mix, House Riccota with Herbs, Winter Truffle Butter on Hippie Bread</div>
-    <div className='font-summer text-[3rem] text-[#47b9c3]'>12$</div>
+    <div className='font-summer text-[3rem] text-[#47b9c3]'>Vegetarian</div>
     </div></>,
     <>
     <div className='p-1'>
     <div className='font-gt uppercase mb-2 text-[3.3rem] text-[#47b9c3]'>Lemongrass Chicken Satay</div>
     <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Marinated Chicken Thigh, Green Goddess Oil, Thai Curry Peanut Sauce</div>
-    <div className='font-summer text-[3rem] text-[#e3b505]'>12$</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>Protein</div>
     </div></>,
     <>
     <div className='p-1'>
     <div className='font-gt uppercase mb-2 text-[3.5rem] text-[#47b9c3]'>Pickled Mushroom Satay</div>
     <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Son & Skye Blue Oyster Mushrooms, Yakitori Sauce, Crumbled Cashew </div>
-    <div className='font-summer text-[3rem] text-[#47b9c3]'>12$</div>
+    <div className='font-summer text-[3rem] text-[#47b9c3]'>Vegan</div>
     </div></>,
     <>
     <div className='p-1'>
     <div className='font-gt uppercase mb-2 text-[3.7rem] text-[#47b9c3]'>Winter Squash Hummus</div>
     <div className='font-poppins mb-2 text-[1rem] text-[#dbe7e8]'>Crunchy Pumpkin Seed Topping, Smoked Paaprika Oil, House Hemp-Seed Crackers and Spiced Cinnamon Crackers</div>
-    <div className='font-summer text-[3rem] text-[#e3b505]'>12$</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>Vegan</div>
     </div></>,
     <>
     <div className='p-1'>
     <div className='font-gt uppercase mb-2 text-[3.3rem] text-[#47b9c3]'>Blistered Shishito Peppers</div>
-    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Charcoal Grilled, Togarashi, Creamy Miso Sauce</div>
-    <div className='font-summer text-[3rem] text-[#e3b505]'>12$</div>
+    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Charcoal Grilled, Pistachio Romesco Sauce, Africa Spices</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>Vegan</div>
     </div></>,
     // Add more snack items as needed
   ],
@@ -82,39 +82,39 @@ const menuItems = {
   sides: [
     <>
     <div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[4rem] text-[#]'>item 1</div>
-    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Lorem epsum, menu item descriptions. Yum Yum. Lorem, lorem epsum. Lorem</div>
-    <div className='font-summer text-[3rem] text-[#e3b505]'>12$</div>
+    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>Roasted Winter Root Vegetables (GF) (V)</div>
+    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Honey, Thyme, Almond Gremolata (Vegan Substitute Maple Syrup)</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>15 for 1/2 Pan</div>
     </div></>,
     <>
     <div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>item 2</div>
+    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>Duck Fat Fingerling Potatoes (GF)</div>
     <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Lorem epsum, menu item descriptions. Yum Yum. Lorem, lorem epsum. Lorem</div>
-    <div className='font-summer text-[3rem] text-[#e3b505]'>12$</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>15$ for 1/2 Pan</div>
     </div></>,
     <>
     <div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>item 3</div>
-    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Lorem epsum, menu item descriptions. Yum Yum. Lorem, lorem epsum. Lorem</div>
-    <div className='font-summer text-[3rem] text-[#e3b505]'>12$</div>
+    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>Roasted Brussels with Squash & Vegan Bacon(GF) (V)</div>
+    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Brussels tossed in vegan lemon butter, Roasted Kabocha Squash, topped with vegan bacon crumble</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>15$ for 1/2 Pan</div>
+    </div></>,
+      <>
+      <div className='p-1'>
+      <div className='font-gt uppercase mb-2 text-[4rem] text-[#]'>Green Rice (GF) (V)</div>
+      <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Vegan Basil Pesto, Feta Cheese (optional)</div>
+      <div className='font-summer text-[3rem] text-[#e3b505]'>12$ for 1/2 Pan</div>
+      </div></>,
+    <>
+    <div className='p-1'>
+    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>Brussel Sprouts Caeser (GF)</div>
+    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Super thin sliced brussels, garlic crumbs, Shaved Parmigiano Reggiano</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>12$ for 1/2 Pan</div>
     </div></>,
     <>
     <div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>item 4</div>
-    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Lorem epsum, menu item descriptions. Yum Yum. Lorem, lorem epsum. Lorem</div>
-    <div className='font-summer text-[3rem] text-[#e3b505]'>12$</div>
-    </div></>,
-    <>
-    <div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>item 5</div>
-    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Lorem epsum, menu item descriptions. Yum Yum. Lorem, lorem epsum. Lorem</div>
-    <div className='font-summer text-[3rem] text-[#e3b505]'>12$</div>
-    </div></>,
-    <>
-    <div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>item 6</div>
-    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Lorem epsum, menu item descriptions. Yum Yum. Lorem, lorem epsum. Lorem</div>
-    <div className='font-summer text-[3rem] text-[#47b9c3]'>12$</div>
+    <div className='font-gt uppercase mb-2 text-[4rem] text-[#e3b505]'>Stewed Collards with Parmigiano Rind (GF) (Veg)</div>
+    <div className='font-gt uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Slow Stewed Collards, Rosemary, Root Vegetables, Parmigiano Rind</div>
+    <div className='font-summer text-[3rem] text-[#47b9c3]'>15$ for 1/2 Pan</div>
     </div></>,
     // Add more snack items as needed
   ],
