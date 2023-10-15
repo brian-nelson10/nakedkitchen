@@ -8,7 +8,7 @@
 }
 @media only screen and (max-width: 600px) {
     .grass {
-      background-size: 10%;
+      background-size: contain;
     }
   }
 
