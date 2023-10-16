@@ -11,8 +11,7 @@ import BreakfastNext from "../components/NextMenu/breakfast";
 const MenuCatering = () => {
 
     return (
-        <main className="bg-[#0d1f22]">
-            <div className="h-[100%] w-[100%] overflow-hidden">
+        <main className="">
                 <div className="scroll h-[100%] w-[100%] overflow-hidden ">
                     <section className="z-50">
                         <Navbar />
@@ -37,7 +36,6 @@ const MenuCatering = () => {
                         <Footer />
                     </section>
                 </div>
-            </div>
         </main>
     )
 };
