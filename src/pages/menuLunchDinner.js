@@ -17,7 +17,7 @@ const MenuLunchDinner = () => {
                     <section className="z-50">
                         <Navbar />
                     </section>
-                    <section className="grid grid-rows-3 w-screen text-center h-[67rem] z-40 px-[2rem] pt-[20rem] bg-fixed -space-y-[10rem] grass">
+                    <section className="grid grid-rows-3 w-screen text-center h-[67rem] z-40 px-[2rem] pt-[20rem] bg-fixed -space-y-[10rem] md:grass grassMobile">
                         <LunchDinnerHero />
                     </section>
                     <section className="relative h-fit overflow-hidden bg-[#020202]">
