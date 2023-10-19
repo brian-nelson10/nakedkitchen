@@ -43,7 +43,7 @@ const Home = () => {
                         <section className="z-50">
                             <Navbar />
                         </section>
-                        <section className="grid grid-rows-2 w-screen h-[55rem] md:h-[68rem] z-40 px-[.5rem] md:px-[2rem] md:pt-[25rem] bg-fixed grass">
+                        <section className="grid grid-rows-2 w-screen h-[55rem] md:h-[68rem] z-40 px-[.5rem] md:px-[2rem] md:pt-[25rem] bg-fixed grassMobile md:grass">
                             <div className="grid md:grid-cols-2 md:-mb-[25rem] md:mb-0 items-end">
                                 <div className="md:text-start text-[#dbe7e8] items-end md:ml-[1rem] font-gt text-[1.4rem] md:text-[3rem] uppercase">
                                     <motion.p
@@ -81,7 +81,7 @@ const Home = () => {
                     <Hamburger />
                 </div> */}
                         </section>
-                        <section className="relative h-[600rem] md:h-[410rem] overflow-hidden bg-[#dbe7e8]">
+                        <section className="relative h-[625rem] md:h-[410rem] overflow-hidden bg-[#dbe7e8]">
                             <motion.section className="w-screen h-screen absolute inset-0"
                                 initial={{ y: 0 }}
                                 whileInView={{ y: '10%' }}

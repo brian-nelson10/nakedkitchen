@@ -7,7 +7,21 @@ import { FaTwitter } from 'react-icons/fa';
 import { motion } from "framer-motion";
 import white from "../../assets/images/white.png"
 import "./styles.css";
+import { useNavigate } from 'react-router-dom';
 const Footer = () => {
+  const navigate = useNavigate();
+  function handleMenu() {
+    navigate("/menus")
+  };
+  function handleCatering() {
+    navigate("/catering")
+  };
+  function handleAbout() {
+    navigate("/about")
+  };
+  function handleContact() {
+    navigate("/contact")
+  };
   return (
     <footer className="bg-[#1b3d38] py-4 text-[#dbe7e8] bottom-0">
       {/* First Row */}
@@ -47,19 +61,45 @@ const Footer = () => {
         whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .1}}}
         viewport={{ once: true }}
         className="flip-containerFoot border-black border-b-[1px] w-full hover:cursor-pointer">
-        <div className='flip-innerFoot'>
-          <div className='flip-frontFoot grid grid-cols-2 mx-4 mt-4 p-'>
+        <div onClick={handleMenu} className='flip-innerFoot'>
+          <div className='flip-frontFoot grid grid-cols-2 mx-4 mt-4'>
         <div>
-        <h2 className="md:md:text-\[4\.5rem\] font-bold text-[#dbe7e8]">MENU</h2>
+        <h2 className="md:md:text-[4.5rem] font-bold text-[#dbe7e8]">MENU</h2>
         </div>
         
         <div className="flex justify-end items-center text-end">
             <img src={white} alt="arrow" className='md:w-[6rem] w-[4rem] justify-end items-center'/>
         </div>
         </div>
-        <div className='flip-backFoot bg-black grid grid-cols-2 -mt-20 mx-4'>
+        <div className='flip-backFoot bg-black grid grid-cols-2 -mt-16 mx-4'>
           <div>
-        <h2 className="md:md:text-\[4\.5rem\] font-bold">MENU</h2>
+        <h2 className="md:md:text-[4.5rem] font-bold">MENU</h2>
+        </div>
+        
+        <div className="flex justify-end items-center text-end">
+            <img src={arrow} alt="arrow" className='md:w-[6rem] w-[4rem] justify-end items-center mr-1 mt-1'/>
+        </div>
+        </div>
+        </div>
+      </motion.div>
+      <motion.div 
+        initial={{opacity: 0, y: 200}}
+        whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .1}}}
+        viewport={{ once: true }}
+        className="flip-containerFoot border-black border-b-[1px] w-full hover:cursor-pointer">
+        <div onClick={handleCatering} className='flip-innerFoot'>
+          <div className='flip-frontFoot grid grid-cols-2 mx-4 mt-4 p-'>
+        <div>
+        <h2 className="md:text-[4.5rem] font-bold text-[#dbe7e8]">Catering</h2>
+        </div>
+        
+        <div className="flex justify-end items-center text-end">
+            <img src={white} alt="arrow" className='md:w-[6rem] w-[4rem] justify-end items-center'/>
+        </div>
+        </div>
+        <div className='flip-backFoot bg-black grid grid-cols-2 -mt-16 mx-4'>
+          <div>
+        <h2 className="md:text-[4.5rem] font-bold">Catering</h2>
         </div>
         
         <div className="flex justify-end items-center text-end">
@@ -73,19 +113,19 @@ const Footer = () => {
         whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .1}}}
         viewport={{ once: true }}
         className="flip-containerFoot border-black border-b-[1px] w-full hover:cursor-pointer">
-        <div className='flip-innerFoot'>
+        <div onClick={handleAbout} className='flip-innerFoot'>
           <div className='flip-frontFoot grid grid-cols-2 mx-4 mt-4 p-'>
         <div>
-        <h2 className="md:text-\[4\.5rem\] font-bold text-[#dbe7e8]">Catering</h2>
+        <h2 className="md:text-[4.5rem] font-bold text-[#dbe7e8]">About</h2>
         </div>
         
         <div className="flex justify-end items-center text-end">
             <img src={white} alt="arrow" className='md:w-[6rem] w-[4rem] justify-end items-center'/>
         </div>
         </div>
-        <div className='flip-backFoot bg-black grid grid-cols-2 -mt-20 mx-4'>
+        <div className='flip-backFoot bg-black grid grid-cols-2 -mt-16 mx-4'>
           <div>
-        <h2 className="md:text-\[4\.5rem\] font-bold">Catering</h2>
+        <h2 className="md:text-[4.5rem] font-bold">About</h2>
         </div>
         
         <div className="flex justify-end items-center text-end">
@@ -99,45 +139,19 @@ const Footer = () => {
         whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .1}}}
         viewport={{ once: true }}
         className="flip-containerFoot border-black border-b-[1px] w-full hover:cursor-pointer">
-        <div className='flip-innerFoot'>
+        <div onClick={handleContact} className='flip-innerFoot'>
           <div className='flip-frontFoot grid grid-cols-2 mx-4 mt-4 p-'>
         <div>
-        <h2 className="md:text-\[4\.5rem\] font-bold text-[#dbe7e8]">About</h2>
+        <h2 className="md:text-[4.5rem] font-bold text-[#dbe7e8]">Contact</h2>
         </div>
         
         <div className="flex justify-end items-center text-end">
             <img src={white} alt="arrow" className='md:w-[6rem] w-[4rem] justify-end items-center'/>
         </div>
         </div>
-        <div className='flip-backFoot bg-black grid grid-cols-2 -mt-20 mx-4'>
+        <div className='flip-backFoot bg-black grid grid-cols-2 -mt-16 mx-4'>
           <div>
-        <h2 className="md:text-\[4\.5rem\] font-bold">About</h2>
-        </div>
-        
-        <div className="flex justify-end items-center text-end">
-            <img src={arrow} alt="arrow" className='w-[6rem] justify-end items-center mr-1 mt-1'/>
-        </div>
-        </div>
-        </div>
-      </motion.div>
-      <motion.div 
-        initial={{opacity: 0, y: 200}}
-        whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .1}}}
-        viewport={{ once: true }}
-        className="flip-containerFoot border-black border-b-[1px] w-full hover:cursor-pointer">
-        <div className='flip-innerFoot'>
-          <div className='flip-frontFoot grid grid-cols-2 mx-4 mt-4 p-'>
-        <div>
-        <h2 className="md:text-\[4\.5rem\] font-bold text-[#dbe7e8]">Contact</h2>
-        </div>
-        
-        <div className="flex justify-end items-center text-end">
-            <img src={white} alt="arrow" className='md:w-[6rem] w-[4rem] justify-end items-center'/>
-        </div>
-        </div>
-        <div className='flip-backFoot bg-black grid grid-cols-2 -mt-20 mx-4'>
-          <div>
-        <h2 className="md:text-\[4\.5rem\] font-bold">Contact</h2>
+        <h2 className="md:text-[4.5rem] font-bold">Contact</h2>
         </div>
         
         <div className="flex justify-end items-center text-end">

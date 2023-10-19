@@ -120,9 +120,9 @@ const menuItems = {
   ],
   entrees: [
     <><div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[2rem] text-[#47b9c3]'>Kabocha Squash Bolognese</div>
-    <div className='font-poppins mb-1 text-[1.2rem] text-[#dbe7e8]'>Japanese Kabocha Squash Sauce with Grass Fed Ground Beef & Azar Ground Sausage, Pappardelle, Parmigiano Reggiano</div>
-    <div className='font-summer text-[3rem] text-[#47b9c3]'>Protein Choice</div>
+    <div className='font-gt uppercase mb-2 text-[2rem] text-[#47b9c3]'>Butternut Squash Cream Tortellini</div>
+    <div className='font-poppins mb-1 text-[1.2rem] text-[#dbe7e8]'>3 Cheese Filled Tortellini, Fried sage, Vegan Umaro Bacon (Vegetarian)</div>
+    <div className='font-summer text-[3rem] text-[#47b9c3]'>Vegan Choice</div>
     </div></>,
     <><div className='p-1'>
     <div className='font-gt uppercase mb-4 mt-4 text-[2.1rem] text-[#47b9c3]'>Sunchoke & Grilled Tomato Pappardelle</div>
