@@ -5,14 +5,14 @@ import Button from '../Button/button';
 
 const TwoColumn = () => {
   return (
-    <div className="grid grid-cols-2 mx-[1rem] mb-[5rem] justify-items-center">
-      <div className="w-[45rem] h-[57rem] border border-black">
+    <div className="grid md:grid-cols-2 mx-[1rem] mb-[5rem] justify-items-center">
+      <div className="md:w-[45rem] md:h-[57rem] border border-black">
         <motion.img
           initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0, transition: { duration: .8, delay: .2 } }}
-          src={hero} alt="a cool of food" className="w-[45rem] h-[57rem]" />
+          src={hero} alt="a cool of food" className="md:w-[45rem] md:h-[57rem]" />
       </div>
-      <div className="w-full md:w-1/2 text-end -ml-8 items-center">
+      <div className="md:w-1/2 md:text-end text-center md:-ml-8 items-center">
         <div>
           <motion.p
             initial={{ opacity: 0, x: -200 }}
@@ -21,7 +21,7 @@ const TwoColumn = () => {
           <motion.p
             initial={{ opacity: 0, x: -200 }}
             whileInView={{ opacity: 1, x: 0, transition: { duration: .8, delay: .2 } }}
-            className='font-gt text-[#1b3d38] uppercase text-[5rem] -mb-[3.5rem]'>the welfare</motion.p>
+            className='font-gt text-[#1b3d38] uppercase md:text-[5rem] text-[4.5rem] -mb-[3.5rem]'>the welfare</motion.p>
           <motion.p
             initial={{ opacity: 0, x: -200 }}
             whileInView={{ opacity: 1, x: 0, transition: { duration: .8, delay: .3 } }}
@@ -49,7 +49,7 @@ const TwoColumn = () => {
         </div>
         <motion.div
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, transition: { duration: 1, delay: .6 } }} className="text-lg border border-black p-6 m-4 w-[33rem] h-[32rem] text-center font-poppins">
+          whileInView={{ opacity: 1, transition: { duration: 1, delay: .6 } }} className="text-lg border border-black p-6 m-4 md:w-[33rem] md:h-[32rem] w-[20rem] text-center font-poppins">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, transition: { duration: 1, delay: .7 } }}>
@@ -59,7 +59,7 @@ Our diverse menu thoughtfully caters to various dietary preferences, highlightin
 We wholeheartedly embrace a holistic approach to dining that reflects our deep respect for the environment. At our restaurant, 
 our identity is defined by our commitment to offering nourishing, sustainable, and naturally delectable food choices.
           </motion.p>
-          <div className="text-center mt-12 text-[4.5rem] text-[#1b3d38]">
+          <div className="text-center mt-12 text-[2rem] md:text-[4.5rem] text-[#1b3d38]">
             <Button className="uppercase text-center" children="RESERVE" />
           </div>
         </motion.div>

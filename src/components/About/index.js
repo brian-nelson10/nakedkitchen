@@ -9,8 +9,8 @@ const Box = () => {
   function handleMenu() {
     navigate("/menus");
   };
-  function handleAbout() {
-    navigate("/about");
+  function handleCatering() {
+    navigate("/catering");
   };
   function handleReserve() {
     navigate("/reservations");
@@ -22,13 +22,13 @@ const Box = () => {
         <motion.p 
           initial={{opacity: 0, x: -200}}
           whileInView={{opacity: 1, x: 0, transition: {duration: .8, delay: .4}}}
-          className='font-gt text-[#1b3d38] uppercase text-[8rem] -mb-[4rem]'>Food in the</motion.p>
+          className='font-gt text-[#1b3d38] uppercase md:text-[8rem] text-[3rem] -mb-[2rem] md:-mb-[4rem]'>Food in the</motion.p>
           <motion.p 
           initial={{opacity: 0, x: -200}}
           whileInView={{opacity: 1, x: 0, transition: {duration: .8, delay: .5}}}
-          className='font-gt uppercase text-[#1b3d38] text-[8rem]'>Nude.</motion.p>
+          className='font-gt uppercase text-[#1b3d38] text-[6rem] md:text-[8rem]'>Nude.</motion.p>
         </div>
-        <div className='font-poppins text-[#1b3d38] text-[1.4rem]'>
+        <div className='font-poppins text-[#1b3d38] md:text-[1.4rem]'>
             <motion.p
               initial={{opacity: 0}}
               whileInView={{opacity: 1, transition: {duration: 1, delay: .3}}}
@@ -40,7 +40,7 @@ const Box = () => {
               <motion.p 
               initial={{opacity: 0}}
               whileInView={{opacity: 1, transition: {duration: 1, delay: .5}}}
-              className='flex flex-row'>Our food is <span className='text-[2.2rem] -mt-3'>&nbsp;naked&nbsp;</span> ,using unprocessed ingredients,</motion.p>
+              className='md:flex md:flex-row'>Our food is <span className='text-[1.1rem] md:text-[2.2rem] md:-mt-3'>&nbsp;naked&nbsp;</span> ,using unprocessed ingredients,</motion.p>
               <motion.p 
               initial={{opacity: 0}}
               whileInView={{opacity: 1, transition: {duration: 1, delay: .6}}}
@@ -109,11 +109,11 @@ const Box = () => {
         whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .9}}}
         viewport={{ once: true }}
         className='flip-container border-black border-b-[1px] w-full hover:cursor-pointer'
-        onClick={handleAbout}>
+        onClick={handleCatering}>
       <div className='flip-inner'>
       <div className="flip-front w-full mx-4 mt-4 grid grid-cols-2">
         <div>
-        <h2 className="text-[4.5rem] font-bold">ABOUT US</h2>
+        <h2 className="text-[4.5rem] font-bold">CATERING</h2>
         
         </div>
         <div className='flex justify-end text-end mr-8 items-center'>
@@ -122,7 +122,7 @@ const Box = () => {
       </div>
       <div className='flip-back bg-black grid grid-cols-2 -mt-20 mx-4'>
           <div>
-        <h2 className="text-[4.5rem]">ABOUT US</h2>
+        <h2 className="text-[4.5rem]">CATERING</h2>
         
         </div>
         <div className="flex justify-end items-center text-end">
