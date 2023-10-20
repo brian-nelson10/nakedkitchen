@@ -203,7 +203,7 @@ const LunchDinnerSubmenu = () => {
         </div>
       </div>
       <AnimateSharedLayout type="crossfade">
-        <motion.div layout className="mt-4 grid grid-cols-2">
+        <motion.div layout className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
           {menuItems[activeMenu].map((item, index) => (
             <motion.div
               key={item}
@@ -212,7 +212,7 @@ const LunchDinnerSubmenu = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
-              className="w-[36rem] h-[16rem] border border-[2px] border-[#e3b505] my-[5rem] mx-[8rem] text-center items-center p-2"
+              className="border border-[2px] border-[#e3b505] my-5 mx-1 md:w-[36rem] lg:w-[36rem] text-center items-center p-2"
             >
               {item}
             </motion.div>
