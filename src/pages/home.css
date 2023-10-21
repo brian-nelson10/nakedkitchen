@@ -9,7 +9,7 @@
 
 @media only screen and (max-width: 600px) {
     .grass {
-        background: url("../assets/images/veggies\ 3.png");
+        background-size: 50%;
     }
   }
 
