@@ -12,11 +12,9 @@
 
 @media only screen and (max-width: 600px) {
     .grass {
-        background-size: 50%;
-        background-attachment:scroll;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
+       
+        background-attachment: scroll;
+        
     }
   }
 
