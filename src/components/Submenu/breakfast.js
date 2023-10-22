@@ -84,9 +84,9 @@ const BreakfastSubmenu = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col items-center justify-center mt-[20rem]">
+    <div className="h-max flex flex-col items-center justify-center mt-[70rem] md:mt-[20rem]">
          <div className='text-[#dbe7e8] font-poppins mb-2'>Breakfast menu offered 7am - 4pm</div>
-      <div className="flex space-x-4 font-gt text-[3rem] uppercase">
+      <div className="flex flex-col md:flex-row space-x-4 text-center font-gt text-[3rem] uppercase">
         <div
           className={`cursor-pointer text-[#dbe7e8] ${
             activeMenu === 'snacks' ? 'text-[#e3b505]' : ''
@@ -115,7 +115,7 @@ const BreakfastSubmenu = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
-              className="w-[36rem] h-[16rem] border border-[2px] border-[#e3b505] my-[5rem] mx-[1rem] md:w-[36rem] text-center items-center p-2"
+              className="border border-[2px] border-[#e3b505] my-[5rem] mx-[1rem] md:w-[36rem] text-center items-center p-2"
             >
               {item}
             </motion.div>

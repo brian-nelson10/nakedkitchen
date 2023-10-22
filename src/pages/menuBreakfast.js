@@ -25,7 +25,7 @@ const MenuBreakfast = () => {
                             <BreakfastSubmenu />
                         </div>
                     </section>
-                    <section className="grid grid-cols-2">
+                    <section className="grid grid-cols-2 h-[20rem] md:h-auto">
                         <div className="border-r-2 border-[#e3b505]">
                             <LunchDinnerNext />
                         </div>
