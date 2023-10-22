@@ -84,7 +84,7 @@ const BreakfastSubmenu = () => {
   };
 
   return (
-    <div className="h-max flex flex-col items-center justify-center mt-[70rem] md:mt-[20rem]">
+    <div className="h-max flex flex-col items-center justify-center mt-[10rem] md:mt-[20rem]">
          <div className='text-[#dbe7e8] font-poppins mb-2'>Breakfast menu offered 7am - 4pm</div>
       <div className="flex flex-col md:flex-row space-x-4 text-center font-gt text-[3rem] uppercase">
         <div
