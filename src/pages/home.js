@@ -39,11 +39,11 @@ const Home = () => {
                 style={{ transform: `translateY(${scrollAmount}px)` }}
                 className="w-full min-h-screen"
             >
-                    <div className="scroll h-[100%] w-[100%] overflow-hidden ">
+                    
                         <section className="z-50">
                             <Navbar />
                         </section>
-                        <section className="grid grid-rows-2 w-screen h-[67rem] z-40 px-[.5rem] md:px-[2rem] md:pt-[25rem] bg-fixed grass">
+                        <section className="grid grid-rows-2 w-screen h-[67rem] z-40 px-[.5rem] md:px-[2rem] md:pt-[25rem] bg-fixed flex-1 grass">
                             <div className="grid md:grid-cols-2 md:-mb-[25rem] md:mb-0 items-end">
                                 <div className="md:text-start text-[#dbe7e8] items-end md:ml-[1rem] font-gt text-[1.4rem] md:text-[3rem] uppercase">
                                     <motion.p
@@ -164,7 +164,7 @@ const Home = () => {
                             </motion.section>
                         </section>
                     </div>
-                </div>
+               
             
         </main>
     );
