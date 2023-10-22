@@ -13,9 +13,9 @@
 @media only screen and (max-width: 600px) {
     .grass {
         background-size: 50%;
-        -webkit-background-size: 50%;
-        -moz-background-size: 50%;
-        -o-background-size: 50%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
     }
   }
 
