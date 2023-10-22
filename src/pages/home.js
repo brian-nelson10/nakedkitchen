@@ -34,7 +34,7 @@ const Home = () => {
     const scrollAmount = scrollY * .01; // Adjust the multiplier to control scroll speed
 
     return (
-        <main className="bg-[#dbe7e8] h-screen">
+        <main className=" h-screen">
             <div
                 style={{ transform: `translateY(${scrollAmount}px)` }}
                 className="w-full min-h-screen"

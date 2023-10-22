@@ -5,13 +5,19 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     opacity: 1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .grass {
         background-size: 50%;
+        -webkit-background-size: 50%;
+        -moz-background-size: 50%;
+        -o-background-size: 50%;
     }
-  } */
+  }
 
   @media only screen and (max-width: 600px) {
     .menu1 {
