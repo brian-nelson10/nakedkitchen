@@ -10,6 +10,7 @@ import About from './pages/about';
 import MenuCatering from './pages/menuCatering';
 import NotFound from './pages/NotFound';
 import Contact from './pages/contact';
+import Thanksgiving from './pages/thanksgiving';
 // import ScrollTop from './components/ScrollTop';
 
 function App() {
@@ -54,6 +55,10 @@ function App() {
             path="/contact"
             exact element={<Contact />}
             />
+            <Route
+          path='/thanksgiving'
+          element={<Thanksgiving />}
+        />
             {/* <Route
             path='/reservations'
             element={<Reservations />}
