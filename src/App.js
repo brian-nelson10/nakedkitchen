@@ -11,6 +11,7 @@ import MenuCatering from './pages/menuCatering';
 import NotFound from './pages/NotFound';
 import Contact from './pages/contact';
 import Thanksgiving from './pages/thanksgiving';
+import Merch from './pages/merch';
 // import ScrollTop from './components/ScrollTop';
 
 function App() {
@@ -63,10 +64,10 @@ function App() {
             path='/reservations'
             element={<Reservations />}
             /> */}
-            {/* <Route
+            <Route
             path='/merch'
             element={<Merch />}
-            /> */}
+            />
             <Route
                     path="*"
                     element={<NotFound />}
