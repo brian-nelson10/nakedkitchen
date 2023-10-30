@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import hero from "../../assets/images/wall5.jpg"
+import hero from "../../assets/images/veggiesAlt.jpeg";
 import Button from '../Button/button';
 
 const TwoColumn = () => {

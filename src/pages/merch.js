@@ -40,10 +40,14 @@ const Merch = () => {
                                 </stripe-buy-button>
                             </div>
                             <div className="border-3 border border-[#e3b505] p-10">
-                                <div className="mb-2 text-[#47b9c3] font-gt uppercase text-[3rem]">Orange Dude!</div>
+                                <div className="mb-2 text-[#47b9c3] font-gt uppercase text-[3rem]">Coffee Freak.</div>
                                 <div className="mb-2 text-[#e3b505] md:mx-10 md:px-10 mb-5 font-poppins uppercase md:text-[1.5rem]">Small Chest Logo with Large Back Print on Comfort Colors White Tee</div>
+                                <script async
+                                    src="https://js.stripe.com/v3/buy-button.js">
+                                </script>
+
                                 <stripe-buy-button
-                                    buy-button-id="buy_btn_1O6YVRB3OInBaAUnlO4K7IMt"
+                                    buy-button-id="buy_btn_1O6ccMB3OInBaAUnRPG3hZ9b"
                                     publishable-key="pk_live_51NOKTIB3OInBaAUnvrJx5QEK7UKLkB1sRz2R9vixw3X7k0rxLGHmn4XT370M2NOtuQXsikfozTt2GnYteNfUjwbQ00lk56yFck"
                                 >
                                 </stripe-buy-button>
