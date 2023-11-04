@@ -67,13 +67,13 @@ const Navbar = () => {
           Catering
         </a>
         </div>
-        <div className='w-[2rem] h-[2rem]'>
+        <div className='w-[2rem] h-[2rem] z-50'>
         <a href="/merch" className="md:hover:text-[#e3b505] md:hover:font-summer md:hover:text-[3.2rem]">
           Merch
         </a>
         </div>
         </div>
-        <div className='items-end text-end justify-end flex'>
+        <div className='items-end text-end justify-end flex z-10'>
         <img
         src={logo}
         alt="Icon"

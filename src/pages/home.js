@@ -7,7 +7,7 @@ import BoxTwo from "../components/About/boxTwo";
 import MenuImages from "../components/MenuImages";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import hero from "../assets/images/wall5.jpg"
+// import hero from "../assets/images/wall5.jpg"
 import myVideo from "../assets/images/veggieVideo.mov"
 import Marquee1 from "../components/Marquee/marquee1";
 import TwoColumn from "../components/TwoColumn";

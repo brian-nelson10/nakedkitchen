@@ -18,12 +18,6 @@ const menuItems = {
   entrees: [
     <>
     <div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[2.7rem] text-[#47b9c3]'>Vegan Mashed Potatoes</div>
-    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Chives, Vegan Butter</div>
-   
-    </div></>,
-    <>
-    <div className='p-1'>
     <div className='font-gt uppercase mb-2 text-[2.3rem] text-[#47b9c3]'>Sweet Potato Mash</div>
     <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Brown Sugar Crumble, Vegan Butter</div>
 
@@ -68,14 +62,16 @@ const ThanksgivingSubmenu = () => {
   return (
     <div className="h-max flex flex-col items-center text-center justify-center mt-[4rem]">
          <div className='text-[#e3b505] font-poppins mb-4'>Vegan Thanksgiving Take Home Kits</div>
+         <div className='text-[#dbe7e8] font-poppins mb-2'>Substitute a Real Turkey or Add it on!</div>
          <div className='text-[#e3b505] font-poppins mb-4 '>Feeds a Family of 4</div>
          <div className='text-[#e3b505] font-poppins mb-10'>Comes with Chef instructions and all the fixins!</div>
          <div className='text-[#47b9c3] font-gt text-[3rem] uppercase mb-2'>$170$</div>
          <div className='text-[#47b9c3] font-gt text-[3rem] uppercase mb-2'>Main Entree</div>
          <div className='text-[#dbe7e8] font-poppins mb-2'>Choose 1</div>
+         <div className='text-[#dbe7e8] font-poppins mb-2'>Sub a Real Turkey or Add it on for 25!</div>
          <div className='text-[#dbe7e8] text-center font-poppins mb-2'></div>
          <div className='text-[#47b9c3] font-gt text-[3rem] uppercase mb-2'>Starches</div>
-         <div className='text-[#dbe7e8] font-poppins mb-2'>Choose 1</div>
+         <div className='text-[#dbe7e8] font-poppins mb-2'>Sweet Potato Mash / Vegan Mac & Cheese</div>
          <div className='text-[#dbe7e8] font-poppins mb-2'></div>
          <div className='text-[#47b9c3] font-gt text-[3rem] uppercase mb-2'>Classic Sides</div>
          <div className='text-[#dbe7e8] font-poppins mb-2'>Choose 2</div>
