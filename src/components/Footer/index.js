@@ -48,7 +48,7 @@ const Footer = () => {
             />
             <div className='mt-[1rem]'>
             <p className='font-bold '>Questions? &nbsp;</p>
-            <p>info@nakedkitchenjax.com</p>
+            <p>brian.nelson@nakedkitchenjax.com</p>
             </div>
           </div>
           </div>

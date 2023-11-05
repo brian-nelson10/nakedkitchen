@@ -73,8 +73,8 @@ const ThanksgivingSubmenu = () => {
          <div className='text-[#47b9c3] font-gt text-[3rem] uppercase mb-2'>Starches</div>
          <div className='text-[#dbe7e8] font-poppins mb-2'>Sweet Potato Mash / Vegan Mac & Cheese</div>
          <div className='text-[#dbe7e8] font-poppins mb-2'></div>
-         <div className='text-[#47b9c3] font-gt text-[3rem] uppercase mb-2'>Classic Sides</div>
-         <div className='text-[#dbe7e8] font-poppins mb-2'>Choose 2</div>
+         <div className='text-[#47b9c3] font-gt text-[3rem] uppercase mb-2'>Sides</div>
+         <div className='text-[#dbe7e8] font-poppins mb-2'>Green Bean Casserole, Butternut Squash Curry, Roasted Root Vegetables</div>
          <div className='text-[#dbe7e8] font-poppins mb-2'></div>
          <div className='text-[#47b9c3] font-gt text-[3rem] uppercase mb-2'>Fixins</div>
          <div className='text-[#dbe7e8] font-poppins mb-2'>Included in your kit</div>

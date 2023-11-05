@@ -9,18 +9,19 @@ const ThanksgivingHero = () => {
         navigate("/contact")
     }
     return (
-        <><div className="text-[#dbe7e8] items-end font-gt text-[3rem] md:text-[8rem] uppercase">
+        <><div className="text-[#dbe7e8] items-end font-gt text-[4rem] md:text-[8rem] uppercase">
             <div>
             <motion.p
                 initial={{ y: -310, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: .5, delay: .2 }}
-                className="-mb-[4rem] -mt-[4rem]">
+                className="md:-mb-[4rem] md:-mt-[4rem]">
                 Vegan</motion.p>
                 <motion.p
-                initial={{ y: -315, opacity: 0 }}
+                initial={{ y: -320, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: .5, delay: .3 }}>
+                transition={{ duration: .5, delay: .3 }}
+                className="md:mt-0">
                 Thanksgiving</motion.p>
                 </div>
         </div><div className="font-summer text-[8rem] text-[#e3b505]">
