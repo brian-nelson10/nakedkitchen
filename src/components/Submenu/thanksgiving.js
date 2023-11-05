@@ -45,7 +45,7 @@ const menuItems = {
     <>
     <div className='p-1'>
     <div className='font-gt uppercase mb-2 text-[2.7rem] text-[#47b9c3]'>Roasted Root Vegetables</div>
-    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Maple Glaze, Thyme, Roasted Almonds</div>
+    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Maple Glaze, Thyme, Roasted Almonds, Carrots, Rutabaga, Turnips, Parsnips, Celery Root</div>
    
     </div></>,
     // Add more entree items as needed
@@ -65,10 +65,10 @@ const ThanksgivingSubmenu = () => {
          <div className='text-[#dbe7e8] font-poppins mb-2'>Substitute a Real Turkey or Add it on!</div>
          <div className='text-[#e3b505] font-poppins mb-4 '>Feeds a Family of 4</div>
          <div className='text-[#e3b505] font-poppins mb-10'>Comes with Chef instructions and all the fixins!</div>
-         <div className='text-[#47b9c3] font-gt text-[3rem] uppercase mb-2'>$170$</div>
+         <div className='text-[#47b9c3] font-gt text-[3rem] uppercase mb-2'>$175$</div>
          <div className='text-[#47b9c3] font-gt text-[3rem] uppercase mb-2'>Main Entree</div>
          <div className='text-[#dbe7e8] font-poppins mb-2'>Choose 1</div>
-         <div className='text-[#dbe7e8] font-poppins mb-2'>Sub a Real Turkey or Add it on for 25!</div>
+         <div className='text-[#dbe7e8] font-poppins mb-2'>Sub a Real Turkey or Add it on for $55!</div>
          <div className='text-[#dbe7e8] text-center font-poppins mb-2'></div>
          <div className='text-[#47b9c3] font-gt text-[3rem] uppercase mb-2'>Starches</div>
          <div className='text-[#dbe7e8] font-poppins mb-2'>Sweet Potato Mash / Vegan Mac & Cheese</div>
@@ -81,7 +81,7 @@ const ThanksgivingSubmenu = () => {
          <div className='text-[#dbe7e8] font-poppins mb-2'>Cranberry Sauce, Vegan Stuffing, Extra seasoning, Vegan Butter</div>
          <div className='text-[#47b9c3] font-gt text-[3rem] uppercase mb-2'>Vegan Pie Add On's</div>
          <div className='text-[#dbe7e8] font-poppins mb-2'>Spiced Pumpkin Pie or Spiced Apple Pie</div>
-         <div className='text-[#dbe7e8] font-poppins mb-2'>Comes with Coconut Whipped Cream and Monkfruit Powdered Sugar</div>
+         <div className='text-[#dbe7e8] font-poppins mb-2'>Comes with Vegan Whipped Cream and Monkfruit Powdered Sugar</div>
          <div className='text-[#dbe7e8] font-poppins mb-2'>15$ Each 25$ for Both</div>
       <div className="flex flex-col md:flex-row space-x-4 font-gt text-[3rem] uppercase">
         <div
