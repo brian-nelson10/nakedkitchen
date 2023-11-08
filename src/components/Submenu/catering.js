@@ -195,6 +195,7 @@ const CateringSubmenu = () => {
          <div className='text-[#dbe7e8] font-poppins mb-2'>(2 Vegan Column Choices / 2 Protein Column Choices)</div>
          <div className='text-[#dbe7e8] font-poppins mb-2'>40$ a Person</div>
       <div className="flex flex-col md:flex-row space-x-4 font-gt text-[3rem] uppercase">
+        <div className='text-[3rem] font-poppins text-[#47b9c3]'>Select a Category Below</div>
         <div
           className={`cursor-pointer text-[#dbe7e8] ${
             activeMenu === 'snacks' ? 'text-[#e3b505]' : ''

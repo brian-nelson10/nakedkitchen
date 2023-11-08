@@ -132,7 +132,7 @@ const Home = () => {
                                 <motion.p
                                     initial={{ opacity: 0, x: 200 }}
                                     whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
-                                    className='font-gt uppercase text-[#1b3d38] text-[5rem] md:text-[8rem]'>conscious</motion.p>
+                                    className='font-gt uppercase text-[#1b3d38] text-[5rem] md:text-[8rem]'>conscience</motion.p>
                                 <motion.div
                                     initial={{ opacity: 0 }}
                                     whileInView={{ opacity: 1, transition: { duration: 1, delay: .2 } }}
@@ -142,7 +142,7 @@ const Home = () => {
                                         whileInView={{ opacity: 1, transition: { duration: 1, delay: .4 } }}>
                                         Alongside a warm, inviting and social
                                         atmosphere our guests will enjoy comforting, healthy, and delicious scratch food from a
-                                        menu of traditional and new favorites done in a nourishing health-conscious manner. Taking
+                                        menu of traditional and new favorites done in a nourishing health-conscience manner. Taking
                                         ingredients from around the world and accessing a “food is medicine” mentality, we
                                         have created a vision to deliver a truly unique experience for our community. “Cooking
                                         with Conscience” is the forefront of our brand’s standard.
