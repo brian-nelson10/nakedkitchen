@@ -1,7 +1,7 @@
 import React from 'react';
-import img1 from "../../assets/images/wall5.jpg"
-import img2 from "../../assets/images/wall5.jpg"
-import img3 from "../../assets/images/wall5.jpg"
+import img1 from "../../assets/images/catering1.jpg"
+import img2 from "../../assets/images/catering2.jpg"
+import img3 from "../../assets/images/catering4.jpg"
 
 const MenuImages = () => {
   return (
