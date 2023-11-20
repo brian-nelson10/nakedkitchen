@@ -197,10 +197,14 @@ const Footer = () => {
           {/* Third Column */}
           <div className="grid grid-cols-3 px-6 mt-5 md:mt-0 justify-items-center items-center">
             <div className=''>
+              <a href='https://www.facebook.com/profile.php?id=61551247460477'>
               <FaFacebook className='md:h-[4rem] md:w-[4rem] h-[3rem] w-[3rem] hover:text-[#e3b505] hover:cursor-pointer'/>
+              </a>
             </div>
             <div>
+              <a href='https://www.instagram.com/nakedkitchenjax/'>
               <FaInstagram className='md:h-[4rem] md:w-[4rem] h-[3rem] w-[3rem] hover:text-[#e3b505] hover:cursor-pointer'/>
+              </a>
             </div>
             <div>
               <FaTwitter className='md:h-[4rem] md:w-[4rem] h-[3rem] w-[3rem] hover:text-[#e3b505] hover:cursor-pointer'/>

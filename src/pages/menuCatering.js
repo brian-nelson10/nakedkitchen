@@ -7,6 +7,7 @@ import CateringHero from "../components/MenuHero/catering";
 import CateringSubmenu from "../components/Submenu/catering";
 import LunchDinnerNext from "../components/NextMenu/lunchDinner";
 import BreakfastNext from "../components/NextMenu/breakfast";
+import CateringImages from "../components/MenuImages/cateringImages";
 
 const MenuCatering = () => {
 
@@ -23,6 +24,10 @@ const MenuCatering = () => {
                         <div className="-mt-10 mb-[20rem]">
                             <CateringSubmenu />
                         </div>
+                    
+                    <div className="-mt-[10rem] mb-10">
+                        <CateringImages/>
+                    </div>
                     </section>
                     <section className="grid grid-cols-2 h-[20rem] md:h-auto">
                         <div className="border-r-2 border-[#e3b505]">

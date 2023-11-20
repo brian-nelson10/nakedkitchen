@@ -82,7 +82,7 @@ const Home = () => {
                     <Hamburger />
                 </div> */}
                 </section>
-                <section className="relative h-[625rem] md:h-[410rem] overflow-hidden bg-[#dbe7e8]">
+                <section className="relative h-[625rem] md:h-[420rem] overflow-hidden bg-[#dbe7e8]">
                     <motion.section className="w-screen h-screen absolute inset-0"
                         initial={{ y: 0 }}
                         whileInView={{ y: '10%' }}
