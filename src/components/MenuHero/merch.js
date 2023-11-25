@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const MerchHero = () => {
     return (
-        <><div className="text-[#dbe7e8] items-end font-gt text-[5rem] md:text-[8rem] uppercase">
+        <><div className="text-[#47b9c3] items-end font-sperm text-[5rem] md:text-[8rem] uppercase">
             <motion.p
                 initial={{ y: -310, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}

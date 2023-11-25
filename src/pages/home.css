@@ -11,10 +11,26 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .grass {
-       
+    .grass {       
         background-attachment: scroll;
-        
+    }
+  }
+
+  .popup {
+    background: url("../assets/images/NakedKitchen.png");
+   
+    background-position: 670px 100px;
+    background-attachment: fixed;
+    
+    opacity: 1;
+  
+}
+
+@media only screen and (max-width: 600px) {
+    .popup {
+       background-position: -35px 10px;
+        background-attachment: fixed;
+        background-size: 465px;
     }
   }
 

@@ -13,6 +13,7 @@ import Contact from './pages/contact';
 import Thanksgiving from './pages/thanksgiving';
 import Merch from './pages/merch';
 import MenuPorch from './pages/porch';
+import PopUp from './pages/popup';
 // import ScrollTop from './components/ScrollTop';
 
 function App() {
@@ -72,6 +73,10 @@ function App() {
             <Route
             path='/porchfest'
             element={<MenuPorch />}
+            />
+            <Route
+            path='/popup'
+            element={<PopUp />}
             />
             <Route
                     path="*"

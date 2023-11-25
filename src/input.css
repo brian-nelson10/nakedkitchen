@@ -31,3 +31,13 @@
     src: url("../src/assets/fonts/summer-loving-solid-regular.otf");
     font-display: swap;
 }
+@font-face {
+    font-family: "Fifth Grader";
+    src: url("../src/assets/fonts/Fifth-Grader.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "TF Spermo";
+    src: url("../src/assets/fonts/TF\ Spermo.otf");
+    font-display: swap;
+}
