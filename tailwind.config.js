@@ -11,7 +11,8 @@ module.exports = {
       gt: ['GT Flexa','sans-serif'],
       summer: ['Summer Loving', 'cursive'],
       fifth: ['Fifth Grader', 'sans-serif'],
-      sperm: ['TF Spermo','sans-serif']
+      sperm: ['TF Spermo','sans-serif'],
+      psych: ['Psych', 'sans-serif'],
 
     },
     },

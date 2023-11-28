@@ -64,8 +64,8 @@ const Navbar = () => {
         <p onClick={handleHome} className={isTransparent ? 'font-summer -mt-6 w-[1rem] md:w-max text-2xl md:text-[5rem] text-[#e3b505] hover:cursor-pointer' : 'font-summer -mt-3 w-[1rem] md:w-max text-2xl md:text-[5rem] hover:cursor-pointer'}>Naked Kitchen</p>
         </div>
         <div className='text-start -ml-7 md:ml-0 space-x-12 md:space-x-[12rem] text-xl md:text-[3rem] flex flex-row'>
-          <div className='w-[1.5rem] md:w-[2rem] h-[2rem] font-fifth tracking-wide text-[1.8rem] md:text-[5rem] -ml-3 mr-2 md:mr-0 md:ml-0 z-50'>
-        <a href="/popup" className={isTransparent ? "md:hover:text-[5.2rem] aa" : "md:hover:text-[5.2rem] ab"}>
+          <div className='w-[1.5rem] md:w-[2rem] h-[2rem] font-psych text-[1.6rem] md:text-[5rem] -ml-3 mr-2 md:ml-0 mb-2 z-50'>
+        <a href="/popup" className={isTransparent ? "md:hover:text-[5.2rem] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0)] aa" : "md:hover:text-[5.2rem] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0)] ab"}>
             PopUp!
         </a>
         </div>

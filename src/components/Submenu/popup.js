@@ -39,6 +39,12 @@ const menuItems = {
     <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Butternut Squash Cream, Fried Sage</div>
     <div className='font-summer text-[3rem] text-[#e3b505]'>Vegetarian</div>
     </div></>,
+    <>
+    <div className='p-1'>
+    <div className='font-gt uppercase mb-2 text-[3.3rem] text-[#47b9c3]'>Jicama Taco</div>
+    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Jicama Shell, Vegan Chorizo, Crispy Potato, Avocado Lime Crema, Cilantro</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>Vegetarian</div>
+    </div></>
     // Add more snack items as needed
   ]
 };

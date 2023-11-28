@@ -41,3 +41,8 @@
     src: url("../src/assets/fonts/TF\ Spermo.otf");
     font-display: swap;
 }
+@font-face {
+    font-family: "Psych";
+    src: url("../src/assets/fonts/JMH\ Psychedelic\ CAPS.ttf");
+    font-display: swap;
+}

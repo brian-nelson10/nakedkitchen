@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 // import Button from "../Button/button";
 const PopUpHero = () => {
     return (
-        <><div className="text-[#47b9c3] items-end font-fifth text-[9rem] md:text-[15rem] uppercase tracking-tighter">
+        <><div className="text-[#47b9c3] items-end font-psych text-[9rem] md:text-[15rem] uppercase tracking-tighter">
             <motion.p
                 initial={{ y: -310, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: .5, delay: .2 }}
-                className="">
+                className="drop-shadow-[10px_8px_0px_rgba(0,0,0)]">
                 Pop Up!</motion.p>
         </div><div className="font-summer text-[8rem] text-[#e3b505]">
                 <motion.p

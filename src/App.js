@@ -14,6 +14,7 @@ import Thanksgiving from './pages/thanksgiving';
 import Merch from './pages/merch';
 import MenuPorch from './pages/porch';
 import PopUp from './pages/popup';
+import ScrollToTop from './components/scrollToTop';
 // import ScrollTop from './components/ScrollTop';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
   return (
 
     <Router basename={process.env.PUBLIC_URL}>
+      <ScrollToTop />
       <Routes>
         <Route
           path="/"
