@@ -17,9 +17,9 @@
   }
 
   .popup {
-    background: url("../assets/images/NakedKitchen.png");
+    background: url("../assets/images/pastrami.png");
    
-    background-position: 670px 100px;
+    background-position: center;
     background-attachment: fixed;
     
     opacity: 1;
@@ -28,6 +28,40 @@
 
 @media only screen and (max-width: 600px) {
     .popup {
+       background-position: -35px 10px;
+        background-attachment: fixed;
+        background-size: 465px;
+    }
+  }
+  .merch {
+    background: url("../assets/images/NakedKitchen.png");
+    background-position: 670px 100px;
+    background-attachment: fixed;
+    
+    opacity: 1;
+  
+}
+
+@media only screen and (max-width: 600px) {
+    .merch {
+       background-position: -35px 10px;
+        background-attachment: fixed;
+        background-size: 465px;
+    }
+  }
+  .catering {
+    background: url("../assets/images/catering.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+    opacity: 1;
+  
+}
+
+@media only screen and (max-width: 600px) {
+    .catering {
        background-position: -35px 10px;
         background-attachment: fixed;
         background-size: 465px;
