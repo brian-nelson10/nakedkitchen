@@ -20,7 +20,7 @@ const MenuCatering = () => {
                     <section className="grid grid-rows-3 w-screen text-center h-[67rem] z-40 px-[2rem] pt-[20rem] bg-fixed -space-y-[10rem] catering">
                         <CateringHero />
                     </section>
-                    <section className="relative h-fit overflow-hidden bg-[#020202]">
+                    <section className="relative h-fit overflow-hidden catering">
                         <div className="-mt-10 mb-[20rem]">
                             <CateringSubmenu />
                         </div>

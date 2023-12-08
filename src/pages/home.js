@@ -12,9 +12,15 @@ import myVideo from "../assets/images/veggieVideo.mov"
 import Marquee1 from "../components/Marquee/marquee1";
 import TwoColumn from "../components/TwoColumn";
 import Button from "../components/Button/button";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
     const [scrollY, setScrollY] = useState(0);
+    const navigate = useNavigate();
+
+    function handleAbout() {
+        navigate("/about")
+    }
 
     const handleScroll = () => {
         setScrollY(window.scrollY);
@@ -148,7 +154,7 @@ const Home = () => {
                                         with Conscience” is the forefront of our brand’s standard.
                                     </motion.p>
                                     <div className="text-center my-[4rem] text-[2rem] md:text-[4.5rem] text-[#1b3d38]">
-                                        <Button className="uppercase text-center" children="LEARN MORE" />
+                                        <Button className="uppercase text-center" children="LEARN MORE" onClick={handleAbout}/>
                                     </div>
                                 </motion.div>
                             </div>

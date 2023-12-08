@@ -61,7 +61,7 @@ const Navbar = () => {
     >
       <div className="grid grid-cols-3 md:space-x-4 md:pt-2 mt-2 text-2xl md:text-[3rem] w-full flex items-center">
         <div className=''>
-        <p onClick={handleHome} className={isTransparent ? 'font-summer -mt-6 w-[1rem] md:w-max text-2xl md:text-[5rem] text-[#e3b505] hover:cursor-pointer' : 'font-summer -mt-3 w-[1rem] md:w-max text-2xl md:text-[5rem] hover:cursor-pointer'}>Naked Kitchen</p>
+        <p onClick={handleHome} className={isTransparent ? 'font-summer -mt-6 w-[1rem] md:w-max text-2xl md:text-[5rem] text-[#e3b505] hover:cursor-pointer drop-shadow-[4px_4px_0px_rgba(0,0,0)]' : 'font-summer -mt-3 w-[1rem] md:w-max text-2xl md:text-[5rem] hover:cursor-pointer drop-shadow-[4px_4px_0px_rgba(0,0,0)]'}>Naked Kitchen</p>
         </div>
         <div className='text-start -ml-7 md:ml-0 space-x-12 md:space-x-[12rem] text-xl md:text-[3rem] flex flex-row'>
           <div className='w-[1.5rem] md:w-[2rem] h-[2rem] font-psych text-[1.6rem] md:text-[5rem] -ml-3 mr-2 md:ml-0 mb-2 z-50'>
@@ -84,7 +84,7 @@ const Navbar = () => {
         <img
         src={logo}
         alt="Icon"
-        className="w-[3rem] h-[3rem] md:w-[5rem] md:h-[5rem] object-contain items-end text-end justify-end"
+        className="w-[3rem] h-[3rem] md:w-[5rem] md:h-[5rem] object-contain items-end text-end justify-end drop-shadow-[5px_4px_3px_rgba(0,0,0)]"
       />
       </div>
       </div>

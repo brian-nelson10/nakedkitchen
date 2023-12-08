@@ -7,13 +7,13 @@ import "./styles.css"
 const Box = () => {
   const navigate = useNavigate();
   function handleMenu() {
-    navigate("/menus");
+    navigate("/popup");
   };
   function handleCatering() {
     navigate("/catering");
   };
-  function handleReserve() {
-    navigate("/reservations");
+  function handleContact() {
+    navigate("/contact");
   };
   return (
     <div>
@@ -80,11 +80,11 @@ const Box = () => {
         whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .8}}}
         viewport={{ once: true }}
         className="flip-container border-black border-b-[1px] w-full hover:cursor-pointer"
-        onClick={handleReserve}>
+        onClick={handleContact}>
         <div className='flip-inner'>
           <div className='flip-front grid grid-cols-2 mx-4 mt-4 p-'>
         <div>
-        <h2 className="text-[4.5rem] font-bold">RESERVE</h2>
+        <h2 className="text-[4.5rem] font-bold">CONTACT</h2>
         
         </div>
         
@@ -94,7 +94,7 @@ const Box = () => {
         </div>
         <div className='flip-back bg-black grid grid-cols-2 -mt-20 mx-4'>
           <div>
-        <h2 className="text-[4.5rem] font-bold">RESERVE</h2>
+        <h2 className="text-[4.5rem] font-bold">CONTACT</h2>
         
         </div>
         

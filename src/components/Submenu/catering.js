@@ -171,7 +171,7 @@ const CateringSubmenu = () => {
   };
 
   return (
-    <div className="h-max flex flex-col items-center text-center justify-center mt-[4rem]">
+    <div className="h-max flex flex-col items-center text-center justify-center mt-[4rem] bg-[#020202] bg-opacity-75">
          <div className='text-[#e3b505] font-poppins mb-10'>Catering Menu Changes Based On Season</div>
          <div className='text-[#47b9c3] font-gt text-[3rem] uppercase mb-2'>Simple Package</div>
          <div className='text-[#dbe7e8] font-poppins mb-2'>Choose 2 Small Bites, Choose 2 Entrees, Choose 1 Side</div>

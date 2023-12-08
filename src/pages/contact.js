@@ -17,11 +17,11 @@ const Contact = () => {
                     <section className="z-50">
                         <Navbar />
                     </section>
-                    <section className="grid grid-rows-3 w-screen text-center h-[67rem] z-40 px-[2rem] pt-[25rem] bg-fixed -space-y-[10rem] grass">
+                    <section className="grid grid-rows-3 w-screen text-center h-[67rem] z-40 px-[2rem] pt-[25rem] bg-fixed -space-y-[10rem] contact">
                         <ContactHero />
                     </section>
-                    <section className="relative h-fit overflow-hidden bg-[#020202]">
-                        <div className="text-[#47b9c3] text-center space-y-8 font-poppins text-[1.2rem] md:text-[5rem] md:p-[5rem] md:mx-[5rem] p-8 mb-[5rem] flex flex-col">
+                    <section className="relative h-fit overflow-hidden contact">
+                        <div className="text-[#47b9c3] text-center space-y-8 font-poppins text-[1.2rem] md:text-[5rem] md:p-[5rem] md:mx-[5rem] p-8 mb-[5rem] flex flex-col bg-[#020202] rounded-xl bg-opacity-80">
                            <div><a href="mailto:brian.nelson@nakedkitchenjax.com">Email: brian.nelson@nakedkitchenjax.com</a></div>
                             <div>Phone: (407) - 864 - 0404</div>
                         </div>

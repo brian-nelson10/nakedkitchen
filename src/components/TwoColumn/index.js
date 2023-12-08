@@ -2,8 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import hero from "../../assets/images/veggiesAlt.jpeg";
 import Button from '../Button/button';
+import { useNavigate } from 'react-router-dom';
 
 const TwoColumn = () => {
+  const navigate = useNavigate();
+  
+  function handleReserve() {
+    navigate("/about")
+  }
   return (
     <div className="grid md:grid-cols-2 mx-[1rem] mb-[5rem] justify-items-center">
       <div className="md:w-[45rem] md:h-[57rem] border border-black">
@@ -60,7 +66,7 @@ We wholeheartedly embrace a holistic approach to dining that reflects our deep r
 our identity is defined by our commitment to offering nourishing, sustainable, and naturally delectable food choices.
           </motion.p>
           <div className="text-center mt-12 text-[2rem] md:text-[4.5rem] text-[#1b3d38]">
-            <Button className="uppercase text-center" children="RESERVE" />
+            <Button className="uppercase text-center" children="LEARN MORE" onClick={handleReserve}/>
           </div>
         </motion.div>
       </div>

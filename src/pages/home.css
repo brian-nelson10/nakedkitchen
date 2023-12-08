@@ -11,68 +11,98 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .grass {       
+    .grass {
         background-attachment: scroll;
     }
-  }
+}
 
-  .popup {
+.popup {
     background: url("../assets/images/pastrami.png");
-   
     background-position: center;
     background-attachment: fixed;
-    
     opacity: 1;
-  
+
 }
 
 @media only screen and (max-width: 600px) {
     .popup {
-       background-position: -35px 10px;
+        background-position: -35px 10px;
         background-attachment: fixed;
         background-size: 465px;
     }
-  }
-  .merch {
+}
+
+.merch {
     background: url("../assets/images/NakedKitchen.png");
     background-position: 670px 100px;
     background-attachment: fixed;
-    
     opacity: 1;
-  
+
 }
 
 @media only screen and (max-width: 600px) {
     .merch {
-       background-position: -35px 10px;
+        background-position: -35px 10px;
         background-attachment: fixed;
         background-size: 465px;
     }
-  }
-  .catering {
+}
+
+.catering {
     background: url("../assets/images/catering.jpg");
-   background-size: cover;
-   background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    
     opacity: 1;
-  
+
 }
 
 @media only screen and (max-width: 600px) {
     .catering {
-       background-position: -35px 10px;
         background-attachment: fixed;
-        background-size: 465px;
-    }
-  }
 
-  @media only screen and (max-width: 600px) {
-    .menu1 {
-      background-size: 50%;
     }
-  }
+}
+
+.contact {
+    background: url("../assets/images/nkClouds.png");
+    background-size: 40%;
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 1;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .contact {
+        background-attachment: fixed;
+        background-size: 300px;
+    }
+}
+
+.about {
+    background: url("../assets/images/photo3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 1;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .about {
+        background-attachment: fixed;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .menu1 {
+        background-size: 50%;
+    }
+}
 
 .menu1 {
     background: url("../assets/images/veggies.jpeg");
@@ -105,6 +135,7 @@
     justify-content: space-between;
     min-width: 50%;
 }
+
 .col {
     flex: 1 2 0;
     max-width: 100%;
@@ -113,46 +144,56 @@
 @media (max-width: 991.98px) {
     .title {
         text-align: center;
-   }
+    }
+
     .cardSect {
         justify-content: center;
         min-height: 100px;
-   }
+    }
+
     #dividerWrap {
         flex-basis: 0;
         flex-grow: 1;
         min-width: 90%;
-   }
-   #dividerWrap2 {
-    flex-basis: 0;
-    flex-grow: 1;
-    min-width: 90%;
-}
+    }
+
+    #dividerWrap2 {
+        flex-basis: 0;
+        flex-grow: 1;
+        min-width: 90%;
+    }
+
     .item {
         display: block;
         min-width: 300;
-   }
+    }
+
     .contentDivider {
         margin: 15px 0 15px 0;
         font-size: 20px;
-   }
+    }
+
     .contentDivider .dividedText {
         display: flex;
         width: 100%;
         justify-content: center;
         align-items: center;
-            text-align: center;
-   }
-    .contentDivider .dividedText:before, .contentDivider .dividedText:after {
+        text-align: center;
+    }
+
+    .contentDivider .dividedText:before,
+    .contentDivider .dividedText:after {
         content: '';
         border-top: 2px solid;
         margin: 0 20px 0 0;
         flex: 1 0 20px;
-   }
+    }
+
     .contentDivider .dividedText:after {
         margin: 0 0 0 20px;
-   }
+    }
 }
+
 @media (min-width: 992px) {
     #dividerWrap {
         flex-basis: 0;
@@ -160,10 +201,12 @@
         max-width: 20px;
         padding: -10px 0 -10px;
         justify-content: center;
-   }
+    }
+
     .split {
         justify-content: center;
-   }
+    }
+
     .contentDivider {
         position: relative;
         display: flex;
@@ -173,24 +216,28 @@
         justify-self: center;
         height: 100%;
         min-width: 100%;
-   }
-    .contentDivider .dividedText:before, .contentDivider .dividedText:after {
+    }
+
+    .contentDivider .dividedText:before,
+    .contentDivider .dividedText:after {
         position: absolute;
         content: "";
         width: 1px;
         left: 50%;
         border-left: 2px solid black;
-   }
+    }
+
     .contentDivider .dividedText:before {
         bottom: 50%;
         top: 0;
         margin-bottom: 20px;
-   }
+    }
+
     .contentDivider .dividedText:after {
         top: 50%;
         bottom: 0;
         margin-top: 20px;
-   }
+    }
 }
 
 .button-background-move-menu {
@@ -204,9 +251,9 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-  }
- 
-  .button-background-move-menu:after {
+}
+
+.button-background-move-menu:after {
     content: "";
     border: 2px solid #e3b505;
     width: 100%;
@@ -216,9 +263,9 @@
     top: 7px;
     left: 7px;
     transition: 0.5s;
-  }
-  
-  .button-background-move-menu:hover:after {
+}
+
+.button-background-move-menu:hover:after {
     top: 0px;
     left: 0px;
-  }
+}

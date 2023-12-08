@@ -7,7 +7,8 @@ const MerchHero = () => {
             <motion.p
                 initial={{ y: -310, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: .5, delay: .2 }}>
+                transition={{ duration: .5, delay: .2 }}
+                className="drop-shadow-[10px_8px_0px_rgba(0,0,0)]">
                 MERCH STORE</motion.p>
         </div>
             </>
