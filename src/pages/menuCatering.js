@@ -23,9 +23,7 @@ const MenuCatering = () => {
                     </section>                   
                     <section className="relative h-fit overflow-hidden bg-[#020202] catering">
                         <div className="-mt-10 mb-[20rem]">
-                        <LazyLoad>
                             <CateringSubmenu />
-                            </LazyLoad>
                         </div>
                     <div className="-mt-[10rem] mb-10">
                         <LazyLoad>
