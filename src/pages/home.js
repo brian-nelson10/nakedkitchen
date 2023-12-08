@@ -13,6 +13,8 @@ import Marquee1 from "../components/Marquee/marquee1";
 import TwoColumn from "../components/TwoColumn";
 import Button from "../components/Button/button";
 import { useNavigate } from "react-router-dom";
+import LazyLoad from "react-lazy-load";
+
 
 const Home = () => {
     const [scrollY, setScrollY] = useState(0);
@@ -48,7 +50,9 @@ const Home = () => {
             >
 
                 <section className="z-50">
+                    <LazyLoad>
                     <Navbar />
+                    </LazyLoad>
                 </section>
                 <section preserveAspectRatio="none" className="grid grid-rows-2 w-screen h-[67rem] z-40 px-[.5rem] md:px-[2rem] md:pt-[25rem] bg-fixed flex-1 grass">
                     <div className="grid md:grid-cols-2 md:-mb-[25rem] md:mb-0 items-end">
@@ -88,6 +92,7 @@ const Home = () => {
                     <Hamburger />
                 </div> */}
                 </section>
+                <LazyLoad>
                 <section className="relative h-[625rem] md:h-[420rem] overflow-hidden bg-[#dbe7e8]">
                     <motion.section className="w-screen h-screen absolute inset-0"
                         initial={{ y: 0 }}
@@ -176,6 +181,7 @@ const Home = () => {
                         </div>
                     </motion.section>
                 </section>
+                </LazyLoad>
             </div>
 
 
