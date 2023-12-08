@@ -3,8 +3,6 @@ import "./home.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 // import Button from "../components/Button/button";
-import CateringSubmenu from "../components/Submenu/catering";
-import CateringImages from "../components/MenuImages/cateringImages";
 import CateringNext from "../components/NextMenu/catering";
 import PopUpHero from "../components/MenuHero/popup";
 import PopUpSubmenu from "../components/Submenu/popup";

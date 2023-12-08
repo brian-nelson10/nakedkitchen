@@ -14,7 +14,7 @@ const MenuCatering = () => {
 
     return (
         <main className="">
-                <div className="scroll h-[100%] w-[100%] overflow-hidden ">
+                <div className="scroll h-[100%] w-[100%]">
                     <section className="z-50">
                         <Navbar />
                     </section>
@@ -23,7 +23,9 @@ const MenuCatering = () => {
                     </section>                   
                     <section className="relative h-fit overflow-hidden bg-[#020202] catering">
                         <div className="-mt-10 mb-[20rem]">
+                            <LazyLoad>
                             <CateringSubmenu />
+                            </LazyLoad>
                         </div>
                     <div className="-mt-[10rem] mb-10">
                         <LazyLoad>
