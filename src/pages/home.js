@@ -92,7 +92,7 @@ const Home = () => {
                     <Hamburger />
                 </div> */}
                 </section>
-                <LazyLoad>
+               
                 <section className="relative h-[625rem] md:h-[420rem] overflow-hidden bg-[#dbe7e8]">
                     <motion.section className="w-screen h-screen absolute inset-0"
                         initial={{ y: 0 }}
@@ -100,7 +100,9 @@ const Home = () => {
                         transition={{ ease: 'linear', duration: .5, delay: .1 }}>
                         <div className="md:grid md:grid-cols-11 mt-[1rem] mb-[6rem] card col col-auto splitContent container px-[1rem] md:px-[4rem] md:flex md:flex-col">
                             <div className="md:col-span-4">
+                            <LazyLoad>
                                 <Box />
+                                </LazyLoad>
                             </div>
                             <div className="col col-auto md:mx-[4rem] relative" id="dividerWrap">
                                 <div className="contentDivider ">
@@ -108,7 +110,9 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className="mt-[4rem] md:col-span-6">
+                                <LazyLoad>
                                 <ImageBox />
+                                </LazyLoad>
                             </div>
                         </div>
                         <hr className="border-black border-b-1 md:mx-[6rem] mx-[1rem] mb-[8rem]" />
@@ -167,21 +171,28 @@ const Home = () => {
                         <hr className="border-black border-b-1 md:mx-[6rem] mx-[1rem] mt-[8rem] md:mt-[8rem] mb-[8rem]" />
 
                         <div>
+                            <LazyLoad>
                             <BoxTwo />
+                            </LazyLoad>
                         </div>
                         <div>
+                            <LazyLoad>
                             <MenuImages />
+                            </LazyLoad>
                         </div>
                         <hr className="border-black border-b-1 md:mx-[6rem] mt-[5rem] mb-[8rem]" />
                         <div>
+                            <LazyLoad>
                             <TwoColumn />
+                            </LazyLoad>
                         </div>
                         <div>
+                            <LazyLoad>
                             <Footer />
+                            </LazyLoad>
                         </div>
                     </motion.section>
                 </section>
-                </LazyLoad>
             </div>
 
 

@@ -11,9 +11,6 @@ import BreakfastNext from "../components/NextMenu/breakfast";
 import MerchHero from "../components/MenuHero/merch";
 import shirt from "../assets/images/nakedGold.png";
 import shirt1 from "../assets/images/coffeeGold.png";
-import LazyLoad from "react-lazy-load";
-
-
 const Merch = () => {
 
     return (
@@ -26,7 +23,6 @@ const Merch = () => {
                     <section className="grid grid-rows-3 w-screen text-center h-[67rem] z-40 px-[2rem] pt-[25rem] bg-fixed -space-y-[10rem] merch">
                         <MerchHero />
                     </section>
-                    <LazyLoad>
                     <section className="relative h-fit overflow-hidden bg-[#020202] merch">
                         <div className="text-[#e3b505] font-poppins text-center mt-[4rem] bg-black mx-[42rem] py-10 rounded bg-opacity-75">
                             <p className="mb-2">Tax & Shipping Included!</p>
@@ -76,7 +72,6 @@ const Merch = () => {
                     <section>
                         <Footer />
                     </section>
-                    </LazyLoad>
                 </div>
             </div>
         </main>

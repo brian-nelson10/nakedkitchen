@@ -6,9 +6,6 @@ import Navbar from "../components/Navbar";
 import LunchDinnerNext from "../components/NextMenu/lunchDinner";
 import BreakfastNext from "../components/NextMenu/breakfast";
 import ContactHero from "../components/MenuHero/contact";
-import LazyLoad from "react-lazy-load";
-
-
 const Contact = () => {
 
     return (
@@ -21,7 +18,6 @@ const Contact = () => {
                     <section className="grid grid-rows-3 w-screen text-center h-[67rem] z-40 px-[2rem] pt-[25rem] bg-fixed -space-y-[10rem] contact">
                         <ContactHero />
                     </section>
-                    <LazyLoad>
                     <section className="relative h-fit overflow-hidden contact">
                         <div className="text-[#47b9c3] text-center space-y-8 font-poppins text-[1.2rem] md:text-[5rem] md:p-[5rem] md:mx-[5rem] p-8 mb-[5rem] flex flex-col bg-[#020202] rounded-xl bg-opacity-80">
                            <div><a href="mailto:brian.nelson@nakedkitchenjax.com">Email: brian.nelson@nakedkitchenjax.com</a></div>
@@ -39,7 +35,7 @@ const Contact = () => {
                     <section>
                         <Footer />
                     </section>
-                    </LazyLoad>
+                    
                 </div>
             </div>
         </main>

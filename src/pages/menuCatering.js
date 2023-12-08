@@ -20,15 +20,17 @@ const MenuCatering = () => {
                     </section>
                     <section className="grid grid-rows-3 w-screen text-center h-[67rem] z-40 px-[2rem] pt-[20rem] bg-fixed -space-y-[10rem] catering">
                         <CateringHero />
-                    </section>
-                    <LazyLoad>
+                    </section>                   
                     <section className="relative h-fit overflow-hidden bg-[#020202] catering">
                         <div className="-mt-10 mb-[20rem]">
+                        <LazyLoad>
                             <CateringSubmenu />
+                            </LazyLoad>
                         </div>
-                    
                     <div className="-mt-[10rem] mb-10">
+                        <LazyLoad>
                         <CateringImages/>
+                        </LazyLoad>
                     </div>
                     </section>
                     <section className="grid grid-cols-2 h-[20rem] md:h-auto">
@@ -42,7 +44,7 @@ const MenuCatering = () => {
                     <section>
                         <Footer />
                     </section>
-                    </LazyLoad>
+                    
                 </div>
         </main>
     )
