@@ -14,7 +14,7 @@ const About = () => {
                     </section>
                     <section className="grid grid-rows-3 w-screen h-[68rem] z-40 px-[2rem] pt-[10rem] bg-fixed about">
                         <div className="grid grid-cols-2 items-end">
-                            <div className="text-start text-[#dbe7e8] items-end ml-[1rem] font-gt text-[10rem] -ml-2 uppercase drop-shadow-[10px_8px_0px_rgba(0,0,0)]">
+                            <div className="text-start text-[#dbe7e8] items-end ml-[1rem] font-gt text-[2rem] md:text-[10rem] -ml-2 uppercase drop-shadow-[10px_8px_0px_rgba(0,0,0)]">
                                 <motion.p
                                     initial={{ y: -310, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
@@ -23,7 +23,7 @@ const About = () => {
                             </div>
                             <div></div>
                         </div>
-                        <div className="font-gt text-[#dbe7e8] text-center text-[19rem] -mt-20 flex-row flex">
+                        <div className="font-gt text-[#dbe7e8] text-center text-[3rem] md:text-[19rem] -mt-20 flex-row flex">
                             <motion.p
                                 initial={{ y: -300, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
@@ -33,7 +33,7 @@ const About = () => {
                             </motion.p>
                             
                         </div>
-                        <div className="font-gt text-[#dbe7e8] text-center text-[19rem] -mt-20 flex-row flex">
+                        <div className="font-gt text-[#dbe7e8] text-center text-[3rem] md:text-[19rem] -mt-20 flex-row flex">
                         <motion.p
                                 initial={{ y: 300, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
