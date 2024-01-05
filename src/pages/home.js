@@ -4,7 +4,6 @@ import "./home.css";
 import Box from "../components/About";
 import ImageBox from "../components/ImageBox";
 import BoxTwo from "../components/About/boxTwo";
-import MenuImages from "../components/MenuImages";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 // import hero from "../assets/images/wall5.jpg"
@@ -14,9 +13,11 @@ import TwoColumn from "../components/TwoColumn";
 import Button from "../components/Button/button";
 import { useNavigate } from "react-router-dom";
 import LazyLoad from "react-lazy-load";
-
+import Carousel from "../components/Carousel";
+import { useMediaQuery } from "react-responsive";
 
 const Home = () => {
+    const isMobile = useMediaQuery({ maxWidth: 767 }); // Adjust the maxWidth according to your mobile breakpoints
     const [scrollY, setScrollY] = useState(0);
     const navigate = useNavigate();
 
@@ -48,15 +49,12 @@ const Home = () => {
                 style={{ transform: `translateY(${scrollAmount}px)` }}
                 className="w-full min-h-screen"
             >
-
                 <section className="z-50">
-                    <LazyLoad>
                     <Navbar />
-                    </LazyLoad>
                 </section>
-                <section preserveAspectRatio="none" className="grid grid-rows-2 w-screen h-[67rem] z-40 px-[.5rem] md:px-[2rem] md:pt-[25rem] bg-fixed flex-1 grass">
+                <section preserveAspectRatio="none" className="grid grid-rows-2 w-screen h-[67rem] z-40 px-[.5rem] md:px-[1rem] md:pt-[25rem] bg-fixed flex-1 grass">
                     <div className="grid md:grid-cols-2 md:-mb-[25rem] md:mb-0 items-end">
-                        <div className="md:text-start text-[#dbe7e8] items-end md:ml-[1rem] font-gt text-[1.4rem] md:text-[3rem] uppercase">
+                        <div className="md:text-start text-[#dbe7e8] items-end md:ml-[1rem] font-gt text-[1.4rem] md:text-[2.8rem] uppercase">
                             <motion.p
                                 initial={{ y: -310, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
@@ -65,7 +63,7 @@ const Home = () => {
                         </div>
                         <div></div>
                     </div>
-                    <div className="font-gt text-[#dbe7e8] text-center text-[8rem] md:text-[19rem] -mt-[15rem] md:-mt-20 flex-col md:flex-row flex">
+                    <div className="font-gt text-[#dbe7e8] text-center text-[8rem] md:text-[19rem] tracking-tight drop-shadow-[4px_4px_0px_#e3b505] -mt-[15rem] md:-mt-20 flex-col md:flex-row flex">
                         <motion.p
                             initial={{ y: -300, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
@@ -92,7 +90,7 @@ const Home = () => {
                     <Hamburger />
                 </div> */}
                 </section>
-               
+
                 <section className="relative h-[625rem] md:h-[420rem] overflow-hidden bg-[#dbe7e8]">
                     <motion.section className="w-screen h-screen absolute inset-0"
                         initial={{ y: 0 }}
@@ -100,8 +98,8 @@ const Home = () => {
                         transition={{ ease: 'linear', duration: .5, delay: .1 }}>
                         <div className="md:grid md:grid-cols-11 mt-[1rem] mb-[6rem] card col col-auto splitContent container px-[1rem] md:px-[4rem] md:flex md:flex-col">
                             <div className="md:col-span-4">
-                            <LazyLoad>
-                                <Box />
+                                <LazyLoad>
+                                    <Box />
                                 </LazyLoad>
                             </div>
                             <div className="col col-auto md:mx-[4rem] relative" id="dividerWrap">
@@ -111,7 +109,7 @@ const Home = () => {
                             </div>
                             <div className="mt-[4rem] md:col-span-6">
                                 <LazyLoad>
-                                <ImageBox />
+                                    <ImageBox />
                                 </LazyLoad>
                             </div>
                         </div>
@@ -119,14 +117,14 @@ const Home = () => {
                         <div className="-mt-10"><Marquee1 /></div>
                         <div className="grid md:grid-cols-3 mt-[1rem] mb-[6rem] card col col-auto splitContent container px-[1rem] md:px-[4rem] flex flex-col">
                             <div className="md:w-[45rem] md:h-[57rem] wborder border-black">
-                                {/* <motion.img
+                                <motion.video
+                                    autoPlay={!isMobile} // Disable autoPlay for mobile
+                                    loop
+                                    muted
                                     initial={{ opacity: 0, x: -200 }}
-                                    whileInView={{ opacity: 1, x: 0, transition: { duration: .8, delay: .2 } }}
-                                    src={hero} alt="a cool of food" className="md:w-[45rem] md:h-[57rem] w-[22rem] h-[30rem]" /> */}
-                                <motion.video autoPlay loop muted
-                                initial={{ opacity: 0, x: -200 }}
-                                whileInView={{ opacity: 1, x: 0, transition: { duration: .8, delay: .2 } }}
-                                className="md:w-[45rem] md:h-[57rem] w-[22rem] h-[30rem]">
+                                    whileInView={{ opacity: 1, x: 0, transition: { duration: 0.8, delay: 0.2 } }}
+                                    className="md:w-[45rem] md:h-[57rem] w-[22rem] h-[30rem]"
+                                >
                                     <source src={myVideo} type="video/mp4" />
                                 </motion.video>
                             </div>
@@ -139,15 +137,15 @@ const Home = () => {
                                 <motion.p
                                     initial={{ opacity: 0, x: 200 }}
                                     whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
-                                    className='font-gt text-[#1b3d38] uppercase text-[5rem] md:text-[8rem] -mb-[3rem] md:-mb-[4rem]'>Cooking</motion.p>
+                                    className='font-gt text-[#008080] uppercase text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem] -mb-[3rem] md:-mb-[4rem]'>Cooking</motion.p>
                                 <motion.p
                                     initial={{ opacity: 0, x: 200 }}
                                     whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
-                                    className='font-gt text-[#1b3d38] uppercase text-[5rem] md:text-[8rem] -mb-[3rem] md:-mb-[4rem]'>With</motion.p>
+                                    className='font-gt text-[#008080] uppercase text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem] -mb-[3rem] md:-mb-[4rem]'>With</motion.p>
                                 <motion.p
                                     initial={{ opacity: 0, x: 200 }}
                                     whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
-                                    className='font-gt uppercase text-[#1b3d38] text-[5rem] md:text-[8rem]'>conscience</motion.p>
+                                    className='font-gt uppercase text-[#008080] text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem]'>conscience</motion.p>
                                 <motion.div
                                     initial={{ opacity: 0 }}
                                     whileInView={{ opacity: 1, transition: { duration: 1, delay: .2 } }}
@@ -163,7 +161,7 @@ const Home = () => {
                                         with Conscience” is the forefront of our brand’s standard.
                                     </motion.p>
                                     <div className="text-center my-[4rem] text-[2rem] md:text-[4.5rem] text-[#1b3d38]">
-                                        <Button className="uppercase text-center" children="LEARN MORE" onClick={handleAbout}/>
+                                        <Button className="uppercase text-center" children="LEARN MORE" onClick={handleAbout} />
                                     </div>
                                 </motion.div>
                             </div>
@@ -172,23 +170,23 @@ const Home = () => {
 
                         <div>
                             <LazyLoad>
-                            <BoxTwo />
+                                <BoxTwo />
                             </LazyLoad>
                         </div>
                         <div>
                             <LazyLoad>
-                            <MenuImages />
+                                <Carousel />
                             </LazyLoad>
                         </div>
                         <hr className="border-black border-b-1 md:mx-[6rem] mt-[5rem] mb-[8rem]" />
                         <div>
                             <LazyLoad>
-                            <TwoColumn />
+                                <TwoColumn />
                             </LazyLoad>
                         </div>
                         <div>
                             <LazyLoad>
-                            <Footer />
+                                <Footer />
                             </LazyLoad>
                         </div>
                     </motion.section>

@@ -46,3 +46,13 @@
     src: url("../src/assets/fonts/JMH\ Psychedelic\ CAPS.ttf");
     font-display: swap;
 }
+@font-face {
+    font-family: "Entuista";
+    src: url("../src/assets/fonts/Entuista\ Regular.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Fifty";
+    src: url("../src/assets/fonts/56thStreet-Regular.otf");
+    font-display: swap;
+}

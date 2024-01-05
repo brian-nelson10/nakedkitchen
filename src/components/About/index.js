@@ -22,13 +22,13 @@ const Box = () => {
         <motion.p 
           initial={{opacity: 0, x: -200}}
           whileInView={{opacity: 1, x: 0, transition: {duration: .8, delay: .4}}}
-          className='font-gt text-[#1b3d38] uppercase md:text-[8rem] text-[3rem] -mb-[2rem] md:-mb-[4rem]'>Food in the</motion.p>
+          className='font-gt text-[#008080] uppercase md:text-[8rem] text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke -mb-[2rem] md:-mb-[4rem]'>Food in</motion.p>
           <motion.p 
           initial={{opacity: 0, x: -200}}
           whileInView={{opacity: 1, x: 0, transition: {duration: .8, delay: .5}}}
-          className='font-gt uppercase text-[#1b3d38] text-[6rem] md:text-[8rem]'>Nude.</motion.p>
+          className='font-gt uppercase text-[#008080] text-[5rem] md:text-[8rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke'>the Nude.</motion.p>
         </div>
-        <div className='font-poppins text-[#1b3d38] md:text-[1.4rem]'>
+        <div className='font-poppins text-[#1b3d38] text-center md:text-[1.4rem]'>
             <motion.p
               initial={{opacity: 0}}
               whileInView={{opacity: 1, transition: {duration: 1, delay: .3}}}
@@ -40,7 +40,7 @@ const Box = () => {
               <motion.p 
               initial={{opacity: 0}}
               whileInView={{opacity: 1, transition: {duration: 1, delay: .5}}}
-              className='md:flex md:flex-row'>Our food is <span className='text-[1.1rem] md:text-[2.2rem] md:-mt-3'>&nbsp;naked&nbsp;</span> ,using unprocessed ingredients,</motion.p>
+              className='md:flex md:flex-row'>Our food is naked ,using unprocessed ingredients,</motion.p>
               <motion.p 
               initial={{opacity: 0}}
               whileInView={{opacity: 1, transition: {duration: 1, delay: .6}}}

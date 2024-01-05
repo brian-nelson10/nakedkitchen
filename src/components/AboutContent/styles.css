@@ -1,0 +1,33 @@
+.parallax-container {
+    height: 160vh;
+    background-size: auto;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .parallax-container::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    filter: brightness(50%);
+    background-image: url('../../assets/images/photo2.jpg');
+  }
+  
+  .parallax-text {
+    text-align: center;
+    position: relative;
+  }
+  .strokeSmall {
+    -webkit-text-stroke: .5px white;
+}
+@media only screen and (max-width: 600px) {
+    .strokeSmall {
+        -webkit-text-stroke: 0px;
+    }
+}

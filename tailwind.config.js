@@ -8,11 +8,13 @@ module.exports = {
       comic: ['Webcomic', "cursive"],
       xtreem: ['Xtreem', 'sans-serif'],
       poppins: ['Poppins', 'sans-serif'],
-      gt: ['GT Flexa','sans-serif'],
+      // gt: ['GT Flexa','sans-serif'],
       summer: ['Summer Loving', 'cursive'],
       fifth: ['Fifth Grader', 'sans-serif'],
       sperm: ['TF Spermo','sans-serif'],
       psych: ['Psych', 'sans-serif'],
+      gt: ['Fifty', 'sans-serif'],
+      ent: ['Entuista', 'sans-serif']
 
     },
     },

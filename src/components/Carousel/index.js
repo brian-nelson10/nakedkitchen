@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import photo0 from "../../assets/images/wall4.jpg";
-import photo1 from '../../assets/images/photo1.jpg';
-import photo2 from '../../assets/images/photo2.jpg';
-import photo3 from '../../assets/images/photo3.jpg';
+import photo0 from "../../assets/images/kimchiPink.png";
+import photo1 from '../../assets/images/pastrami.png';
+import photo2 from '../../assets/images/chorizo.png';
+import photo3 from '../../assets/images/brusselsYellow.png';
+import photo4 from '../../assets/images/crispygreen.png';
+import photo5 from '../../assets/images/gnocchi.png';
 
-const photos = [photo0, photo1, photo2, photo3];
+const photos = [photo0, photo1, photo2, photo3, photo4, photo5, photo0];
+const slideDuration = 11; // in seconds
 
 const Carousel = () => {
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
@@ -13,24 +16,34 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentPhotoIndex((prevIndex) => (prevIndex + 1) % photos.length);
-    }, 5000);
+    }, slideDuration * 1000);
 
     return () => clearInterval(interval);
   }, []);
 
+  const prevPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
+  const nextPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+
   return (
-    <div className="w-full h-[60rem] px-[3rem] my-[2rem] pb-[6rem] flex justify-center items-center">
+    <div className="w-full h-[40rem] px-[3rem] my-[2rem] pb-[6rem] overflow-hidden relative">
       <AnimatePresence initial={false} exitBeforeEnter>
-        <motion.img
+        <motion.div
           key={currentPhotoIndex}
-          src={photos[currentPhotoIndex]}
-          alt={`Photo ${currentPhotoIndex + 1}`}
-          className="w-full h-full object-cover"
-          initial={{ opacity: .5, scale: 1.2 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: .6, scale: 0.8 }}
-          transition={{ duration: .5 }}
-        />
+          className="w-full h-full flex"
+          initial={{ x: '0%' }}
+          animate={{ x: '-150%' }}
+          exit={{ x: '0%' }}
+          transition={{ duration: slideDuration, ease: 'linear' }}
+        >
+          {photos.map((photo, index) => (
+            <motion.img
+              key={index}
+              src={photo}
+              alt={`Photo ${index + 1}`}
+              className="w-[40rem] h-[40rem] flex-shrink-0"
+            />
+          ))}
+        </motion.div>
       </AnimatePresence>
     </div>
   );
