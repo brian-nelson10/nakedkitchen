@@ -79,7 +79,7 @@ const Home = () => {
                         </motion.p>
                     </div>
                 </section>
-                <section className="relative h-[625rem] md:h-[420rem] overflow-hidden bg-[#dbe7e8]">
+                <section className="relative h-[640rem] md:h-[500rem] bg-[#dbe7e8]">
                     <motion.section className="w-screen h-screen absolute inset-0"
                         initial={{ y: 0 }}
                         whileInView={{ y: '10%' }}
@@ -104,8 +104,8 @@ const Home = () => {
                         <div>
                             <LazyLoad>
                                 <Carousel />
-                                </LazyLoad>
-                            </div>
+                            </LazyLoad>
+                        </div>
                         <hr className="border-black border-b-1 md:mx-[6rem] mx-[1rem] mb-[8rem]" />
                         <div className="-mt-10"><Marquee1 /></div>
                         <div className="grid md:grid-cols-3 mt-[1rem] mb-[6rem] card col col-auto splitContent container px-[1rem] md:px-[4rem] flex flex-col">
