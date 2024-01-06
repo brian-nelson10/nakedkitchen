@@ -6,8 +6,9 @@ import photo2 from '../../assets/images/chorizo.png';
 import photo3 from '../../assets/images/brusselsYellow.png';
 import photo4 from '../../assets/images/crispygreen.png';
 import photo5 from '../../assets/images/gnocchi.png';
+import photo6 from '../../assets/images/ceviche.png';
 
-const photos = [photo0, photo1, photo2, photo3, photo4, photo5, photo0, photo1, photo2, photo3, photo4, photo5, photo0];
+const photos = [photo0, photo1, photo2, photo3, photo4, photo5, photo6, photo0, photo1, photo2, photo3, photo4, photo5, photo6, photo0];
 const slideDuration = 15; // in seconds
 
 const Carousel = () => {
