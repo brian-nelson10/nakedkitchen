@@ -29,8 +29,8 @@ const Carousel = () => {
           key={currentPhotoIndex}
           className="md:w-full md:h-full flex"
           initial={{ x: '100%' }}
-          animate={{ x: '-600%' }}
-          exit={{ x: '100%' }}
+          animate={{ x: '-700%' }}
+          exit={{ x: '-600%' }}
           transition={{ duration: slideDuration, ease: 'linear', repeat: Infinity }}
         >
           {photos.map((photo, index) => (
