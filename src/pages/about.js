@@ -47,6 +47,7 @@ const About = () => {
                     <section>
                         <AboutContent />
                     </section>
+                    
                     <section>
                         <Footer />
                     </section>

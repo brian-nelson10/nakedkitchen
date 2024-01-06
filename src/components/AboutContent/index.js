@@ -1,13 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './styles.css'; // Import the CSS file
+import WritingText from '../WritingText';
 
 const AboutContent = () => {
 
   return (
     <div className="border-t-[1.4rem] border-b-[1.4rem] border-black parallax-container bg-fixed grid grid-rows-2 p-4">
       <motion.p
-        className="parallax-text text-[3rem] md:text-[8rem] text-[#FFFF] font-gt"
+        className="parallax-text text-[3rem] md:text-[8rem] -mt-[20rem] md:-mb-[30rem] text-[#FFFF] font-gt"
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: [0,.25,.5,1], y: 0 }}
         transition={{ duration: 0.6, delay: .25 }}
@@ -15,7 +16,7 @@ const AboutContent = () => {
         Phoenix Arts & Innovation District
       </motion.p>
       <motion.p
-      className="parallax-text text-[#FFFF] text-[1rem] md:text-[2.1rem] font-bold font-poppins p-6 md:p-[3rem] m-1 md:m-2 strokeSmall bg-black bg-opacity-50 rounded-xl"
+      className="parallax-text text-[#FFFF] text-[1rem] md:text-[1.5rem] -mt-[40rem] md:-mt-[40rem] font-poppins p-6 md:p-[3rem] m-1 md:m-2 bg-black bg-opacity-50 rounded-xl"
       initial={{ opacity: 0, y: -100 }}
       whileInView={{ opacity: [0,.25,.5,1], y: 0 }}
       transition={{ duration: 0.6, delay: .25 }}>

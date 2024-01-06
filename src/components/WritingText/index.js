@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 
 const WritingText = () => {
   const [writtenText, setWrittenText] = useState('');
-  const text = 'We Serve Our Food The Way It Should Be.. Naked.';
+  const text = 'Coming Soon!';
  
   useEffect(() => {
    
     const handleScroll = () => {
-      const scrollPosition = (window.pageYOffset / 2.4) ;
+      const scrollPosition = (window.pageYOffset / 2.5) ;
       const textLength = text.length;
       const visibleTextLength = Math.floor((scrollPosition / window.innerHeight) * textLength);
       const visibleText = text.slice(0, visibleTextLength);
