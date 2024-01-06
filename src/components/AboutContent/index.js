@@ -6,6 +6,7 @@ import WritingText from '../WritingText';
 const AboutContent = () => {
 
   return (
+    <>
     <div className="border-t-[1.4rem] border-b-[1.4rem] border-black parallax-container bg-fixed grid grid-rows-2 p-4">
       <motion.p
         className="parallax-text text-[3rem] md:text-[8rem] -mt-[20rem] md:-mb-[30rem] text-[#FFFF] font-gt"
@@ -28,6 +29,17 @@ const AboutContent = () => {
          Join us in celebrating a new era of community and creativity at PHX JAX and the enticing addition of Naked Kitchen.
       </motion.p>
     </div>
+    <div className='border-b-[1.4rem] border-black parallax-container2 bg-fixed grid grid-rows-2 p-4'>
+    <motion.p
+        className="parallax-text text-[3rem] md:text-[8rem] -mt-[20rem] md:-mb-[30rem] text-[#FFFF] font-gt"
+        initial={{ opacity: 0, y: -100 }}
+        whileInView={{ opacity: [0,.25,.5,1], y: 0 }}
+        transition={{ duration: 0.6, delay: .25 }}
+      >
+        "Cooking With Conscience”
+      </motion.p>
+    </div>
+    </>
   );
 };
 

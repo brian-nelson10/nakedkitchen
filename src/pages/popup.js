@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import CateringNext from "../components/NextMenu/catering";
 import PopUpHero from "../components/MenuHero/popup";
 import PopUpSubmenu from "../components/Submenu/popup";
+import Carousel from "../components/Carousel";
 
 const PopUp = () => {
 
@@ -22,10 +23,9 @@ const PopUp = () => {
                         <div className="-mt-10 mb-[20rem]">
                             <PopUpSubmenu />
                         </div>
-                    
-                    {/* <div className="-mt-[10rem] mb-10">
-                        <CateringImages/>
-                    </div> */}
+                        <div>
+                            <Carousel />
+                        </div>
                     </section>
                     <section className="grid h-[20rem] md:h-auto">
                         <div className="border-r-2 border-[#e3b505]">

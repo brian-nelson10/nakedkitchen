@@ -18,7 +18,26 @@
     filter: brightness(50%);
     background-image: url('../../assets/images/photo2.jpg');
   }
-  
+  .parallax-container2 {
+    height: 160vh;
+    background-size: auto;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .parallax-container2::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    filter: brightness(50%);
+    background-image: url('../../assets/images/veggies.jpeg');
+  }
   .parallax-text {
     text-align: center;
     position: relative;

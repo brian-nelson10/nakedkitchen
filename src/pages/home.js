@@ -78,19 +78,7 @@ const Home = () => {
                             KITCHEN
                         </motion.p>
                     </div>
-                    {/* <div className="grid items-center mb-4 z-40">
-                    <IntroAnimation />
-                </div>
-
-                <div className="grid justify-center text-center h-[12rem] w-[12rem] mx-[12rem]" >
-
-                    <img src={nklogo} alt="nk logo" className="z-50" />
-                </div>
-                <div className="grid items-center justify-end text-end items-end z-50 mb-4">
-                    <Hamburger />
-                </div> */}
                 </section>
-
                 <section className="relative h-[625rem] md:h-[420rem] overflow-hidden bg-[#dbe7e8]">
                     <motion.section className="w-screen h-screen absolute inset-0"
                         initial={{ y: 0 }}
@@ -113,6 +101,11 @@ const Home = () => {
                                 </LazyLoad>
                             </div>
                         </div>
+                        <div>
+                            <LazyLoad>
+                                <Carousel />
+                                </LazyLoad>
+                            </div>
                         <hr className="border-black border-b-1 md:mx-[6rem] mx-[1rem] mb-[8rem]" />
                         <div className="-mt-10"><Marquee1 /></div>
                         <div className="grid md:grid-cols-3 mt-[1rem] mb-[6rem] card col col-auto splitContent container px-[1rem] md:px-[4rem] flex flex-col">
@@ -182,6 +175,11 @@ const Home = () => {
                         <div>
                             <LazyLoad>
                                 <TwoColumn />
+                            </LazyLoad>
+                        </div>
+                        <div>
+                            <LazyLoad>
+                                <Carousel />
                             </LazyLoad>
                         </div>
                         <div>

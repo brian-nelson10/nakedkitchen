@@ -11,7 +11,7 @@ const TwoColumn = () => {
     navigate("/about")
   }
   return (
-    <div className="grid md:grid-cols-2 mx-[1rem] mb-[5rem] justify-items-center">
+    <div className="grid md:grid-cols-2 md:mx-[1rem] -ml-[.5rem] mb-[5rem] justify-items-center">
       <div className="md:w-[45rem] md:h-[57rem] ">
         <motion.img
           initial={{ opacity: 0, x: -200 }}
@@ -55,7 +55,7 @@ const TwoColumn = () => {
         </div>
         <motion.div
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, transition: { duration: 1, delay: .6 } }} className="text-lg border border-black p-6 m-4 md:w-[33rem] md:h-[32rem] w-[20rem] text-center font-poppins">
+          whileInView={{ opacity: 1, transition: { duration: 1, delay: .6 } }} className="text-lg border border-black p-6 md:m-4 ml-10 md:w-[33rem] md:h-[32rem] w-[20rem] text-center font-poppins">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, transition: { duration: 1, delay: .7 } }}>

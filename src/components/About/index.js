@@ -57,7 +57,7 @@ const Box = () => {
         <div className='flip-inner'>
           <div className='flip-front grid grid-cols-2 mx-4 mt-4 p-'>
         <div>
-        <h2 className="text-[4.5rem] font-bold">MENU</h2>
+        <h2 className="text-[3.5rem]  md:text-[4.5rem] font-bold">MENU</h2>
         </div>
         
         <div className="flex justify-end items-center text-end">
@@ -66,7 +66,7 @@ const Box = () => {
         </div>
         <div className='flip-back bg-black grid grid-cols-2 -mt-20 mx-4'>
           <div>
-        <h2 className="text-[4.5rem] font-bold">MENU</h2>
+        <h2 className="text-[3.5rem]  md:text-[4.5rem] font-bold">MENU</h2>
         </div>
         
         <div className="flex justify-end items-center text-end">
@@ -84,7 +84,7 @@ const Box = () => {
         <div className='flip-inner'>
           <div className='flip-front grid grid-cols-2 mx-4 mt-4 p-'>
         <div>
-        <h2 className="text-[4.5rem] font-bold">CONTACT</h2>
+        <h2 className="text-[3.5rem]  md:text-[4.5rem] font-bold">CONTACT</h2>
         
         </div>
         
@@ -94,7 +94,7 @@ const Box = () => {
         </div>
         <div className='flip-back bg-black grid grid-cols-2 -mt-20 mx-4'>
           <div>
-        <h2 className="text-[4.5rem] font-bold">CONTACT</h2>
+        <h2 className="text-[3.5rem]  md:text-[4.5rem] font-bold">CONTACT</h2>
         
         </div>
         
@@ -113,7 +113,7 @@ const Box = () => {
       <div className='flip-inner'>
       <div className="flip-front w-full mx-4 mt-4 grid grid-cols-2">
         <div>
-        <h2 className="text-[4.5rem] font-bold">CATERING</h2>
+        <h2 className="text-[3.5rem]  md:text-[4.5rem] font-bold">CATERING</h2>
         
         </div>
         <div className='flex justify-end text-end mr-8 items-center'>
@@ -122,7 +122,7 @@ const Box = () => {
       </div>
       <div className='flip-back bg-black grid grid-cols-2 -mt-20 mx-4'>
           <div>
-        <h2 className="text-[4.5rem]">CATERING</h2>
+        <h2 className="text-[3.5rem]  md:text-[4.5rem]">CATERING</h2>
         
         </div>
         <div className="flex justify-end items-center text-end">

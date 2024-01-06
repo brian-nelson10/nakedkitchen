@@ -94,7 +94,7 @@
 
 @media only screen and (max-width: 600px) {
     .about {
-        background-attachment: fixed;
+        background-attachment: scroll;
     }
 }
 
@@ -277,22 +277,3 @@
         -webkit-text-stroke: 2px black;
     }
 }
-.parallax-container {
-    height: 150vh;
-    background-size: cover;
-    background-attachment: fixed;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-  }
-  .parallax-container::before {
-  
-    position: absolute;
-   
-  }
-  
-  .parallax-text {
-    text-align: center;
-    position: relative;
-  }
