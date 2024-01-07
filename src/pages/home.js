@@ -13,7 +13,7 @@ import TwoColumn from "../components/TwoColumn";
 import Button from "../components/Button/button";
 import { useNavigate } from "react-router-dom";
 import LazyLoad from "react-lazy-load";
-import Carousel from "../components/Carousel";
+import CarouselComponent from "../components/Carousel";
 import { useMediaQuery } from "react-responsive";
 
 const Home = () => {
@@ -54,7 +54,7 @@ const Home = () => {
                 </section>
                 <section preserveAspectRatio="none" className="grid grid-rows-2 w-screen h-[67rem] z-40 px-[.5rem] md:px-[1rem] md:pt-[25rem] bg-fixed flex-1 grass">
                     <div className="grid md:grid-cols-2 md:-mb-[25rem] md:mb-0 items-end">
-                        <div className="md:text-start text-[#dbe7e8] items-end md:ml-[1rem] font-gt text-[1.4rem] md:text-[2.8rem] uppercase">
+                        <div className="md:text-start text-[#dbe7e8] items-end md:ml-[1rem] font-gt text-[1.2rem] md:text-[2.8rem] uppercase">
                             <motion.p
                                 initial={{ y: -310, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
@@ -79,11 +79,12 @@ const Home = () => {
                         </motion.p>
                     </div>
                 </section>
-                <section className="relative h-[640rem] md:h-[500rem] bg-[#dbe7e8]">
+                <section className="relative h-[620rem] md:h-[490rem] bg-[#dbe7e8]">
                     <motion.section className="w-screen h-screen absolute inset-0"
                         initial={{ y: 0 }}
                         whileInView={{ y: '10%' }}
-                        transition={{ ease: 'linear', duration: .5, delay: .1 }}>
+                        transition={{ ease: 'linear', duration: .5, delay: .1 }}
+                        >
                         <div className="md:grid md:grid-cols-11 mt-[1rem] mb-[6rem] card col col-auto splitContent container px-[1rem] md:px-[4rem] md:flex md:flex-col">
                             <div className="md:col-span-4">
                                 <LazyLoad>
@@ -103,7 +104,7 @@ const Home = () => {
                         </div>
                         <div>
                             <LazyLoad>
-                                <Carousel />
+                                <CarouselComponent />
                             </LazyLoad>
                         </div>
                         <hr className="border-black border-b-1 md:mx-[6rem] mx-[1rem] mb-[8rem]" />
@@ -111,6 +112,7 @@ const Home = () => {
                         <div className="grid md:grid-cols-3 mt-[1rem] mb-[6rem] card col col-auto splitContent container px-[1rem] md:px-[4rem] flex flex-col">
                             <div className="md:w-[45rem] md:h-[57rem] wborder border-black">
                                 <motion.video
+                                    viewport={{ once: true }}
                                     autoPlay={!isMobile} // Disable autoPlay for mobile
                                     loop
                                     muted
@@ -128,22 +130,27 @@ const Home = () => {
                             </div>
                             <div className="mt-[3rem] w-full md:w-1/2 -p-1 items-center">
                                 <motion.p
+                                    viewport={{ once: true }}
                                     initial={{ opacity: 0, x: 200 }}
                                     whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
                                     className='font-gt text-[#008080] uppercase text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem] -mb-[3rem] md:-mb-[4rem]'>Cooking</motion.p>
                                 <motion.p
+                                    viewport={{ once: true }}
                                     initial={{ opacity: 0, x: 200 }}
                                     whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
                                     className='font-gt text-[#008080] uppercase text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem] -mb-[3rem] md:-mb-[4rem]'>With</motion.p>
                                 <motion.p
+                                    viewport={{ once: true }}
                                     initial={{ opacity: 0, x: 200 }}
                                     whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
                                     className='font-gt uppercase text-[#008080] text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem]'>conscience</motion.p>
                                 <motion.div
+                                    viewport={{ once: true }}
                                     initial={{ opacity: 0 }}
                                     whileInView={{ opacity: 1, transition: { duration: 1, delay: .2 } }}
                                     className="text-lg border-2 border-black p-6 m-4 md:w-[32rem] h-[30rem] font-poppins">
                                     <motion.p
+                                        viewport={{ once: true }}
                                         initial={{ opacity: 0 }}
                                         whileInView={{ opacity: 1, transition: { duration: 1, delay: .4 } }}>
                                         Alongside a warm, inviting and social
@@ -168,7 +175,7 @@ const Home = () => {
                         </div>
                         <div>
                             <LazyLoad>
-                                <Carousel />
+                                <CarouselComponent />
                             </LazyLoad>
                         </div>
                         <hr className="border-black border-b-1 md:mx-[6rem] mt-[5rem] mb-[8rem]" />
@@ -179,7 +186,7 @@ const Home = () => {
                         </div>
                         <div>
                             <LazyLoad>
-                                <Carousel />
+                                <CarouselComponent />
                             </LazyLoad>
                         </div>
                         <div>

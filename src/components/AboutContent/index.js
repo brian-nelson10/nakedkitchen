@@ -17,7 +17,7 @@ const AboutContent = () => {
         Phoenix Arts & Innovation District
       </motion.p>
       <motion.p
-      className="parallax-text text-[#FFFF] text-[1rem] md:text-[1.5rem] -mt-[40rem] md:-mt-[40rem] font-poppins p-6 md:p-[3rem] m-1 md:m-2 bg-black bg-opacity-50 rounded-xl"
+      className="parallax-text text-[#FFFF] text-[1rem] md:text-[1.5rem] -mt-[30rem] md:-mt-[40rem] font-poppins p-6 md:p-[3rem] m-1 md:m-2 bg-black bg-opacity-50 rounded-xl"
       initial={{ opacity: 0, y: -100 }}
       whileInView={{ opacity: [0,.25,.5,1], y: 0 }}
       transition={{ duration: 0.6, delay: .25 }}>

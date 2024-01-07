@@ -81,6 +81,7 @@ const BoxTwo = () => {
                     </div>
                 </motion.div>
                 <motion.div
+                    viewport={{ once: true }}
                     initial={{ opacity: 0, y: 200 }}
                     whileInView={{ opacity: 1, y: 0, transition: { duration: .5, delay: .5 } }}
                     className="flip-container border-black w-full hover:cursor-pointer"

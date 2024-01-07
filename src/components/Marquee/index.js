@@ -21,7 +21,7 @@ const marqueeVariants = {
 const Marquee = () => {
   return (
     <div> 
-      <div className="marquee relative h-[210px]" >
+      <div className="marquee relative overflow-hidden h-[210px]" >
         <motion.div
           className="track overflow-hidden"
           variants={marqueeVariants}
