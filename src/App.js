@@ -13,7 +13,6 @@ import Contact from './pages/contact';
 import Thanksgiving from './pages/thanksgiving';
 import Merch from './pages/merch';
 import MenuPorch from './pages/porch';
-import PopUp from './pages/popup';
 import ScrollToTop from './components/scrollToTop';
 import PopUpMenu from './pages/popupmenu';
 // import ScrollTop from './components/ScrollTop';
@@ -79,7 +78,7 @@ function App() {
             />
             <Route
             path='/popup'
-            element={<PopUp />}
+            element={<PopUpMenu />}
             />
             <Route
             path='/popupmenu'
