@@ -9,6 +9,8 @@ import photo3 from '../../assets/images/brusselsYellow.png';
 import photo4 from '../../assets/images/crispygreen.png';
 import photo5 from '../../assets/images/gnocchi.png';
 import photo6 from '../../assets/images/ceviche.png';
+import photo7 from '../../assets/images/chipped.png';
+import photo8 from '../../assets/images/hoisinPnutTaco.png';
 
 // import './Carousel.css'; // Import your custom Tailwind CSS styles
 
@@ -20,7 +22,8 @@ const images = [
   `${photo4}`,
   `${photo5}`,
   `${photo6}`,
-  `${photo0}`
+  `${photo7}`,
+  `${photo8}`
 ];
 
 const CarouselComponent = () => {
