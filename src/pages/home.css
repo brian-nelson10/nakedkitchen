@@ -33,8 +33,9 @@
 }
 
 .merch {
-    background: url("../assets/images/NakedKitchen.png");
-    background-position: 670px 100px;
+    background: url("../assets/images/orangeDudeWhite.png");
+    background-position: 60px;
+    background-size: contain;
     background-attachment: fixed;
     opacity: 1;
 

@@ -10,6 +10,9 @@ const images = [
   `${photo0}`,
   `${photo1}`,
   `${photo2}`,
+  `${photo0}`,
+  `${photo1}`,
+  `${photo2}`,
 ];
 
 const MerchCarousel = () => {
@@ -34,15 +37,11 @@ const MerchCarousel = () => {
         swipeable={true}
         draggable={true}
         responsive={responsive}
-        autoPlay={true}
-        autoPlaySpeed={3000}
-        transitionDuration={800}
-        infinite={true}
         showDots={false}
       >
         {images.map((image, index) => (
-          <div className="h-full w-full flex" key={index}>
-            <img src={image} alt={`Image ${index + 1}`} />
+          <div className="h-[25rem] w-[25rem] m-8" key={index}>
+            <img className="" src={image} alt={`Image ${index + 1}`} />
           </div>
         ))}
       </Carousel>
