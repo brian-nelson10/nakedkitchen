@@ -49,7 +49,7 @@ const CarouselComponent = () => {
         draggable={true}
         responsive={responsive}
         autoPlay={true}
-        autoPlaySpeed={2000}
+        autoPlaySpeed={3000}
         transitionDuration={800}
         infinite={true}
         showDots={false}
