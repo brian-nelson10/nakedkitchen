@@ -10,8 +10,9 @@ import LunchDinnerNext from "../components/NextMenu/lunchDinner";
 import BreakfastNext from "../components/NextMenu/breakfast";
 import MerchHero from "../components/MenuHero/merch";
 import shirt from "../assets/images/linecooktee2.png";
-import shirt1 from "../assets/images/linecookteeclouds.png";
-import shirt2 from "../assets/images/linecookteeclouds2.png";
+import shirt1 from "../assets/images/linecookteeclouds.jpeg";
+import shirt2 from "../assets/images/linecookteeclouds2.jpeg";
+import shirt3 from "../assets/images/linecookteeback.jpg";
 import clem from "../assets/images/orangeDudeWhite.png";
 // import MerchCarousel from "../components/Carousel/merchCarousel";
 const Merch = () => {
@@ -32,13 +33,14 @@ const Merch = () => {
                             <p className="mb-2">All proceeds go into opening our restaurant!</p>
                         </div>
                         <div className="grid grid-rows-2 p-[3rem] m-[3rem] justify-center items-center text-center gap-4">
-                            <div className="border-3 border border-[#e3b505] p-10 bg-black bg-opacity-75">
+                            <div className="border-3 border border-black p-10 bg-black bg-opacity-95">
                                 <div className="mb-2 text-[#47b9c3] font-gt uppercase text-[3rem]">The Line Cook Tee</div>
-                                <div className="mb-2 text-[#e3b505] md:mx-10 mx-[5rem] md:px-10 mb-5 font-poppins uppercase md:text-[1.5rem]">Small Chest Logo with Large Back Print on Comfort Colors Tee</div>
-                                <div className="w-fit flex flex-col md:flex-row mx-[4rem]">
-                                    <img className="md:h-[30rem] md:w-[30rem] py-2 md:p-2" src={shirt} />
-                                    <img className="md:h-[30rem] md:w-[30rem] py-2 md:p-2" src={shirt1} />
-                                    <img className="md:h-[30rem] md:w-[30rem] py-2 md:p-2" src={shirt2} />
+                                <div className="mb-2 text-white md:mx-10 mx-[3rem] md:px-10 mb-5 font-poppins uppercase md:text-[1.5rem]">Small Left Chest Logo with Large Back Print on Comfort Colors Tee</div>
+                                <div className="w-fit md:mx-[32rem] ">
+                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-white" src={shirt} />
+                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-white" src={shirt1} />
+                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-white" src={shirt2} />
+                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-white" src={shirt3} />
                                 </div>
                                 <div className="mt-[8rem]">
                                 <stripe-buy-button
@@ -48,13 +50,13 @@ const Merch = () => {
                                 </stripe-buy-button>
                                 </div>
                             </div>
-                            <div className="border-3 border border-[#e3b505] p-10 bg-black bg-opacity-75">
+                            <div className="border-3 border border-black p-10 bg-black bg-opacity-95">
                                 <div className="mb-2 text-[#47b9c3] font-gt uppercase text-[3rem]">Clementine Tee</div>
-                                <div className="mb-2 text-[#e3b505] md:mx-10 md:px-10 mb-5 font-poppins uppercase md:text-[1.5rem]">Oversized Front Print on Comfort Colors Tee</div>
+                                <div className="mb-2 text-white md:mx-10 md:px-10 mb-5 font-poppins uppercase md:text-[1.5rem]">Oversized Back Print With left chest logo print on Comfort Colors Tee</div>
                                 <div className="w-fit flex flex-col md:flex-row mx-[4rem]">
-                                    <img className="md:h-[30rem] md:w-[30rem] py-2 md:p-2 " src={clem} />
-                                    <img className="md:h-[30rem] md:w-[30rem] py-2 md:p-2 hidden md:block" src={clem} />
-                                    <img className="md:h-[30rem] md:w-[30rem] py-2 md:p-2 hidden md:block" src={clem} />
+                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-[#e3b505] " src={clem} />
+                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-[#e3b505] hidden md:block" src={clem} />
+                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-[#e3b505] hidden md:block" src={clem} />
                                 </div>
                                 <div className="mt-8">
                                 <stripe-buy-button

@@ -63,7 +63,7 @@ const Home = () => {
                         </div>
                         <div></div>
                     </div>
-                    <div className="font-gt text-[#dbe7e8] text-center text-[8rem] md:text-[19rem] tracking-tight drop-shadow-[4px_4px_0px_#e3b505] -mt-[15rem] md:-mt-20 flex-col md:flex-row flex">
+                    <div className="font-ent text-[#dbe7e8] text-center text-[8rem] md:text-[19rem] drop-shadow-[10px_5px_0px_#e3b505] -mt-[15rem] md:-mt-20 flex-col md:flex-row flex">
                         <motion.p
                             initial={{ y: -300, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}

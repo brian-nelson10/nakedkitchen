@@ -61,12 +61,12 @@ const Navbar = () => {
     >
       <div className="grid grid-cols-3 md:space-x-4 md:pt-2 mt-2 text-2xl md:text-[3rem] w-full flex items-center">
         <div className=''>
-        <p onClick={handleHome} className={isTransparent ? 'font-summer -mt-6 w-[1rem] md:w-max text-2xl md:text-[5rem] text-[#e3b505] hover:cursor-pointer drop-shadow-[4px_4px_0px_rgba(0,0,0)]' : 'font-summer -mt-3 w-[1rem] md:w-max text-2xl md:text-[5rem] hover:cursor-pointer drop-shadow-[4px_4px_0px_rgba(0,0,0)]'}>Naked Kitchen</p>
+        <p onClick={handleHome} className={isTransparent ? 'font-summer -mt-6 w-[1rem] md:w-max text-xl md:text-[5rem] text-[#e3b505] hover:cursor-pointer drop-shadow-[4px_4px_0px_rgba(0,0,0)]' : 'font-summer -mt-3 w-[1rem] md:w-max text-2xl md:text-[5rem] hover:cursor-pointer drop-shadow-[4px_4px_0px_rgba(0,0,0)]'}>Naked Kitchen</p>
         </div>
-        <div className='text-start -ml-7 md:ml-0 space-x-12 md:space-x-[12rem] text-xl md:text-[3rem] flex flex-row'>
-          <div className='w-[1.5rem] md:w-[2rem] h-[2rem] font-psych text-[1.6rem] md:text-[5rem] -ml-3 mr-2 md:ml-0 mb-2 z-50'>
-        <a href="/popup" className={isTransparent ? "md:hover:text-[5.2rem] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0)] aa" : "md:hover:text-[5.2rem] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0)] ab"}>
-            PopUp!
+        <div className='text-start -ml-12 md:ml-8 space-x-12 md:space-x-[13rem] text-xl md:text-[3rem] flex flex-row'>
+          <div className='w-[2rem] h-[2rem] text-center'>
+        <a href="/popup" className={isTransparent ? "md:hover:text-[3.2rem] aa" : "md:hover:text-[5.2rem] ab"}>
+            Popup Menu
         </a>
         </div>
         <div className='w-[2rem] h-[2rem]'>
@@ -81,11 +81,13 @@ const Navbar = () => {
         </div>
         </div>
         <div className='items-end text-end justify-end flex z-10'>
+        <a href="/about" className="">
         <img
         src={logo}
         alt="Icon"
         className="w-[3rem] h-[3rem] md:w-[5rem] md:h-[5rem] object-contain items-end text-end justify-end drop-shadow-[5px_4px_3px_rgba(0,0,0)]"
-      />
+        />
+        </a>
       </div>
       </div>
     
