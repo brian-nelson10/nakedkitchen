@@ -38,6 +38,15 @@ const AboutContent = () => {
       >
         "Cooking With Conscience”
       </motion.p>
+      <motion.p
+      className="parallax-text text-[#FFFF] text-[1rem] md:text-[1.5rem] -mt-[30rem] md:-mt-[40rem] font-poppins p-6 md:p-[3rem] m-1 md:m-2 bg-black bg-opacity-50 rounded-xl"
+      initial={{ opacity: 0, y: -100 }}
+      whileInView={{ opacity: [0,.25,.5,1], y: 0 }}
+      transition={{ duration: 0.6, delay: .25 }}>
+         Wholesome, Honest Cooking: Our cuisine is meticulously crafted from scratch, using only real, unprocessed ingredients, for a wholesome dining experience. Our diverse menu thoughtfully caters to various dietary preferences, highlighting an array of plant-based components used seemlessly with your usual favorites. We wholeheartedly embrace a holistic approach to dining that reflects our deep respect for the environment. At our restaurant, our identity is defined by our commitment to offering nourishing, sustainable, and naturally delectable food choices.
+
+
+      </motion.p>
     </div>
     </>
   );

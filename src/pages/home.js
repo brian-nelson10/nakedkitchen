@@ -186,11 +186,6 @@ const Home = () => {
                         </div>
                         <div>
                             <LazyLoad>
-                                <CarouselComponent />
-                            </LazyLoad>
-                        </div>
-                        <div>
-                            <LazyLoad>
                                 <Footer />
                             </LazyLoad>
                         </div>
