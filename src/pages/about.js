@@ -27,7 +27,7 @@ const About = () => {
                     </section>
                     <section className="grid grid-rows-3 w-screen h-[68rem] z-40 px-[2rem] pt-[10rem] bg-fixed about">
                         <div className="grid md:grid-cols-2 items-end">
-                            <div className="text-start text-[#EA85AF] items-end md:ml-[1rem] font-gt text-[5rem] md:text-[10rem] -ml-2 uppercase drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke">
+                            <div className="text-start text-[#F6B092] items-end md:ml-[1rem] font-gt text-[5rem] md:text-[10rem] -ml-2 uppercase drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke">
                                 <motion.p
                                     initial={{ y: -310, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
@@ -36,7 +36,7 @@ const About = () => {
                             </div>
                             <div></div>
                         </div>
-                        <div className="font-gt text-[#EA85AF] text-center text-[6rem] md:text-[19rem] -mt-[7rem] md:-mt-20 flex-row flex">
+                        <div className="font-ent text-[#F6B092] text-center text-[6rem] md:text-[19rem] -mt-[7rem] md:-mt-20 flex-row flex">
                             <motion.p
                                 initial={{ y: -300, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
@@ -46,7 +46,7 @@ const About = () => {
                             </motion.p>
                             
                         </div>
-                        <div className="font-gt text-[#EA85AF] text-center text-[6.5rem] md:text-[19rem] -mt-[19rem] md:-mt-20 flex-row flex">
+                        <div className="font-ent text-[#F6B092] text-center text-[6.5rem] md:text-[19rem] -mt-[19rem] md:-mt-20 flex-row flex">
                         <motion.p
                                 initial={{ y: 300, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
@@ -82,17 +82,17 @@ const About = () => {
                                     viewport={{ once: true }}
                                     initial={{ opacity: 0, x: 200 }}
                                     whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
-                                    className='font-gt text-[#EA85AF] uppercase text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem] -mb-[3rem] md:-mb-[4rem]'>Cooking</motion.p>
+                                    className='font-gt text-[#F6B092] uppercase text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem] -mb-[3rem] md:-mb-[4rem]'>Cooking</motion.p>
                                 <motion.p
                                     viewport={{ once: true }}
                                     initial={{ opacity: 0, x: 200 }}
                                     whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
-                                    className='font-gt text-[#EA85AF] uppercase text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem] -mb-[3rem] md:-mb-[4rem]'>With</motion.p>
+                                    className='font-gt text-[#F6B092] uppercase text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem] -mb-[3rem] md:-mb-[4rem]'>With</motion.p>
                                 <motion.p
                                     viewport={{ once: true }}
                                     initial={{ opacity: 0, x: 200 }}
                                     whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
-                                    className='font-gt uppercase text-[#EA85AF] text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem]'>conscience</motion.p>
+                                    className='font-gt uppercase text-[#F6B092] text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem]'>conscience</motion.p>
                                 <motion.div
                                     viewport={{ once: true }}
                                     initial={{ opacity: 0 }}
@@ -109,7 +109,7 @@ const About = () => {
                                         have created a vision to deliver a truly unique experience for our community. “Cooking
                                         with Conscience” is the forefront of our brand’s standard.
                                     </motion.p>
-                                    <div className="text-center my-[4rem] text-[2rem] md:text-[4.5rem] text-[#EA85AF]">
+                                    <div className="text-center my-[4rem] text-[2rem] md:text-[4.5rem] text-[#F6B092]">
                                         <Button className="uppercase text-center" children="SEE MENU" onClick={handleAbout} />
                                     </div>
                                 </motion.div>
