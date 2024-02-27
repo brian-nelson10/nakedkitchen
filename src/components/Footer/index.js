@@ -23,7 +23,7 @@ const Footer = () => {
     navigate("/contact")
   };
   return (
-    <footer className="bg-[#EA85AF] py-4 text-[#dbe7e8] bottom-0">
+    <footer className="bg-[#F6B092] py-4 text-[#dbe7e8] bottom-0">
       {/* First Row */}
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 border-b-2 border-t-2 border-[#dbe7e8] py-[3rem]">

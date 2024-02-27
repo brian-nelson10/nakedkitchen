@@ -1,5 +1,5 @@
 .grass {
-    background: url("../assets/images/naked90s.png");
+    background: url("../assets/images/clouds.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -106,7 +106,7 @@
 }
 
 .menu1 {
-    background: url("../assets/images/veggies.jpeg");
+    background: url("../assets/images/clouds.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -115,7 +115,7 @@
 }
 
 .menu2 {
-    background: url("../assets/images/veggies.jpeg");
+    background: url("../assets/images/clouds.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -124,7 +124,7 @@
 }
 
 .menu {
-    background: url("../assets/images/veggies.jpeg");
+    background: url("../assets/images/clouds.jpeg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

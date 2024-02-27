@@ -172,7 +172,7 @@ const Box = () => {
           key={index}
           src={image}
           alt={`Image ${index + 1}`}
-          className="w-full h-auto sm:h-auto"
+          className="w-full h-auto p-2 m-2 sm:h-auto"
         />
       ))}
     </div>
