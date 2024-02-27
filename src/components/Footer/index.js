@@ -23,7 +23,7 @@ const Footer = () => {
     navigate("/contact")
   };
   return (
-    <footer className="bg-[#1b3d38] py-4 text-[#dbe7e8] bottom-0">
+    <footer className="bg-[#EA85AF] py-4 text-[#dbe7e8] bottom-0">
       {/* First Row */}
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 border-b-2 border-t-2 border-[#dbe7e8] py-[3rem]">
@@ -60,7 +60,7 @@ const Footer = () => {
         initial={{opacity: 0, y: 200}}
         whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .1}}}
         viewport={{ once: true }}
-        className="flip-containerFoot border-black border-b-[1px] w-full hover:cursor-pointer">
+        className="flip-containerFoot border-white border-b-[1px] w-full hover:cursor-pointer">
         <div onClick={handleMenu} className='flip-innerFoot'>
           <div className='flip-frontFoot grid grid-cols-2 mx-4 mt-4'>
         <div>
@@ -86,7 +86,7 @@ const Footer = () => {
         initial={{opacity: 0, y: 200}}
         whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .1}}}
         viewport={{ once: true }}
-        className="flip-containerFoot border-black border-b-[1px] w-full hover:cursor-pointer">
+        className="flip-containerFoot border-white border-b-[1px] w-full hover:cursor-pointer">
         <div onClick={handleCatering} className='flip-innerFoot'>
           <div className='flip-frontFoot grid grid-cols-2 mx-4 mt-4 p-'>
         <div>
@@ -112,7 +112,7 @@ const Footer = () => {
         initial={{opacity: 0, y: 200}}
         whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .1}}}
         viewport={{ once: true }}
-        className="flip-containerFoot border-black border-b-[1px] w-full hover:cursor-pointer">
+        className="flip-containerFoot border-white border-b-[1px] w-full hover:cursor-pointer">
         <div onClick={handleAbout} className='flip-innerFoot'>
           <div className='flip-frontFoot grid grid-cols-2 mx-4 mt-4 p-'>
         <div>
@@ -138,7 +138,7 @@ const Footer = () => {
         initial={{opacity: 0, y: 200}}
         whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .1}}}
         viewport={{ once: true }}
-        className="flip-containerFoot border-black border-b-[1px] w-full hover:cursor-pointer">
+        className="flip-containerFoot border-white border-b-[1px] w-full hover:cursor-pointer">
         <div onClick={handleContact} className='flip-innerFoot'>
           <div className='flip-frontFoot grid grid-cols-2 mx-4 mt-4 p-'>
         <div>

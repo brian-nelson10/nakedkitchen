@@ -2,28 +2,28 @@ import React, { useEffect, useState } from "react";
 import { motion } from 'framer-motion';
 import "./home.css";
 import Box from "../components/About";
-import ImageBox from "../components/ImageBox";
+// import ImageBox from "../components/ImageBox";
 import BoxTwo from "../components/About/boxTwo";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 // import hero from "../assets/images/wall5.jpg"
-import myVideo from "../assets/images/veggieVideo.mov"
-import Marquee1 from "../components/Marquee/marquee1";
-import TwoColumn from "../components/TwoColumn";
-import Button from "../components/Button/button";
-import { useNavigate } from "react-router-dom";
+// import myVideo from "../assets/images/veggieVideo.mov"
+// import Marquee1 from "../components/Marquee/marquee1";
+// import TwoColumn from "../components/TwoColumn";
+// import Button from "../components/Button/button";
+// import { useNavigate } from "react-router-dom";
 import LazyLoad from "react-lazy-load";
-import CarouselComponent from "../components/Carousel";
-import { useMediaQuery } from "react-responsive";
+// import CarouselComponent from "../components/Carousel";
+// import { useMediaQuery } from "react-responsive";
 
 const Home = () => {
-    const isMobile = useMediaQuery({ maxWidth: 767 }); // Adjust the maxWidth according to your mobile breakpoints
+    // const isMobile = useMediaQuery({ maxWidth: 767 }); // Adjust the maxWidth according to your mobile breakpoints
     const [scrollY, setScrollY] = useState(0);
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
-    function handleAbout() {
-        navigate("/about")
-    }
+    // function handleAbout() {
+    //     navigate("/about")
+    // }
 
     const handleScroll = () => {
         setScrollY(window.scrollY);
@@ -52,7 +52,7 @@ const Home = () => {
                 <section className="z-50">
                     <Navbar />
                 </section>
-                <section preserveAspectRatio="none" className="grid grid-rows-2 w-screen h-[67rem] z-40 px-[.5rem] md:px-[1rem] md:pt-[25rem] bg-fixed flex-1 grass">
+                <section preserveAspectRatio="none" className="grid grid-rows-2 w-screen h-[75rem] z-40 px-[.5rem] md:px-[1rem] md:pt-[25rem] bg-fixed flex-1 grass">
                     <div className="grid md:grid-cols-2 md:-mb-[25rem] md:mb-0 items-end">
                         <div className="md:text-start text-[#dbe7e8] items-end md:ml-[1rem] font-gt text-[1.2rem] md:text-[2.8rem] uppercase">
                             <motion.p
@@ -63,7 +63,7 @@ const Home = () => {
                         </div>
                         <div></div>
                     </div>
-                    <div className="font-ent text-[#dbe7e8] text-center text-[8rem] md:text-[19rem] drop-shadow-[10px_5px_0px_#e3b505] -mt-[15rem] md:-mt-20 flex-col md:flex-row flex">
+                    <div className="font-ent text-[#36F0F0] text-center text-[8rem] md:text-[19rem] drop-shadow-[10px_5px_0px_#FDF331] -mt-[15rem] md:-mt-20 flex-col md:flex-row flex">
                         <motion.p
                             initial={{ y: -300, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
@@ -79,19 +79,19 @@ const Home = () => {
                         </motion.p>
                     </div>
                 </section>
-                <section className="relative h-[620rem] md:h-[490rem] bg-[#dbe7e8]">
+                <section className="relative h-[428rem] md:h-[420rem] bg-[#dbe7e8]">
                     <motion.section className="w-screen h-screen absolute inset-0"
                         initial={{ y: 0 }}
                         whileInView={{ y: '10%' }}
                         transition={{ ease: 'linear', duration: .5, delay: .1 }}
                         >
-                        <div className="md:grid md:grid-cols-11 mt-[1rem] mb-[6rem] card col col-auto splitContent container px-[1rem] md:px-[4rem] md:flex md:flex-col">
-                            <div className="md:col-span-4">
+                        <div className="mt-[1rem] mb-[6rem] card col col-auto splitContent container px-[1rem] md:px-[4rem] md:flex md:flex-col">
+                            <div className="">
                                 <LazyLoad>
                                     <Box />
                                 </LazyLoad>
                             </div>
-                            <div className="col col-auto md:mx-[4rem] relative" id="dividerWrap">
+                            {/* <div className="col col-auto md:mx-[4rem] relative" id="dividerWrap">
                                 <div className="contentDivider ">
                                     <div className="dividedText text-[#1b3d38]"><strong>NAKED</strong></div>
                                 </div>
@@ -100,15 +100,12 @@ const Home = () => {
                                 <LazyLoad>
                                     <ImageBox />
                                 </LazyLoad>
-                            </div>
+                            </div> */}
                         </div>
                         <div>
-                            <LazyLoad>
-                                <CarouselComponent />
-                            </LazyLoad>
                         </div>
                         <hr className="border-black border-b-1 md:mx-[6rem] mx-[1rem] mb-[8rem]" />
-                        <div className="-mt-10"><Marquee1 /></div>
+                        {/* <div className="-mt-10"><Marquee1 /></div>
                         <div className="grid md:grid-cols-3 mt-[1rem] mb-[6rem] card col col-auto splitContent container px-[1rem] md:px-[4rem] flex flex-col">
                             <div className="md:w-[45rem] md:h-[57rem] wborder border-black">
                                 <motion.video
@@ -125,7 +122,7 @@ const Home = () => {
                             </div>
                             <div className="col col-auto md:mx-[4rem] relative" id="dividerWrap2">
                                 <div className="contentDivider">
-                                    <div className="dividedText text-[#1b3d38]"><strong>KITCHEN</strong></div>
+                                    <div className="dividedText text-[#1b3d38]"><strong>NAKED KITCHEN</strong></div>
                                 </div>
                             </div>
                             <div className="mt-[3rem] w-full md:w-1/2 -p-1 items-center">
@@ -165,25 +162,15 @@ const Home = () => {
                                     </div>
                                 </motion.div>
                             </div>
-                        </div>
-                        <hr className="border-black border-b-1 md:mx-[6rem] mx-[1rem] mt-[8rem] md:mt-[8rem] mb-[8rem]" />
+                        </div> */}
+                        {/* <hr className="border-black border-b-1 md:mx-[6rem] mx-[1rem] mt-[8rem] md:mt-[8rem] mb-[8rem]" /> */}
 
-                        <div>
+                        <div className="mb-10">
                             <LazyLoad>
                                 <BoxTwo />
                             </LazyLoad>
                         </div>
-                        <div>
-                            <LazyLoad>
-                                <CarouselComponent />
-                            </LazyLoad>
-                        </div>
-                        <hr className="border-black border-b-1 md:mx-[6rem] mt-[5rem] mb-[8rem]" />
-                        <div>
-                            <LazyLoad>
-                                <TwoColumn />
-                            </LazyLoad>
-                        </div>
+                       
                         <div>
                             <LazyLoad>
                                 <Footer />
