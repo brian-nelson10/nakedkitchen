@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimateSharedLayout } from 'framer-motion';
 
 const menuItems = {
-  snacks: [
+  Provisions: [
     <>
     <div className='p-1'>
     <div className='font-gt uppercase mb-2 text-[4rem] text-[#47b9c3]'>Crispy Deviled Eggs</div>
@@ -11,9 +11,9 @@ const menuItems = {
     </div></>,
     <>
     <div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[3.5rem] text-[#47b9c3]'>Winter Forager Crostini</div>
-    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Son & Skye Mushroom Mix, House Riccota with Herbs, Winter Truffle Butter on Hippie Bread</div>
-    <div className='font-summer text-[3rem] text-[#e3b505]'>Vegetarian</div>
+    <div className='font-gt uppercase mb-2 text-[3.5rem] text-[#47b9c3]'>Nduja Crostini</div>
+    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Calabrian Chili Spreadable Sausage, Pickled Celery, Garlic Aioli</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>Protein</div>
     </div></>,
     <>
     <div className='p-1'>
@@ -23,16 +23,22 @@ const menuItems = {
     </div></>,
     <>
     <div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[3.5rem] text-[#47b9c3]'>Pickled Mushroom Satay</div>
-    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Son & Skye Blue Oyster Mushrooms, Yakitori Sauce, Crumbled Cashew </div>
+    <div className='font-gt uppercase mb-2 text-[3.5rem] text-[#47b9c3]'>Korean Rice Cake Satay (Tteokbokki)</div>
+    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Thai Curry Marinade, Gochujang Aioli, Charcoal Grilled </div>
     <div className='font-summer text-[3rem] text-[#e3b505]'>Vegan</div>
     </div></>,
     <>
     <div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[3.7rem] text-[#47b9c3]'>Winter Squash Hummus</div>
-    <div className='font-poppins mb-2 text-[1rem] text-[#dbe7e8]'>Crunchy Pumpkin Seed Topping, Smoked Paaprika Oil, House Hemp-Seed Crackers and Spiced Cinnamon Crackers</div>
-    <div className='font-summer text-[3rem] text-[#e3b505]'>Vegan</div>
+    <div className='font-gt uppercase mb-2 text-[3.7rem] text-[#47b9c3]'>Mini Peruvian Pesto Pasta (Tallarines Verdes)</div>
+    <div className='font-poppins mb-2 text-[1rem] text-[#dbe7e8]'>Bucatini, Basil Pesto, Pickled Shallot, Almond Chimichurri, Queso Fresco</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>Vegtarian</div>
     </div></>,
+      <>
+      <div className='p-1'>
+      <div className='font-gt uppercase mb-2 text-[3.7rem] text-[#47b9c3]'>Mini Thai Chop Salad With Prawn</div>
+      <div className='font-poppins mb-2 text-[1rem] text-[#dbe7e8]'>Mango Kombucha Dressing, Chopped Super Greens, Almond Chimichurri, Crunchy Quinoa, Gochujang</div>
+      <div className='font-summer text-[3rem] text-[#e3b505]'>Protein</div>
+      </div></>,
     <>
     <div className='p-1'>
     <div className='font-gt uppercase mb-2 text-[3.3rem] text-[#47b9c3]'>Blistered Shishito Peppers</div>
@@ -44,22 +50,24 @@ const menuItems = {
   handhelds: [
     <>
     <div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[2.7rem] text-[#47b9c3]'>West Coast Pastrami Sandwich</div>
-    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>House Cured and Smoked, Mustard Seed Crust, Fermented 1000 Island, Olive my Pickle Kraut, Gruyere</div>
-    <div className='font-summer text-[3rem] text-[#47b9c3]'>Protein Choice</div>
-    </div></>,
-    <>
-    <div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[2.3rem] text-[#47b9c3]'>Atlas Monroe Fried Chicken Sandwich</div>
-    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Famous Atlas Monroe Vegan Chicken Filet, Vegan "Ranch" Mayo, House Pickles</div>
-    <div className='font-summer text-[3rem] text-[#e3b505]'>Vegan Choice</div>
-    </div></>,
-    <>
-    <div className='p-1'>
     <div className='font-gt uppercase mb-2 text-[3rem] text-[#47b9c3]'>Kimchi Grilled Cheese</div>
     <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Olive my Pickle Kimchi, Gochujang Aioli, Mozzarella, Gruyere</div>
     <div className='font-summer text-[3rem] text-[#47b9c3]'>Protein Choice </div>
+    </div>
+   </>,
+    <>
+    <div className='p-1'>
+    <div className='font-gt uppercase mb-2 text-[2.3rem] text-[#47b9c3]'>Pork Belly Sliders</div>
+    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Korean BBQ, Cilantro Mayo, Quickles</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>Protein Choice</div>
     </div></>,
+    <>
+     <div className='p-1'>
+    <div className='font-gt uppercase mb-2 text-[2.7rem] text-[#47b9c3]'>The Patty Melt</div>
+    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Two Smash Patties, Organic American Cheese, Grilled Onions, Fermented 1000 Island, on Sourdough</div>
+    <div className='font-summer text-[3rem] text-[#47b9c3]'>Protein Choice</div>
+    </div>
+    </>,
     <>
     <div className='p-1'>
     <div className='font-gt uppercase mb-2 text-[3rem] text-[#47b9c3]'>Pickled Cauliflower Po' Boy</div>
@@ -68,9 +76,9 @@ const menuItems = {
     </div></>,
     <>
     <div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[4rem] text-[#47b9c3]'>Pork Belly Bahn Mi</div>
-    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Snake River Farms "Tocino" Marinated Pork Belly, Pickled Cucumber Slaw, Charred Jalepeno Mayo, Cilantro </div>
-    <div className='font-summer text-[3rem] text-[#47b9c3]'>Protein Choice</div>
+    <div className='font-gt uppercase mb-2 text-[4rem] text-[#47b9c3]'>Tofu Bahn Mi</div>
+    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Cilantro Marinated Tofu, Pickled Cucumber Slaw, Charred Jalepeno Mayo, Cilantro </div>
+    <div className='font-summer text-[3rem] text-[#47b9c3]'>Vegan Choice</div>
     </div></>,
     <>
     <div className='p-1'>
@@ -79,45 +87,45 @@ const menuItems = {
     <div className='font-summer text-[3rem] text-[#e3b505]'>Vegan Choice</div>
     </div></>,
   ],
-  sides: [
-    <>
-    <div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[4rem] text-[#47b9c3]'>Roasted Winter Root Vegetables (GF) (V)</div>
-    <div className='font-poppins uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Honey, Thyme, Almond Gremolata (Vegan Substitute Maple Syrup)</div>
-    <div className='font-summer text-[3rem] text-[#47b9c3]'>13$ for 1/2 Pan</div>
-    </div></>,
-    <>
-    <div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[4rem] text-[#47b9c3]'>Duck Fat Fingerling Potatoes (GF)</div>
-    <div className='font-poppins uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Heirloom Fingerling Potatoes, Duck Fat Confit, Herbs</div>
-    <div className='font-summer text-[3rem] text-[#47b9c3]'>15$ for 1/2 Pan</div>
-    </div></>,
-    <>
-    <div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[3rem] text-[#47b9c3]'>Roasted Brussels with Squash & Vegan Bacon(GF)(V)</div>
-    <div className='font-poppins uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Brussels tossed in vegan lemon butter, Roasted Kabocha Squash, topped with vegan bacon crumble</div>
-    <div className='font-summer text-[3rem] text-[#47b9c3]'>15$ for 1/2 Pan</div>
-    </div></>,
-      <>
-      <div className='p-1'>
-      <div className='font-gt uppercase mb-6 text-[4rem] text-[#47b9c3]'>Green Rice (GF) (V)</div>
-      <div className='font-poppins uppercase mb-6 text-[1.2rem] text-[#dbe7e8]'>Jasmine Rice, Vegan Basil Pesto, Feta Cheese (optional)</div>
-      <div className='font-summer text-[3rem] text-[#47b9c3]'>13$ for 1/2 Pan</div>
-      </div></>,
-    <>
-    <div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[3.5rem] text-[#47b9c3]'>Brussel Sprouts Caeser (GF) (Veg)</div>
-    <div className='font-poppins uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Super thin sliced brussels, garlic crumbs, Shaved Parmigiano Reggiano</div>
-    <div className='font-summer text-[3rem] text-[#47b9c3]'>13$ for 1/2 Pan</div>
-    </div></>,
-    <>
-    <div className='p-1'>
-    <div className='font-gt uppercase mb-2 text-[3rem] text-[#47b9c3]'>Stewed Collards with Parmigiano Rind (GF) (Veg)</div>
-    <div className='font-poppins uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Slow Stewed Collards, Rosemary, Root Vegetables, Parmigiano Rind</div>
-    <div className='font-summer text-[3rem] text-[#47b9c3]'>15$ for 1/2 Pan</div>
-    </div></>,
-    // Add more snack items as needed
-  ],
+  // sides: [
+  //   <>
+  //   <div className='p-1'>
+  //   <div className='font-gt uppercase mb-2 text-[4rem] text-[#47b9c3]'>Roasted Winter Root Vegetables (GF) (V)</div>
+  //   <div className='font-poppins uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Honey, Thyme, Almond Gremolata (Vegan Substitute Maple Syrup)</div>
+  //   <div className='font-summer text-[3rem] text-[#47b9c3]'>13$ for 1/2 Pan</div>
+  //   </div></>,
+  //   <>
+  //   <div className='p-1'>
+  //   <div className='font-gt uppercase mb-2 text-[4rem] text-[#47b9c3]'>Duck Fat Fingerling Potatoes (GF)</div>
+  //   <div className='font-poppins uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Heirloom Fingerling Potatoes, Duck Fat Confit, Herbs</div>
+  //   <div className='font-summer text-[3rem] text-[#47b9c3]'>15$ for 1/2 Pan</div>
+  //   </div></>,
+  //   <>
+  //   <div className='p-1'>
+  //   <div className='font-gt uppercase mb-2 text-[3rem] text-[#47b9c3]'>Roasted Brussels with Squash & Vegan Bacon(GF)(V)</div>
+  //   <div className='font-poppins uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Brussels tossed in vegan lemon butter, Roasted Kabocha Squash, topped with vegan bacon crumble</div>
+  //   <div className='font-summer text-[3rem] text-[#47b9c3]'>15$ for 1/2 Pan</div>
+  //   </div></>,
+  //     <>
+  //     <div className='p-1'>
+  //     <div className='font-gt uppercase mb-6 text-[4rem] text-[#47b9c3]'>Green Rice (GF) (V)</div>
+  //     <div className='font-poppins uppercase mb-6 text-[1.2rem] text-[#dbe7e8]'>Jasmine Rice, Vegan Basil Pesto, Feta Cheese (optional)</div>
+  //     <div className='font-summer text-[3rem] text-[#47b9c3]'>13$ for 1/2 Pan</div>
+  //     </div></>,
+  //   <>
+  //   <div className='p-1'>
+  //   <div className='font-gt uppercase mb-2 text-[3.5rem] text-[#47b9c3]'>Brussel Sprouts Caeser (GF) (Veg)</div>
+  //   <div className='font-poppins uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Super thin sliced brussels, garlic crumbs, Shaved Parmigiano Reggiano</div>
+  //   <div className='font-summer text-[3rem] text-[#47b9c3]'>13$ for 1/2 Pan</div>
+  //   </div></>,
+  //   <>
+  //   <div className='p-1'>
+  //   <div className='font-gt uppercase mb-2 text-[3rem] text-[#47b9c3]'>Stewed Collards with Parmigiano Rind (GF) (Veg)</div>
+  //   <div className='font-poppins uppercase mb-2 text-[1.2rem] text-[#dbe7e8]'>Slow Stewed Collards, Rosemary, Root Vegetables, Parmigiano Rind</div>
+  //   <div className='font-summer text-[3rem] text-[#47b9c3]'>15$ for 1/2 Pan</div>
+  //   </div></>,
+  //   // Add more snack items as needed
+  // ],
   entrees: [
     <><div className='p-1'>
     <div className='font-gt uppercase mb-2 text-[3rem] text-[#47b9c3]'>Butternut Squash Cream Tortellini</div>
@@ -173,7 +181,7 @@ const CateringSubmenu = () => {
   return (
     <div className="h-max flex flex-col items-center text-center justify-center mt-[4rem] bg-[#020202] bg-opacity-75">
          <div className='text-[#e3b505] font-poppins mb-10'>Catering Menu Changes Based On Season</div>
-         <div className='text-[#47b9c3] font-gt text-[3rem] uppercase mb-2'>Simple Package</div>
+         {/* <div className='text-[#47b9c3] font-gt text-[3rem] uppercase mb-2'>Simple Package</div>
          <div className='text-[#dbe7e8] font-poppins mb-2'>Choose 2 Small Bites, Choose 2 Entrees, Choose 1 Side</div>
          <div className='text-[#dbe7e8] text-center font-poppins mb-2'>(1 Vegan Entree Column Choice / 1 Protein Entree Column Choice)</div>
          <div className='text-[#dbe7e8] font-poppins mb-2'>25$ a Person</div>
@@ -193,7 +201,7 @@ const CateringSubmenu = () => {
          <div className='text-[#47b9c3] font-gt text-[3rem] uppercase mb-2'>Whole Package</div>
          <div className='text-[#dbe7e8] font-poppins mb-2'>Choose 4 Small Bites, Choose 4 Entrees, Choose 2 Sides</div>
          <div className='text-[#dbe7e8] font-poppins mb-2'>(2 Vegan Column Choices / 2 Protein Column Choices)</div>
-         <div className='text-[#dbe7e8] font-poppins mb-2'>40$ a Person</div>
+         <div className='text-[#dbe7e8] font-poppins mb-2'>40$ a Person</div> */}
       <div className="flex flex-col md:flex-row space-x-4 font-gt text-[3rem] uppercase">
         <div className='text-[3rem] font-poppins text-[#47b9c3]'>Select a Category Below</div>
         <div
@@ -202,7 +210,7 @@ const CateringSubmenu = () => {
           }`}
           onClick={() => handleMenuClick('snacks')}
         >
-          Small Bites
+          Provisions
         </div>
         <div className='text-[#dbe7e8] pb-2'>|</div>
         <div
@@ -222,15 +230,15 @@ const CateringSubmenu = () => {
         >
           Handhelds
         </div>
-        <div className='text-[#dbe7e8] pb-2'>|</div>
-        <div
+        {/* <div className='text-[#dbe7e8] pb-2'>|</div> */}
+        {/* <div
           className={`cursor-pointer text-[#dbe7e8] ${
             activeMenu === 'sides' ? 'text-[#e3b505]' : ''
           }`}
           onClick={() => handleMenuClick('sides')}
         >
           Sides
-        </div>
+        </div> */}
       </div>
       <AnimateSharedLayout type="crossfade">
         <motion.div layout className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
