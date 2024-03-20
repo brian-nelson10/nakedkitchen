@@ -25,7 +25,7 @@ const PopUpMenu = () => {
           <PopUpHero />
         </section>
         <section className="relative h-fit overflow-hidden bg-transparent popup">
-          <div className=" mb-[5rem]">
+          <div className="m-2 md:mx-[18rem] mb-[5rem]">
             <PdfViewer />
           </div>
           <div>

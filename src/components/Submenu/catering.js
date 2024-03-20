@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimateSharedLayout } from 'framer-motion';
 
 const menuItems = {
-  Provisions: [
+  snacks: [
     <>
     <div className='p-1'>
     <div className='font-gt uppercase mb-2 text-[4rem] text-[#47b9c3]'>Crispy Deviled Eggs</div>
@@ -12,13 +12,13 @@ const menuItems = {
     <>
     <div className='p-1'>
     <div className='font-gt uppercase mb-2 text-[3.5rem] text-[#47b9c3]'>Nduja Crostini</div>
-    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Calabrian Chili Spreadable Sausage, Pickled Celery, Garlic Aioli</div>
+    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Calabrian Chili Spreadable Sausage, Pickled Celery, Lemon Zest</div>
     <div className='font-summer text-[3rem] text-[#e3b505]'>Protein</div>
     </div></>,
     <>
     <div className='p-1'>
     <div className='font-gt uppercase mb-2 text-[3.3rem] text-[#47b9c3]'>Lemongrass Chicken Satay</div>
-    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Marinated Chicken Thigh, Green Goddess Oil, Thai Curry Peanut Sauce</div>
+    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Marinated Chicken Thigh, Cilantro Oil, Thai Curry Peanut Sauce</div>
     <div className='font-summer text-[3rem] text-[#e3b505]'>Protein</div>
     </div></>,
     <>
@@ -42,8 +42,14 @@ const menuItems = {
     <>
     <div className='p-1'>
     <div className='font-gt uppercase mb-2 text-[3.3rem] text-[#47b9c3]'>Blistered Shishito Peppers</div>
-    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Charcoal Grilled, Miso Ginger Vinaigrette, Winter Chickory Salad, Togarashi</div>
+    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Charcoal Grilled, Kimchi Ranch, Frisee, Togarashi</div>
     <div className='font-summer text-[3rem] text-[#e3b505]'>Vegan</div>
+    </div></>,
+    <>
+    <div className='p-1'>
+    <div className='font-gt uppercase mb-2 text-[3.3rem] text-[#47b9c3]'>Bulgogi Udon Bowl</div>
+    <div className='font-poppins mb-2 text-[1.2rem] text-[#dbe7e8]'>Bulgogi Oyster Mushrooms or Shrimp or Pork Belly or Fried Egg, Stir Fry Udon, Kimchi, Pickled Veggies, Green Onion, Cilantro, Gochujang</div>
+    <div className='font-summer text-[3rem] text-[#e3b505]'>Vegan / Vegetarian / Protein</div>
     </div></>,
     // Add more snack items as needed
   ],
@@ -202,7 +208,7 @@ const CateringSubmenu = () => {
          <div className='text-[#dbe7e8] font-poppins mb-2'>Choose 4 Small Bites, Choose 4 Entrees, Choose 2 Sides</div>
          <div className='text-[#dbe7e8] font-poppins mb-2'>(2 Vegan Column Choices / 2 Protein Column Choices)</div>
          <div className='text-[#dbe7e8] font-poppins mb-2'>40$ a Person</div> */}
-      <div className="flex flex-col md:flex-row space-x-4 font-gt text-[3rem] uppercase">
+      <div className="flex flex-col space-x-4 font-gt text-[3rem] uppercase">
         <div className='text-[3rem] font-poppins text-[#47b9c3]'>Select a Category Below</div>
         <div
           className={`cursor-pointer text-[#dbe7e8] ${
@@ -243,7 +249,7 @@ const CateringSubmenu = () => {
       <AnimateSharedLayout type="crossfade">
         <motion.div layout className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
           {menuItems[activeMenu].map((item, index) => (
-            <motion.div
+            <motion.div 
               key={item}
               layout
               initial={{ opacity: 0 }}
