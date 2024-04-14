@@ -139,6 +139,7 @@
 // export default Box;
 
 import React from 'react';
+import photo00 from "../../assets/images/chxSliders.png"
 import photo0 from "../../assets/images/kimchiPink.png";
 import photo1 from '../../assets/images/pastrami.png';
 import photo2 from '../../assets/images/chorizo.png';
@@ -153,6 +154,7 @@ import photo9 from '../../assets/images/porkBelly-min.png'
 // import './Carousel.css'; // Import your custom Tailwind CSS styles
 
 const images = [
+  `${photo00}`,
   `${photo0}`,
   `${photo1}`,
   `${photo2}`,
