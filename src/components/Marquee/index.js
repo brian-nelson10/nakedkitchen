@@ -21,13 +21,13 @@ const marqueeVariants = {
 const Marquee = () => {
   return (
     <div> 
-      <div className="marquee relative overflow-hidden h-[210px]" >
+      <div className="marquee relative md:overflow-hidden h-[210px]" >
         <motion.div
-          className="track overflow-hidden"
+          className="track md:overflow-hidden"
           variants={marqueeVariants}
           animate="animate"
         >
-          <div className="font-gt text-[9rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke uppercase text-[#F6B092]">
+          <div className="font-gt text-[7rem] md:text-[9rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke uppercase text-[#F6B092]">
             Our Menu. Our Menu. Our Menu. Our Menu. Our Menu. Our Menu. Our Menu. Our Menu. Our Menu. Our Menu.
           </div>
         </motion.div>
