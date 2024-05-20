@@ -16,7 +16,7 @@ const About = () => {
     const navigate = useNavigate();
 
     function handleAbout() {
-        navigate("/menus")
+        navigate("/popup")
     }
     return (
         <main className="bg-[#dbe7e8]">
