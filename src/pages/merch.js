@@ -9,11 +9,11 @@ import Navbar from "../components/Navbar";
 import LunchDinnerNext from "../components/NextMenu/lunchDinner";
 import BreakfastNext from "../components/NextMenu/breakfast";
 import MerchHero from "../components/MenuHero/merch";
-import shirt from "../assets/images/linecooktee2.png";
-import shirt1 from "../assets/images/linecookteeclouds.jpeg";
+import shirt from "../assets/images/lineCookBlack.jpg";
+import shirt1 from "../assets/images/lineCookBlackFront.jpg";
 import shirt2 from "../assets/images/linecookteeclouds2.jpeg";
-import shirt3 from "../assets/images/linecookteeback.jpg";
-import clem from "../assets/images/orangeDudeWhite.png";
+import clem2 from "../assets/images/clemFront.jpg";
+import clem from "../assets/images/clemBack.jpg";
 // import MerchCarousel from "../components/Carousel/merchCarousel";
 const Merch = () => {
 
@@ -40,7 +40,6 @@ const Merch = () => {
                                     <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-white" src={shirt} />
                                     <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-white" src={shirt1} />
                                     <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-white" src={shirt2} />
-                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-white" src={shirt3} />
                                 </div>
                                 <div className="mt-[8rem]">
                                 <stripe-buy-button
@@ -55,7 +54,7 @@ const Merch = () => {
                                 <div className="mb-2 text-white md:mx-10 md:px-10 mb-5 font-poppins uppercase md:text-[1.5rem]">Oversized Back Print With left chest logo print on Comfort Colors Tee</div>
                                 <div className="w-fit flex flex-col md:flex-row mx-[4rem]">
                                     <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-[#e3b505] " src={clem} />
-                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-[#e3b505] hidden md:block" src={clem} />
+                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-[#e3b505] hidden md:block" src={clem2} />
                                     <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-[#e3b505] hidden md:block" src={clem} />
                                 </div>
                                 <div className="mt-8">
