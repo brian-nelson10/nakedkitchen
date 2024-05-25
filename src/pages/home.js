@@ -62,12 +62,12 @@ const Home = () => {
                 </section>
                 <section preserveAspectRatio="none" className="grid grid-rows-2 w-screen h-[75rem] z-40 px-[.5rem] md:px-[1rem] md:pt-[25rem] bg-fixed flex-1 grass">
                     <div className="grid md:grid-cols-2 md:-mb-[25rem] md:mb-0 items-end">
-                        <div className="md:text-start text-[#dbe7e8] items-end ml-[1.2rem] md:ml-[1rem] font-gt text-[1.2rem] md:text-[2.8rem] uppercase">
+                        <div className="md:text-start text-[#dbe7e8] items-end ml-[5.8rem] md:ml-[1rem] font-gt text-[1.2rem] md:text-[2.8rem] uppercase">
                             <motion.p
                                 initial={{ y: -310, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ duration: .5, delay: .8 }}>
-                                Eat Balanced. Treat Yourself. Live Fully.</motion.p>
+                                Eat Balanced. Live Fully.</motion.p>
                         </div>
                         <div></div>
                     </div>
