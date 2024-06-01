@@ -87,7 +87,8 @@ const Home = () => {
                         </motion.p>
                     </div>
                 </section>
-                <div className="md:px-[30rem] grass shadow-xl rounded-md max-w-full mx-auto">
+                <div className="md:px-[30rem] grass1 shadow-xl max-w-full mx-auto">
+                    <div className="grass3 py-[5rem]">
       <blockquote
         className="instagram-media"
         data-instgrm-permalink="https://www.instagram.com/reel/C7UsZEOuAOD/?utm_source=ig_embed&amp;utm_campaign=loading"
@@ -157,11 +158,12 @@ const Home = () => {
           </p>
         </div>
       </blockquote>
+      </div>
     </div>
-                <section className="relative h-[428rem] md:h-[420rem] bg-[#dbe7e8]">
+                <section className="relative h-[428rem] md:h-[420rem] bg-[#dbe7e8] grass">
    
                     <motion.section className="w-screen h-screen absolute inset-0"
-                        initial={{ y: 0 }}
+                        initial={{ y: 20 }}
                         whileInView={{ y: '10%' }}
                         transition={{ ease: 'linear', duration: .5, delay: .1 }}
                         >
@@ -250,7 +252,9 @@ const Home = () => {
                                 <BoxTwo />
                             </LazyLoad>
                         </div>
-                       
+                       <div className="grass4 h-[24rem] md:h-[80rem]">
+
+                       </div>
                         <div>
                             <LazyLoad>
                                 <Footer />

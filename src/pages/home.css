@@ -16,6 +16,66 @@
     }
 }
 
+.grass1 {
+    background: url("../assets/images/clouds.jpeg");
+    transform: scaleY(-1);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .grass1 {
+        background-attachment: scroll;
+    }
+}
+
+.grass3 {
+    transform: scaleY(-1);
+}
+
+.grass4 {
+    background: url("../assets/images/nakedPool-min.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .grass4 {
+        background-attachment: scroll;
+        background-size: cover;
+    }
+}
+
+.grass2 {
+    background: url("../assets/images/nakedPool-min.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .grass2 {
+        background-attachment: scroll;
+    }
+}
+
 .popup {
     background: url("../assets/images/pastrami.png");
     background-position: center;
