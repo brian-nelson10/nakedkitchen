@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../../assets/images/nkgold.png";
+import logo from "../../assets/images/nkClouds.png";
 import arrow from "../../assets/images/arrowGreen.png";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from 'react-icons/fa';

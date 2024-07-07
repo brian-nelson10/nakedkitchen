@@ -12,8 +12,8 @@
     font-display: swap;
 }
 @font-face {
-    font-family: "Xtreem";
-    src: url("../src/assets/fonts/XtreemFat_PERSONAL_USE.ttf");
+    font-family: "Lostar";
+    src: url("../src/assets/fonts/Lostar.ttf");
     font-display: swap;
 }
 @font-face {
@@ -54,5 +54,10 @@
 @font-face {
     font-family: "Fifty";
     src: url("../src/assets/fonts/56thStreet-Regular.otf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Afro";
+    src: url("../src/assets/fonts/WTF\ Afroboy.ttf");
     font-display: swap;
 }

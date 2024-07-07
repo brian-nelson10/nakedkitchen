@@ -62,27 +62,27 @@ const Home = () => {
                 </section>
                 <section preserveAspectRatio="none" className="grid grid-rows-2 w-screen h-[75rem] z-40 px-[.5rem] md:px-[1rem] md:pt-[25rem] bg-fixed flex-1 grass">
                     <div className="grid md:grid-cols-2 md:-mb-[25rem] md:mb-0 items-end">
-                        <div className="md:text-start text-[#dbe7e8] items-end ml-[5.8rem] md:ml-[1rem] font-gt text-[1.2rem] md:text-[2.8rem] uppercase">
+                        <div className="md:text-start text-[#dbe7e8] items-end ml-[2.8rem] md:ml-[1rem] font-gt text-[1.2rem] md:text-[2.8rem] uppercase">
                             <motion.p
-                                initial={{ y: -310, opacity: 0 }}
+                                initial={{ y: -810, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
-                                transition={{ duration: .5, delay: .8 }}>
-                                Eat Balanced. Live Fully.</motion.p>
+                                transition={{ duration: .75, delay: .8 }}>
+                                "Good Food, Makes Good Neighbors"</motion.p>
                         </div>
                         <div></div>
                     </div>
                     <div className="font-ent text-[#F6B092] text-center text-[8rem] md:text-[19rem] drop-shadow-[10px_5px_0px_#FDF331] -mt-[15rem] md:-mt-[7rem] flex-col md:flex-row flex">
                         <motion.p
-                            initial={{ y: -300, opacity: 0 }}
+                            initial={{ y: -800, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: .5, delay: .7 }}>
+                            transition={{ duration: .75, delay: .7 }}>
                             NAKED
                         </motion.p>
                         <motion.p
                             className="md:ml-12 md:mt-0 -mt-[4rem] -ml-2"
-                            initial={{ y: 300, opacity: 0 }}
+                            initial={{ y: 800, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
-                            transition={{ duration: .5, delay: .9 }}>
+                            transition={{ duration: .75, delay: .9 }}>
                             KITCHEN
                         </motion.p>
                     </div>

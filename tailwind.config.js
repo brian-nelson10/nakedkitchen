@@ -6,7 +6,9 @@ module.exports = {
       fontFamily: {
        mentra: ['Mentra', 'sans-serif'],
       comic: ['Webcomic', "cursive"],
-      xtreem: ['Xtreem', 'sans-serif'],
+      // xtreem: ['Xtreem', 'sans-serif'],
+      lostar: ['Lostar', 'sans-serif'],
+      afro: ['Afro', 'sans-serif'],
       poppins: ['Poppins', 'sans-serif'],
       // gt: ['GT Flexa','sans-serif'],
       summer: ['Summer Loving', 'cursive'],

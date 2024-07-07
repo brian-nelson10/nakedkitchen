@@ -77,8 +77,9 @@
 }
 
 .popup {
-    background: url("../assets/images/pastrami.png");
+    background: url("../assets/images/kimchiPink.png");
     background-position: center;
+    background-size: contain;
     background-attachment: fixed;
     opacity: 1;
 

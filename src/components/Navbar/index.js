@@ -61,7 +61,7 @@ const Navbar = () => {
     >
       <div className="grid grid-cols-3 md:space-x-4 md:pt-2 mt-2 text-2xl md:text-[3rem] w-full flex items-center">
         <div className=''>
-        <p onClick={handleHome} className={isTransparent ? 'font-summer -mt-6 w-[1rem] md:w-max text-xl md:text-[5rem] text-[#36F0F0] hover:cursor-pointer drop-shadow-[4px_4px_0px_rgba(0,0,0)]' : 'font-summer text-[#F6B092] -mt-3 w-[1rem] md:w-max text-2xl md:text-[5rem] hover:cursor-pointer drop-shadow-[4px_4px_0px_rgba(0,0,0)]'}>Naked Kitchen</p>
+        <p onClick={handleHome} className={isTransparent ? 'font-ent -mt-6 w-[1rem] md:w-max invisible md:visible text-md md:text-[4rem] text-[#36F0F0] hover:cursor-pointer drop-shadow-[4px_4px_0px_rgba(0,0,0)]' : 'font-ent text-[#F6B092] -mt-3 w-[1rem] md:w-max text-xl md:text-[5rem] hover:cursor-pointer drop-shadow-[4px_4px_0px_rgba(0,0,0)]'}>Naked Kitchen</p>
         </div>
         <div className='text-start -ml-12 md:ml-8 space-x-12 md:space-x-[13rem] text-xl md:text-[3rem] flex flex-row'>
           <div className='w-[2rem] h-[2rem] text-center'>
