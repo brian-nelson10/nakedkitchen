@@ -40,7 +40,7 @@ function App() {
   return (
     <div>
     {isLoading ? (
-      <div className="loading-spinner grass py-[20rem] md:p-[25rem] min-h-screen text-center items-center">
+      <div className="loading-spinner grass py-[15rem] md:p-[25rem] min-h-screen text-center items-center">
         {/* You can use a spinner or any loading animation here */}
         <l-quantum
     size="245"
