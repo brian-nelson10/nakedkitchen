@@ -75,7 +75,7 @@ const Merch = () => {
                                 </div>
                                 <div className="my-[2rem]">
                                     <div className="text-[#47b9c3] font-gt uppercase text-[4rem]">
-                                        <p className="my-2">20$</p>
+                                        <p className="my-2">25$</p>
                                     </div>
                                     <stripe-buy-button
                                         buy-button-id="buy_btn_1PKLEuB3OInBaAUnJDVPWfd1"

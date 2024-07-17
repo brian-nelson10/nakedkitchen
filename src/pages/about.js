@@ -4,7 +4,6 @@ import "./home.css";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import AboutContent from "../components/AboutContent";
-import myVideo from "../assets/images/veggieVideo.mov"
 import Marquee1 from "../components/Marquee/marquee1";
 import { useNavigate } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
@@ -30,6 +29,9 @@ const About = () => {
     function handleAbout() {
         navigate("/popup")
     }
+    const firstLine = "NAKED";
+    const secondLine = "KITCHEN";
+  
     return (
         <main className="bg-[#dbe7e8]">
             <div className="h-[100%] w-[100%] overflow-hidden">
@@ -37,37 +39,42 @@ const About = () => {
                     <section className="z-50">
                         <Navbar />
                     </section>
-                    <section className="grid grid-rows-3 w-screen h-[68rem] z-40 px-[2rem] pt-[10rem] bg-fixed about">
-                        <div className="grid md:grid-cols-2 items-end">
-                            <div className="text-start text-[#F6B092] items-end md:ml-[1rem] font-gt text-[5rem] md:text-[10rem] -ml-2 uppercase drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke">
-                                <motion.p
-                                    initial={{ y: -310, opacity: 0 }}
-                                    animate={{ y: 0, opacity: 1 }}
-                                    transition={{ duration: .5, delay: .8 }}>
-                                    About</motion.p>
-                            </div>
-                            <div></div>
-                        </div>
-                        <div className="font-ent text-[#F6B092] text-center text-[6rem] md:text-[19rem] -mt-[7rem] md:-mt-20 flex-row flex">
-                            <motion.p
-                                initial={{ y: -300, opacity: 0 }}
-                                animate={{ y: 0, opacity: 1 }}
-                                transition={{ duration: .5, delay: .7 }}
-                                className="drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke">
-                                NAKED
-                            </motion.p>
-                            
-                        </div>
-                        <div className="font-ent text-[#F6B092] text-center text-[6.5rem] md:text-[19rem] -mt-[19rem] md:-mt-20 flex-row flex">
-                        <motion.p
-                                initial={{ y: 300, opacity: 0 }}
-                                animate={{ y: 0, opacity: 1 }}
-                                transition={{ duration: .5, delay: .9 }}
-                                className="drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:ml-12">
-                                KITCHEN
-                            </motion.p>
-                            </div>
-                    </section>
+                   <section preserveAspectRatio="none" className="grid grid-rows-2 w-screen h-[75rem] z-40 px-[.5rem] md:px-[1rem] md:pt-[25rem] bg-fixed flex-1 about">
+          <div className="grid md:grid-cols-2 md:-mb-[25rem] md:mb-0 items-end">
+            <div className="md:text-start text-[#F6B092] drop-shadow-[10px_5px_0px_#FDF331] items-end ml-[2.8rem] md:ml-[1rem] font-gt text-[1.2rem] md:text-[5.8rem] uppercase">
+              <motion.p
+                initial={{ y: -810, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: .75, delay: .8 }}>
+                About</motion.p>
+            </div>
+            <div></div>
+          </div>
+          <div className="font-ent text-[#F6B092] text-center text-[8rem] md:text-[19rem] drop-shadow-[10px_5px_0px_#FDF331] -mt-[15rem] md:-mt-[7rem] flex-col md:flex-row flex">
+          <div>
+          {firstLine.split("").map((char, index) => (
+            <span
+              key={`first-${index}`}
+              className="flip-animation"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              {char}
+            </span>
+          ))}
+        </div>
+        <div>
+          {secondLine.split("").map((char, index) => (
+            <span
+              key={`second-${index}`}
+              className="flip-animation"
+              style={{ animationDelay: `${(firstLine.length + index) * 0.1}s` }}
+            >
+              {char}
+            </span>
+          ))}
+        </div>
+          </div>
+        </section>
                     <section>
                     <div className=""><Marquee1 /></div>
                         <div className="grid md:grid-cols-3 mt-[1rem] mb-[6rem] card col col-auto splitContent container px-[1rem] md:px-[4rem] flex flex-col">

@@ -1,3 +1,21 @@
+.flip-animation {
+    display: inline-block;
+    opacity: 0;
+    transform: rotateX(90deg);
+    animation: flip 0.8s forwards;
+  }
+  
+  @keyframes flip {
+    0% {
+      opacity: 0;
+      transform: rotateY(90deg);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateY(0);
+    }
+  }
+
 .grass {
     background: url("../assets/images/clouds.jpeg");
     background-size: cover;

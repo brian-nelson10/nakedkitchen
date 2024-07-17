@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import { AnimatePresence } from 'framer-motion';
 import Home from './pages/home';
@@ -15,13 +15,43 @@ import Merch from './pages/merch';
 import MenuPorch from './pages/porch';
 import ScrollToTop from './components/scrollToTop';
 import PopUpMenu from './pages/popupmenu';
+import { quantum } from 'ldrs';
 // import ScrollTop from './components/ScrollTop';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
 
+  useEffect(() => {
+    const handlePageLoad = () => {
+      setIsLoading(false);
+    };
+
+    // Add event listener for the page load
+    window.addEventListener('load', handlePageLoad);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('load', handlePageLoad);
+    };
+  }, []);
+
+  quantum.register()
+  
   return (
-
-    <Router basename={process.env.PUBLIC_URL}>
+    <div>
+    {isLoading ? (
+      <div className="loading-spinner grass py-[20rem] md:p-[25rem] min-h-screen text-center items-center">
+        {/* You can use a spinner or any loading animation here */}
+        <l-quantum
+    size="245"
+    speed="4.5" 
+    color="#F6B092" 
+  ></l-quantum>
+  <p className='font-ent text-[#F6B092] text-center text-[3.5rem] tracking-wide md:text-[4rem]'>WAITING</p>
+      </div>
+    ) : (
+      <div className="main-content">
+       <Router basename={process.env.PUBLIC_URL}>
       <ScrollToTop />
       <Routes>
         <Route
@@ -90,6 +120,11 @@ function App() {
                 />
       </Routes>
     </Router>
+      </div>
+    )}
+  </div>
+
+    
 
   );
 }
