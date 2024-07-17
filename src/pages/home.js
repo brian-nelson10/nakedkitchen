@@ -64,8 +64,8 @@ const Home = () => {
         <section className="z-50">
           <Navbar />
         </section>
-        <section preserveAspectRatio="none" className="grid grid-rows-2 w-screen h-[75rem] z-40 px-[.5rem] md:px-[1rem] md:pt-[25rem] bg-fixed flex-1 grass">
-          <div className="grid md:grid-cols-2 md:-mb-[25rem] md:mb-0 items-end">
+        <section preserveAspectRatio="none" className="grid grid-rows-2 w-screen h-[75rem] pb-[15rem] z-40 px-[.5rem] md:px-[1rem] md:pt-[25rem] bg-fixed flex-1 grass">
+          <div className="grid md:grid-cols-2  md:-mb-[25rem] md:mb-0 items-end">
             <div className="md:text-start text-[#dbe7e8] items-end ml-[2.8rem] md:ml-[1rem] font-gt text-[1.2rem] md:text-[2.8rem] uppercase">
               <motion.p
                 initial={{ y: -810, opacity: 0 }}
