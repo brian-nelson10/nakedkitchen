@@ -24,14 +24,22 @@ function App() {
   useEffect(() => {
     const handlePageLoad = () => {
       setIsLoading(false);
+      clearTimeout(timeoutId);  // Clear the timeout if the page loads before 3 seconds
     };
 
     // Add event listener for the page load
     window.addEventListener('load', handlePageLoad);
 
-    // Cleanup event listener on component unmount
+    // Set a timeout to change isLoading state after 3 seconds
+    const timeoutId = setTimeout(() => {
+      setIsLoading(false);
+      window.removeEventListener('load', handlePageLoad); // Remove event listener if the timeout triggers
+    }, 3000);
+
+    // Cleanup event listener and timeout on component unmount
     return () => {
       window.removeEventListener('load', handlePageLoad);
+      clearTimeout(timeoutId);
     };
   }, []);
 
