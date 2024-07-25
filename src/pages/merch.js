@@ -43,7 +43,9 @@ const Merch = () => {
                     <section className="relative h-fit overflow-hidden bg-[#020202] merch">
                         <div className="text-[#e3b505] font-poppins text-center mt-[4rem] bg-black mx-[42rem] py-10 rounded bg-opacity-75">
                             <p className="mb-2">Shipping Included!</p>
-                            <p className="mb-2">All proceeds go into art for our restaurant!</p>
+                            <p className="mb-2">Recieve a 20$ gift card for every purchase!</p>
+                            <p className="mb-2">(Redeemable at our Restaurant Only.)</p>
+                            <p className="mb-2">(Once we open of course.)</p>
                         </div>
                         <div className="grid grid-rows-2 p-[3rem] m-[3rem] justify-center items-center text-center gap-4">
                             <div className="border-3 border border-black p-10 bg-black bg-opacity-95">
