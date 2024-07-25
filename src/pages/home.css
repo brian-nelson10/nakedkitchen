@@ -128,6 +128,23 @@
     }
 }
 
+.bread {
+    background: url("../assets/images/milkBreadColors.png");
+    background-position: 60px;
+    background-size: contain;
+    background-attachment: fixed;
+    opacity: 1;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .bread {
+        background-position: -35px 10px;
+        background-attachment: fixed;
+        background-size: 465px;
+    }
+}
+
 .catering {
     background: url("../assets/images/catering.jpg");
     background-size: cover;

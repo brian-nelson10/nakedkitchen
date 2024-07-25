@@ -13,6 +13,7 @@ import Navbar from "../components/Navbar";
 // import Button from "../components/Button/button";
 // import { useNavigate } from "react-router-dom";
 import LazyLoad from "react-lazy-load";
+import HoveringImageButton from "../components/HoveringImageButton";
 // import CarouselComponent from "../components/Carousel";
 // import { useMediaQuery } from "react-responsive";
 
@@ -55,18 +56,19 @@ const Home = () => {
 
   return (
     <>
-    <main className=" h-screen">
+    <main className="h-screen">
+    
       <div
         style={{ transform: `translateY(${scrollAmount}px)` }}
         className="w-full min-h-screen"
       >
-        
         <section className="z-50">
           <Navbar />
         </section>
+       
         <section preserveAspectRatio="none" className="grid grid-rows-2 w-screen h-[75rem] pb-[15rem] z-40 px-[.5rem] md:px-[1rem] md:pt-[25rem] bg-fixed flex-1 grass">
           <div className="grid md:grid-cols-2  md:-mb-[25rem] md:mb-0 items-end">
-            <div className="md:text-start text-[#dbe7e8] items-end ml-[2.8rem] md:ml-[1rem] font-gt text-[1.2rem] md:text-[2.8rem] uppercase">
+            <div className="md:text-start text-[#dbe7e8] items-end ml-[2.8rem] md:ml-[1rem] font-gt mt-[12rem] md:mt-0 text-[1.2rem] md:text-[2.8rem] uppercase">
               <motion.p
                 initial={{ y: -810, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -75,7 +77,7 @@ const Home = () => {
             </div>
             <div></div>
           </div>
-          <div className="font-ent text-[#F6B092] text-center text-[8rem] md:text-[19rem] drop-shadow-[10px_5px_0px_#FDF331] -mt-[15rem] md:-mt-[7rem] flex-col md:flex-row flex">
+          <div className="font-ent text-[#F6B092] -space-y-[4rem] md:space-y-0 text-center text-[8rem] md:text-[19rem] drop-shadow-[10px_5px_0px_#FDF331] -mt-[10rem] md:-mt-[7rem] flex-col md:flex-row flex">
           <div>
           {firstLine.split("").map((char, index) => (
             <span

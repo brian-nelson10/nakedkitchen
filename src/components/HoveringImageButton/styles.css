@@ -1,0 +1,9 @@
+@keyframes sway {
+  0%, 100% {
+    transform: rotateY(15deg);
+  }
+  50% {
+    transform: rotateY(-15deg);
+  }
+}
+

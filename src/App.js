@@ -10,12 +10,13 @@ import About from './pages/about';
 import MenuCatering from './pages/menuCatering';
 import NotFound from './pages/NotFound';
 import Contact from './pages/contact';
-import Thanksgiving from './pages/thanksgiving';
 import Merch from './pages/merch';
 import MenuPorch from './pages/porch';
 import ScrollToTop from './components/scrollToTop';
 import PopUpMenu from './pages/popupmenu';
 import { quantum } from 'ldrs';
+import HoveringImageButton from './components/HoveringImageButton';
+import Bread from './pages/bread';
 // import ScrollTop from './components/ScrollTop';
 
 function App() {
@@ -61,6 +62,11 @@ function App() {
       <div className="main-content">
        <Router basename={process.env.PUBLIC_URL}>
       <ScrollToTop />
+      <div className="relative z-50">
+        <div className="absolute top-[3rem] md:top-[5rem] left-2 md:left-12">
+          <HoveringImageButton />
+        </div>
+      </div>
       <Routes>
         <Route
           path="/"
@@ -99,8 +105,8 @@ function App() {
             exact element={<Contact />}
             />
             <Route
-          path='/thanksgiving'
-          element={<Thanksgiving />}
+          path='/milkbread'
+          element={<Bread />}
         />
             {/* <Route
             path='/reservations'
