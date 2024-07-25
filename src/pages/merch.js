@@ -78,7 +78,7 @@ const Merch = () => {
                                         <p className="my-2">25$</p>
                                     </div>
                                     <stripe-buy-button
-                                        buy-button-id="buy_btn_1PKLEuB3OInBaAUnJDVPWfd1"
+                                        buy-button-id="buy_btn_1PgS06B3OInBaAUnXs4Oh1lj"
                                         publishable-key="pk_live_51NOKTIB3OInBaAUnvrJx5QEK7UKLkB1sRz2R9vixw3X7k0rxLGHmn4XT370M2NOtuQXsikfozTt2GnYteNfUjwbQ00lk56yFck"
                                     >
                                     </stripe-buy-button>
