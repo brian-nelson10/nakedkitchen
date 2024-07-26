@@ -44,7 +44,7 @@ const Bread = () => {
                         <div className="grid grid-rows-2 p-[3rem] m-[3rem] justify-center items-center text-center gap-4">
                             <div className="border-3 border border-black p-10 bg-black bg-opacity-95">
                                 <div className="mb-2 text-[#47b9c3] font-gt uppercase text-[3rem]">Milk Bread Buns</div>
-                                <div className="mb-2 text-white md:mx-10 mx-[3rem] md:px-10 mb-5 font-poppins uppercase md:text-[1.5rem]">6 Shokupan Dinner Rolls. Freeze or eat within 3 days for best results!</div>
+                                <div className="mb-2 text-white md:mx-10 mx-[3rem] md:px-10 mb-5 font-poppins uppercase md:text-[1.5rem]">8 Shokupan Dinner Rolls. Freeze or eat within 3 days for best results!</div>
                                 <div className="w-fit flex flex-col md:flex-row mx-[4rem] ">
                                     <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-white cursor-pointer" src={buns2} onClick={() => onOpenModal(buns2)} />
                                     <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-white cursor-pointer" src={buns1} onClick={() => onOpenModal(buns1)} />
