@@ -8,10 +8,9 @@ import Navbar from "../components/Navbar";
 import LunchDinnerNext from "../components/NextMenu/lunchDinner";
 import BreakfastNext from "../components/NextMenu/breakfast";
 import BreadHero from "../components/MenuHero/bread";
-import clem2 from "../assets/images/clemFront.jpg";
-import clem from "../assets/images/clemBack.jpg";
-import mustardback from "../assets/images/mustardback.jpg";
-import mustardfront from "../assets/images/mustardfront.jpg";
+import buns1 from "../assets/images/buns1.jpeg";
+import buns2 from "../assets/images/buns2.jpeg";
+import loaf from "../assets/images/loaf.jpg";
 
 const Bread = () => {
     const [open, setOpen] = useState(false);
@@ -47,9 +46,9 @@ const Bread = () => {
                                 <div className="mb-2 text-[#47b9c3] font-gt uppercase text-[3rem]">Milk Bread Buns</div>
                                 <div className="mb-2 text-white md:mx-10 mx-[3rem] md:px-10 mb-5 font-poppins uppercase md:text-[1.5rem]">6 Shokupan Dinner Rolls. Freeze or eat within 3 days for best results!</div>
                                 <div className="w-fit flex flex-col md:flex-row mx-[4rem] ">
-                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-white cursor-pointer" src={mustardback} onClick={() => onOpenModal(mustardback)} />
-                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-white cursor-pointer" src={mustardfront} onClick={() => onOpenModal(mustardfront)} />
-                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-white cursor-pointer" src={mustardback} onClick={() => onOpenModal(mustardback)} />
+                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-white cursor-pointer" src={buns2} onClick={() => onOpenModal(buns2)} />
+                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-white cursor-pointer" src={buns1} onClick={() => onOpenModal(buns1)} />
+                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-white cursor-pointer" src={buns2} onClick={() => onOpenModal(buns2)} />
                                 </div>
                                 <div className="my-[2rem]">
                                     <div className="text-[#47b9c3] font-gt uppercase text-[4rem]">
@@ -66,9 +65,9 @@ const Bread = () => {
                                 <div className="mb-2 text-[#47b9c3] font-gt uppercase text-[3rem]">Milk Bread Loaf</div>
                                 <div className="mb-2 text-white md:mx-10 md:px-10 mb-5 font-poppins uppercase md:text-[1.5rem]">Standard sized Shokupan Loaf. Freeze or eat within 3 days for best results!</div>
                                 <div className="w-fit flex flex-col md:flex-row mx-[4rem]">
-                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-[#e3b505] cursor-pointer" src={clem} onClick={() => onOpenModal(clem)} />
-                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-[#e3b505] cursor-pointer" src={clem2} onClick={() => onOpenModal(clem2)} />
-                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-[#e3b505] cursor-pointer" src={clem} onClick={() => onOpenModal(clem)} />
+                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-[#e3b505] cursor-pointer" src={loaf} onClick={() => onOpenModal(loaf)} />
+                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-[#e3b505] cursor-pointer" src={loaf} onClick={() => onOpenModal(loaf)} />
+                                    <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-[#e3b505] cursor-pointer" src={loaf} onClick={() => onOpenModal(loaf)} />
                                 </div>
                                 <div className="my-[2rem]">
                                     <div className="text-[#47b9c3] font-gt uppercase text-[4rem]">
