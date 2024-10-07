@@ -15,6 +15,8 @@ import clem2 from "../assets/images/clemFront.jpg";
 import clem from "../assets/images/clemBack.jpg";
 import mustardback from "../assets/images/mustardback.jpg";
 import mustardfront from "../assets/images/mustardfront.jpg";
+import kim from "../assets/images/kim.png";
+import kim2 from "../assets/images/kim2.png";
 
 // import MerchCarousel from "../components/Carousel/merchCarousel";
 const Merch = () => {
@@ -48,6 +50,25 @@ const Merch = () => {
                             <p className="mb-2">(Once we open of course.)</p>
                         </div>
                         <div className="grid grid-rows-2 p-[3rem] m-[3rem] justify-center items-center text-center gap-4">
+                        <div className="border-3 border border-black p-10 bg-black bg-opacity-95">
+                            <div className="mb-2 text-[#47b9c3] font-gt uppercase text-[3rem]">The Kimchi Tee</div>
+                            <div className="mb-2 text-white md:mx-10 md:px-10 mb-5 font-poppins uppercase md:text-[1.5rem]">Oversized Back Print With left chest logo print on Comfort Colors Tee</div>
+                            <div className="w-fit flex flex-col md:flex-row mx-[4rem]">
+                                <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-[#e3b505] cursor-pointer" src={kim} onClick={() => onOpenModal(kim)} />
+                                <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-[#e3b505] cursor-pointer" src={kim2} onClick={() => onOpenModal(kim2)} />
+                                <img className="md:h-[30rem] md:w-[30rem] my-1 border-[.2rem] border border-[#e3b505] cursor-pointer" src={kim} onClick={() => onOpenModal(kim)} />
+                            </div>
+                            <div className="my-[2rem]">
+                                <div className="text-[#47b9c3] font-gt uppercase text-[4rem]">
+                                    <p className="my-2">25$</p>
+                                </div>
+                                <stripe-buy-button
+                                    buy-button-id="buy_btn_1Q76ydB3OInBaAUnmYU8xjBh"
+                                    publishable-key="pk_live_51NOKTIB3OInBaAUnvrJx5QEK7UKLkB1sRz2R9vixw3X7k0rxLGHmn4XT370M2NOtuQXsikfozTt2GnYteNfUjwbQ00lk56yFck"
+                                >
+                                </stripe-buy-button>
+                            </div>
+                        </div>
                             <div className="border-3 border border-black p-10 bg-black bg-opacity-95">
                                 <div className="mb-2 text-[#47b9c3] font-gt uppercase text-[3rem]">Mustard Eye Tee</div>
                                 <div className="mb-2 text-white md:mx-10 mx-[3rem] md:px-10 mb-5 font-poppins uppercase md:text-[1.5rem]">Small Left Chest Logo with Large Back Print on Bella & Canvas Tee</div>
