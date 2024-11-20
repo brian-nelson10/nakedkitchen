@@ -9,20 +9,20 @@ import Marquee from "../Marquee";
 const BoxTwo = () => {
     const navigate = useNavigate();
     function handleBreakfast() {
-        navigate("/breakfast");
+        navigate("/popup");
     };
     function handleLunchDinner() {
-        navigate("/lunch&dinner");
+        navigate("/popup");
     };
     function handleDrinks() {
-        navigate("/drinks");
+        navigate("/popup");
     };
     return (
         <>
-            <div className="font-mentra text-[6rem] mx-[16rem] my-[1rem] tracking-wide">
+            <div className="text-[6rem] mx-[16rem] my-[1rem] tracking-wide">
                 <Marquee />
             </div>
-            <div className="w-full max-w-[72rem] mx-auto border-[3px] border-black font-gt uppercase">
+            <div className="w-full max-w-[72rem] mx-auto border-[3px] border-black font-benditos uppercase">
                 <motion.div
                     initial={{ opacity: 0, y: 200 }}
                     whileInView={{ opacity: 1, y: 0, transition: { duration: .5, delay: .5 } }}

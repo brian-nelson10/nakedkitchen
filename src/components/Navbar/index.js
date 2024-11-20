@@ -52,7 +52,7 @@ const Navbar = () => {
          
             className: isTransparent ? "aa" : "ab"
         }}
-      className={`fixed top-0 left-0 w-full bg-white p-4 flex items-center justify-between transition-all duration-300 font-gt uppercase ${
+      className={`fixed top-0 left-0 w-full bg-white p-4 flex items-center justify-between transition-all duration-300 font-benditos ${
         scrolling ? 'opacity-0' : 'opacity-100'
       }`}
       initial={{ opacity: 0, y: -300 }}
@@ -61,7 +61,7 @@ const Navbar = () => {
     >
       <div className="grid grid-cols-3 md:space-x-4 md:pt-2 mt-2 text-2xl md:text-[3rem] w-full flex items-center">
         <div className=''>
-        <p onClick={handleHome} className={isTransparent ? 'font-ent -mt-6 w-[1rem] md:w-max invisible md:visible text-md md:text-[4rem] text-[#F6B092] hover:cursor-pointer drop-shadow-[4px_4px_0px_rgba(0,0,0)]' : 'font-ent text-[#36F0F0] -mt-3 w-[1rem] md:w-max text-xl md:text-[5rem] hover:cursor-pointer drop-shadow-[4px_4px_0px_rgba(0,0,0)]'}>Naked Kitchen</p>
+        <p onClick={handleHome} className={isTransparent ? 'font-lum -mt-6 w-[1rem] md:w-max invisible md:visible text-md md:text-[4rem] text-[#F6B092] hover:cursor-pointer drop-shadow-[4px_4px_0px_rgba(0,0,0)]' : 'font-lum text-[#36F0F0] -mt-3 w-[1rem] md:w-max text-xl md:text-[5rem] hover:cursor-pointer drop-shadow-[4px_4px_0px_rgba(0,0,0)]'}>naked kitchen</p>
         </div>
         <div className='text-start -ml-8 md:ml-8 space-x-12 md:space-x-[13rem] text-xl md:text-[3rem] flex flex-row'>
           <div className='w-[2rem] h-[2rem] pl-6 md:pl-0 text-center'>

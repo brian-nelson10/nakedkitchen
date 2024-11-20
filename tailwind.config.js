@@ -16,7 +16,10 @@ module.exports = {
       sperm: ['TF Spermo','sans-serif'],
       psych: ['Psych', 'sans-serif'],
       gt: ['Fifty', 'sans-serif'],
-      ent: ['Entuista', 'sans-serif']
+      ent: ['Entuista', 'sans-serif'],
+      billy: ['Tay Billy', 'sans-serif'],
+      benditos: ['Tay Benditos', 'sans-serif'],
+      lum: ['Luminaire', 'sans-serif']
 
     },
     },

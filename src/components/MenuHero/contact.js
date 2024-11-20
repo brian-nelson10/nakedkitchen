@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const ContactHero = () => {
     return (
-        <><div className="text-[#dbe7e8] items-end font-psych text-[6rem] md:text-[12rem] uppercase -mt-[8rem] md:mt-0">
+        <><div className="text-[#dbe7e8] items-end font-benditos text-[6rem] md:text-[12rem] uppercase -mt-[8rem] md:mt-0">
             <motion.p
                 initial={{ y: -310, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}

@@ -27,7 +27,7 @@ const Marquee = () => {
           variants={marqueeVariants}
           animate="animate"
         >
-          <div className="overflow-hidden font-gt text-[5rem] md:text-[9rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke uppercase text-[#F6B092]">
+          <div className="overflow-hidden font-benditos text-[5rem] md:text-[9rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke uppercase text-[#F6B092]">
             Our Menu. Our Menu. Our Menu. Our Menu.
           </div>
         </motion.div>

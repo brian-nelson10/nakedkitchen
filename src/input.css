@@ -61,3 +61,18 @@
     src: url("../src/assets/fonts/WTF\ Afroboy.ttf");
     font-display: swap;
 }
+@font-face {
+    font-family: "Tay Billy";
+    src: url("../src/assets/fonts/TAYBilly.otf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Tay Benditos";
+    src: url("../src/assets/fonts/TAYBenditos.otf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Luminaire";
+    src: url("../src/assets/fonts/Luminaire.otf");
+    font-display: swap;
+}

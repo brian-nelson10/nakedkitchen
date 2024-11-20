@@ -25,42 +25,42 @@ const TwoColumn = () => {
             viewport={{ once: true }}
             initial={{ opacity: 0, x: -200 }}
             whileInView={{ opacity: 1, x: 0, transition: { duration: .8, delay: .1 } }}
-            className='font-gt uppercase text-[#F6B092] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke text-[5rem] -mb-[3.5rem] '>enhancing</motion.p>
+            className='font-benditos uppercase text-[#F6B092] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke text-[5rem] -mb-[3.5rem] '>enhancing</motion.p>
           <motion.p
             viewport={{ once: true }}
             initial={{ opacity: 0, x: -200 }}
             whileInView={{ opacity: 1, x: 0, transition: { duration: .8, delay: .2 } }}
-            className='font-gt text-[#F6B092] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke uppercase md:text-[5rem] text-[4.5rem] -mb-[3.5rem]'>the welfare</motion.p>
+            className='font-benditos text-[#F6B092] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke uppercase md:text-[5rem] text-[4.5rem] -mb-[3.5rem]'>the welfare</motion.p>
           <motion.p
             viewport={{ once: true }}
             initial={{ opacity: 0, x: -200 }}
             whileInView={{ opacity: 1, x: 0, transition: { duration: .8, delay: .3 } }}
-            className='font-gt text-[#F6B092] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke uppercase text-[5rem] -mb-[3.5rem]'>of our</motion.p>
+            className='font-benditos text-[#F6B092] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke uppercase text-[5rem] -mb-[3.5rem]'>of our</motion.p>
           <motion.p
             viewport={{ once: true }}
             initial={{ opacity: 0, x: -200 }}
             whileInView={{ opacity: 1, x: 0, transition: { duration: .8, delay: .4 } }}
-            className='font-gt text-[#F6B092] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke uppercase text-[5rem] -mb-[3.5rem]'>community</motion.p>
+            className='font-benditos text-[#F6B092] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke uppercase text-[5rem] -mb-[3.5rem]'>community</motion.p>
           <motion.p
             viewport={{ once: true }}
             initial={{ opacity: 0, x: -200 }}
             whileInView={{ opacity: 1, x: 0, transition: { duration: .8, delay: .5 } }}
-            className='font-gt text-[#F6B092] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke uppercase text-[5rem] -mb-[3.5rem]'>through</motion.p>
+            className='font-benditos text-[#F6B092] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke uppercase text-[5rem] -mb-[3.5rem]'>through</motion.p>
           <motion.p
             viewport={{ once: true }}
             initial={{ opacity: 0, x: -200 }}
             whileInView={{ opacity: 1, x: 0, transition: { duration: .8, delay: .6 } }}
-            className='font-gt text-[#F6B092] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke uppercase text-[5rem] -mb-[3.5rem]'>wholesome</motion.p>
+            className='font-benditos text-[#F6B092] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke uppercase text-[5rem] -mb-[3.5rem]'>wholesome</motion.p>
           <motion.p
             viewport={{ once: true }}
             initial={{ opacity: 0, x: -200 }}
             whileInView={{ opacity: 1, x: 0, transition: { duration: .8, delay: .7 } }}
-            className='font-gt text-[#F6B092] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke uppercase text-[5rem] -mb-[3.5rem]'>balanced</motion.p>
+            className='font-benditos text-[#F6B092] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke uppercase text-[5rem] -mb-[3.5rem]'>balanced</motion.p>
           <motion.p
             viewport={{ once: true }}
             initial={{ opacity: 0, x: -200 }}
             whileInView={{ opacity: 1, x: 0, transition: { duration: .8, delay: .75 } }}
-            className='font-gt text-[#F6B092] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke uppercase text-[5rem]'>food.</motion.p>
+            className='font-benditos text-[#F6B092] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke uppercase text-[5rem]'>food.</motion.p>
         </div>
         <motion.div
           viewport={{ once: true }}

@@ -29,8 +29,8 @@ const About = () => {
     function handleAbout() {
         navigate("/popup")
     }
-    const firstLine = "NAKED";
-    const secondLine = "KITCHEN";
+    const firstLine = "naked";
+    const secondLine = "kitchen";
   
     return (
         <main className="bg-[#dbe7e8]">
@@ -41,16 +41,16 @@ const About = () => {
                     </section>
                    <section preserveAspectRatio="none" className="grid grid-rows-2 w-screen h-[75rem] z-40 px-[.5rem] md:px-[1rem] md:pt-[25rem] bg-fixed flex-1 about">
           <div className="grid md:grid-cols-2 md:-mb-[25rem] md:mb-0 items-end">
-            <div className="md:text-start text-[#F6B092] drop-shadow-[10px_5px_0px_#FDF331] items-end ml-[2.8rem] md:ml-[1rem] font-gt text-[1.2rem] md:text-[5.8rem] uppercase">
+            <div className="md:text-start text-[#F6B092] drop-shadow-[2px_2px_0px_#1D401D] md:drop-shadow-[10px_5px_0px_#1D401D] items-end ml-[8rem] md:ml-[1rem] mt-[13rem] md:mt-[1rem] font-benditos text-[3.2rem] md:text-[5.8rem] uppercase">
               <motion.p
                 initial={{ y: -810, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
+                animate={{ y: 10, opacity: 1 }}
                 transition={{ duration: .75, delay: .8 }}>
                 About</motion.p>
             </div>
             <div></div>
           </div>
-          <div className="font-ent text-[#F6B092] text-center text-[8rem] md:text-[19rem] drop-shadow-[10px_5px_0px_#FDF331] -mt-[15rem] md:-mt-[7rem] flex-col md:flex-row flex">
+          <div className="font-lum text-[#F6B092] text-center text-[8rem] md:text-[19rem] drop-shadow-[10px_5px_0px_#1D401D] -mt-[15rem] md:-mt-[17rem] flex-col md:flex-row flex">
           <div>
           {firstLine.split("").map((char, index) => (
             <span
@@ -67,7 +67,7 @@ const About = () => {
             <span
               key={`second-${index}`}
               className="flip-animation"
-              style={{ animationDelay: `${(firstLine.length + index) * 0.1}s` }}
+              style={{ animationDelay: `${(firstLine.lenbenditosh + index) * 0.1}s` }}
             >
               {char}
             </span>
@@ -171,17 +171,17 @@ const About = () => {
                                     viewport={{ once: true }}
                                     initial={{ opacity: 0, x: 200 }}
                                     whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
-                                    className='font-gt text-[#F6B092] uppercase text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem] -mb-[3rem] md:-mb-[4rem]'>Cooking</motion.p>
+                                    className='font-benditos text-[#F6B092] uppercase text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem] -mb-[3rem] md:-mb-[4rem]'>Cooking</motion.p>
                                 <motion.p
                                     viewport={{ once: true }}
                                     initial={{ opacity: 0, x: 200 }}
                                     whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
-                                    className='font-gt text-[#F6B092] uppercase text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem] -mb-[3rem] md:-mb-[4rem]'>With</motion.p>
+                                    className='font-benditos text-[#F6B092] uppercase text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem] -mb-[3rem] md:-mb-[4rem]'>With</motion.p>
                                 <motion.p
                                     viewport={{ once: true }}
                                     initial={{ opacity: 0, x: 200 }}
                                     whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
-                                    className='font-gt uppercase text-[#F6B092] text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem]'>conscience</motion.p>
+                                    className='font-benditos uppercase text-[#F6B092] text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem]'>conscience</motion.p>
                                 <motion.div
                                     viewport={{ once: true }}
                                     initial={{ opacity: 0 }}

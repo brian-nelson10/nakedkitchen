@@ -36,7 +36,7 @@
     position: absolute;
     background-size: cover;
     filter: brightness(50%);
-    background-image: url('../../assets/images/veggies.jpeg');
+    background-image: url('../../assets/images/veggiesAlt.jpeg');
   }
   .parallax-text {
     text-align: center;

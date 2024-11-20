@@ -51,8 +51,8 @@ const Home = () => {
 
   const scrollAmount = scrollY * .01; // Adjust the multiplier to control scroll speed
 
-  const firstLine = "NAKED";
-  const secondLine = "KITCHEN";
+  const firstLine = "naked";
+  const secondLine = "kitchen";
 
   return (
     <>
@@ -68,16 +68,16 @@ const Home = () => {
        
         <section preserveAspectRatio="none" className="grid grid-rows-2 w-screen h-[75rem] pb-[15rem] z-40 px-[.5rem] md:px-[1rem] md:pt-[25rem] bg-fixed flex-1 grass">
           <div className="grid md:grid-cols-2  md:-mb-[25rem] md:mb-0 items-end">
-            <div className="md:text-start text-[#dbe7e8] items-end ml-[2.8rem] md:ml-[1rem] font-gt mt-[12rem] md:mt-0 text-[1.2rem] md:text-[2.8rem] uppercase">
+            <div className="md:text-start text-[#dbe7e8] items-end ml-[2.8rem] md:ml-[1rem] font-benditos tracking-wide md:tracking-widest mt-[12rem] md:mt-0 text-[1.2rem] md:text-[2.8rem] uppercase">
               <motion.p
                 initial={{ y: -810, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
+                animate={{ y: 338, opacity: 1 }}
                 transition={{ duration: .75, delay: .8 }}>
                 "Good Food, Makes Good Neighbors"</motion.p>
             </div>
             <div></div>
           </div>
-          <div className="font-ent text-[#F6B092] -space-y-[4rem] md:space-y-0 text-center text-[8rem] md:text-[19rem] drop-shadow-[10px_5px_0px_#FDF331] -mt-[10rem] md:-mt-[7rem] flex-col md:flex-row flex">
+          <div className="font-lum text-[#F6B092] -space-y-[4rem] md:space-y-0 text-center text-[8rem] md:text-[19rem] md:drop-shadow-[10px_5px_0px_#1D401D] drop-shadow-[2px_2px_0px_#1D401D] -mt-[10rem] md:-mt-[7rem] flex-col md:flex-row flex">
           <div>
           {firstLine.split("").map((char, index) => (
             <span
