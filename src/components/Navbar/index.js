@@ -38,7 +38,7 @@ const Navbar = () => {
       controls.start({ opacity: 1, y: 0 });
       setTimeout(() => {
         setIsTransparent(true);
-      }, 2700); // Delay the background color change by 1 second
+      }, 1000); // Delay the background color change by 1 second
     }
   }, [scrolling, controls]);
    function handleHome() {

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 // import Button from "../Button/button";
 const PopUpHero = () => {
     return (
-        <><div className="text-[#47b9c3] items-end font-psych text-[9rem] md:text-[15rem] uppercase -mt-[12rem] md:mt-0">
+        <><div className="text-[#F6B092] items-end font-psych text-[9rem] md:text-[15rem] uppercase -mt-[12rem] md:mt-0">
             <motion.p
                 initial={{ y: -810, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}

@@ -16,10 +16,10 @@ const PopUp = () => {
                     <section className="z-50">
                         <Navbar />
                     </section>
-                    <section className="grid grid-rows-3 w-screen text-center h-[67rem] z-40 px-[2rem] pt-[20rem] -space-y-[10rem] popup">
+                    <section className="grid grid-rows-3 w-screen text-center h-[67rem] z-40 px-[2rem] pt-[20rem] -space-y-[10rem] bg-[#F6B092]">
                         <PopUpHero />
                     </section>
-                    <section className="relative h-fit overflow-hidden bg-transparent popup">
+                    <section className="relative h-fit overflow-hidden bg-transparent bg-[#F6B092]">
                         <div className="-mt-10 mb-[20rem]">
                             <PopUpSubmenu />
                         </div>
