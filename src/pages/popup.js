@@ -23,9 +23,9 @@ const PopUp = () => {
                         <div className="-mt-10 mb-[20rem]">
                             <PopUpSubmenu />
                         </div>
-                        <div>
+                        {/* <div>
                             <Carousel />
-                        </div>
+                        </div> */}
                     </section>
                     <section className="grid h-[20rem] md:h-auto">
                         <div className="border-r-2 border-[#e3b505]">

@@ -15,7 +15,7 @@ import MenuPorch from './pages/porch';
 import ScrollToTop from './components/scrollToTop';
 import PopUpMenu from './pages/popupmenu';
 import { quantum } from 'ldrs';
-import HoveringImageButton from './components/HoveringImageButton';
+// import HoveringImageButton from './components/HoveringImageButton';
 import Bread from './pages/bread';
 // import ScrollTop from './components/ScrollTop';
 
@@ -56,16 +56,16 @@ function App() {
     speed="4.5" 
     color="#F6B092" 
   ></l-quantum>
-  <p className='font-ent text-[#F6B092] text-center text-[3.5rem] tracking-wide md:text-[4rem]'>WAITING</p>
+  <p className='font-benditos text-[#F6B092] text-center text-[3.5rem] tracking-wide md:text-[4rem]'>loading</p>
       </div>
     ) : (
       <div className="main-content">
        <Router basename={process.env.PUBLIC_URL}>
       <ScrollToTop />
       <div className="relative z-50">
-        <div className="absolute top-[3rem] md:top-[5rem] left-2 md:left-12">
+        {/* <div className="absolute top-[3rem] md:top-[5rem] left-2 md:left-12">
           <HoveringImageButton />
-        </div>
+        </div> */}
       </div>
       <Routes>
         <Route

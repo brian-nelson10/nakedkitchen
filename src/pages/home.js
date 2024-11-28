@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { motion } from 'framer-motion';
+import React, { useEffect, useState, useRef } from "react";
+import { motion, useInView } from 'framer-motion';
 import "./home.css";
 import Box from "../components/About";
 // import ImageBox from "../components/ImageBox";
@@ -13,11 +13,16 @@ import Navbar from "../components/Navbar";
 // import Button from "../components/Button/button";
 // import { useNavigate } from "react-router-dom";
 import LazyLoad from "react-lazy-load";
-import HoveringImageButton from "../components/HoveringImageButton";
+// import HoveringImageButton from "../components/HoveringImageButton";
 // import CarouselComponent from "../components/Carousel";
 // import { useMediaQuery } from "react-responsive";
 
-const Home = () => {
+const Home = ({ thirdLine = "medicine" }) => {
+ 
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const isInView1 = useInView(ref1, { once: true });
+  const isInView2 = useInView(ref2, { once: true });
   useEffect(() => {
     // Load the Instagram embed script
     const script = document.createElement('script');
@@ -53,6 +58,7 @@ const Home = () => {
 
   const firstLine = "naked";
   const secondLine = "kitchen";
+  // const thirdLine = "medicine";
 
   return (
     <>
@@ -66,7 +72,7 @@ const Home = () => {
           <Navbar />
         </section>
        
-        <section preserveAspectRatio="none" className="grid grid-rows-2 w-screen h-[75rem] pb-[15rem] z-40 px-[.5rem] md:px-[1rem] md:pt-[25rem] bg-fixed flex-1 grass">
+        <section preserveAspectRatio="none" className="grid grid-rows-2 w-screen h-screen md:h-[75rem] md:pb-[15rem] z-40 px-[.5rem] md:px-[1rem] md:pt-[25rem] bg-fixed flex-1 grass">
           <div className="grid md:grid-cols-2  md:-mb-[25rem] md:mb-0 items-end">
             <div className="md:text-start text-[#dbe7e8] items-end ml-[2.8rem] md:ml-[1rem] font-benditos tracking-wide md:tracking-widest mt-[12rem] md:mt-0 text-[1.2rem] md:text-[2.8rem] uppercase">
               <motion.p
@@ -101,7 +107,83 @@ const Home = () => {
           ))}
         </div>
           </div>
-        </section>
+          </section>
+        
+        <div className="relative flex flex-col items-center justify-center min-h-screen grass">
+      {/* Words "Food Is" */}
+      <div className="absolute top-[50%] -translate-y-1/2 text-center z-10 -mt-[18rem]">
+        <h1 className="font-benditos text-center text-[2rem] md:text-[9rem] text-[#1D401D] mb-[3rem] md:mb-[9rem]">
+          Where Food Is
+        </h1>
+      
+
+      {/* Animated Text */}
+      <div
+        ref={ref1}
+        className="font-lum text-[#F6B092] -space-y-[4rem] md:space-y-0 text-center text-[7.7rem] md:text-[19rem] md:drop-shadow-[10px_5px_0px_#1D401D] drop-shadow-[2px_2px_0px_#1D401D] -mt-[10rem] md:-mt-[27rem] flex-col md:flex-row flex"
+      >
+        <div>
+          {thirdLine.split("").map((char, index) => (
+            <motion.span
+              key={`third-${index}`}
+              className="flip-animation inline-block"
+              initial={{ opacity: 0, y: 20, rotateX: 90 }}
+              animate={
+                isInView1
+                  ? { opacity: 1, y: 0, rotateX: 0 }
+                  : { opacity: 0, y: 20, rotateX: 90 }
+              }
+              transition={{ delay: 1.2 + index * 0.1, duration: 0.3, type: "spring" }}
+            >
+              {char}
+            </motion.span>
+          ))}
+        </div>
+      </div>
+      </div>
+      {/* <div className="relative flex flex-col items-center justify-center mt-[5rem]">
+        <h1 className="font-benditos text-[9rem]">
+          And
+        </h1>
+      </div> */}
+      <div className="relative flex flex-col items-center justify-center mt-[5rem]">
+        {/* Words "Community Is" */}
+        <div className="absolute top-[50%] -translate-y-1/2 text-center z-10">
+          <h1 className="font-benditos text-center text-[2rem] md:text-[9rem] mb-[3rem] md:mb-[9rem] text-[#1D401D]">
+            Community Is
+          </h1>
+        </div>
+
+        {/* Animated Text */}
+        <div
+          ref={ref2}
+          className="font-lum text-[#F6B092] -space-y-[4rem] md:space-y-0 text-center text-[8rem] md:text-[19rem] md:drop-shadow-[10px_5px_0px_#1D401D] drop-shadow-[2px_2px_0px_#1D401D] -mt-[10rem] md:-mt-[7rem] flex-col md:flex-row flex z-50"
+        >
+          <div>
+            {thirdLine.split("").map((char, index) => (
+              <motion.span
+                key={`community-${index}`}
+                className="flip-animation inline-block"
+                initial={{ opacity: 0, y: 20, rotateX: 90 }}
+                animate={
+                  isInView2
+                    ? { opacity: 1, y: 0, rotateX: 0 }
+                    : { opacity: 0, y: 20, rotateX: 90 }
+                }
+                transition={{
+                  delay: 1.5 + index * 0.1, // 1-second initial delay + stagger
+                  duration: 0.4,
+                  type: "spring",
+                }}
+              >
+                {char}
+              </motion.span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+        
         <div className="md:px-[30rem] grass1 shadow-xl max-w-full mx-auto">
           <div className="grass3 py-[5rem]">
             <blockquote
@@ -175,7 +257,7 @@ const Home = () => {
             </blockquote>
           </div>
         </div>
-        <section className="relative h-[428rem] md:h-[420rem] bg-[#dbe7e8] grass">
+        <section className="relative h-[428rem] md:h-[430rem] bg-[#dbe7e8] grass">
 
           <motion.section className="w-screen h-screen absolute inset-0"
             initial={{ y: 20 }}

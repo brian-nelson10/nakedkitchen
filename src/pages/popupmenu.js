@@ -21,16 +21,16 @@ const PopUpMenu = () => {
         <section className="z-50">
           <Navbar />
         </section>
-        <section className="grid grid-rows-3 w-screen text-center h-[67rem] z-40 px-[2rem] pt-[20rem] -space-y-[10rem] bg-[#1D401D]">
+        <section className="grid grid-rows-3 w-screen text-center h-[67rem] z-40 px-[2rem] pt-[20rem] -space-y-[10rem] grass">
           <PopUpHero />
         </section>
-        <section className="relative h-fit overflow-hidden bg-[#1D401D]">
+        <section className="relative h-fit overflow-hidden grass">
           <div className="m-2 md:mx-[18rem] mb-[5rem]">
             <PdfViewer />
           </div>
-          <div>
+          {/* <div>
             <Carousel />
-          </div>
+          </div> */}
         </section>
         <section className="grid h-[20rem] md:h-auto">
           <div className="border-r-2 border-[#e3b505]">
