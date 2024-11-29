@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useRef } from "react";
-import { motion, useInView } from 'framer-motion';
+import React, { useEffect, useState } from "react";
+import { motion } from 'framer-motion';
 import "./home.css";
 import Box from "../components/About";
 // import ImageBox from "../components/ImageBox";
@@ -10,19 +10,15 @@ import Navbar from "../components/Navbar";
 // import myVideo from "../assets/images/veggieVideo.mov"
 // import Marquee1 from "../components/Marquee/marquee1";
 // import TwoColumn from "../components/TwoColumn";
-// import Button from "../components/Button/button";
-// import { useNavigate } from "react-router-dom";
+import Button from "../components/Button/button";
+import { useNavigate } from "react-router-dom";
 import LazyLoad from "react-lazy-load";
 // import HoveringImageButton from "../components/HoveringImageButton";
 // import CarouselComponent from "../components/Carousel";
 // import { useMediaQuery } from "react-responsive";
 
-const Home = ({ thirdLine = "medicine" }) => {
- 
-  const ref1 = useRef(null);
-  const ref2 = useRef(null);
-  const isInView1 = useInView(ref1, { once: true });
-  const isInView2 = useInView(ref2, { once: true });
+const Home = () => {
+
   useEffect(() => {
     // Load the Instagram embed script
     const script = document.createElement('script');
@@ -32,11 +28,11 @@ const Home = ({ thirdLine = "medicine" }) => {
   }, []);
   // const isMobile = useMediaQuery({ maxWidth: 767 }); // Adjust the maxWidth according to your mobile breakpoints
   const [scrollY, setScrollY] = useState(0);
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  // function handleAbout() {
-  //     navigate("/about")
-  // }
+  function handleAbout() {
+      navigate("/about")
+  }
 
   const handleScroll = () => {
     setScrollY(window.scrollY);
@@ -108,82 +104,28 @@ const Home = ({ thirdLine = "medicine" }) => {
         </div>
           </div>
           </section>
-        
-        <div className="relative flex flex-col items-center justify-center min-h-screen grass">
-      {/* Words "Food Is" */}
-      <div className="absolute top-[50%] -translate-y-1/2 text-center z-10 -mt-[18rem]">
-        <h1 className="font-benditos text-center text-[2rem] md:text-[9rem] text-[#1D401D] mb-[3rem] md:mb-[9rem]">
-          Where Food Is
-        </h1>
-      
-
-      {/* Animated Text */}
-      <div
-        ref={ref1}
-        className="font-lum text-[#F6B092] -space-y-[4rem] md:space-y-0 text-center text-[7.7rem] md:text-[19rem] md:drop-shadow-[10px_5px_0px_#1D401D] drop-shadow-[2px_2px_0px_#1D401D] -mt-[10rem] md:-mt-[27rem] flex-col md:flex-row flex"
-      >
-        <div>
-          {thirdLine.split("").map((char, index) => (
-            <motion.span
-              key={`third-${index}`}
-              className="flip-animation inline-block"
-              initial={{ opacity: 0, y: 20, rotateX: 90 }}
-              animate={
-                isInView1
-                  ? { opacity: 1, y: 0, rotateX: 0 }
-                  : { opacity: 0, y: 20, rotateX: 90 }
-              }
-              transition={{ delay: 1.2 + index * 0.1, duration: 0.3, type: "spring" }}
-            >
-              {char}
-            </motion.span>
-          ))}
-        </div>
-      </div>
-      </div>
-      {/* <div className="relative flex flex-col items-center justify-center mt-[5rem]">
-        <h1 className="font-benditos text-[9rem]">
-          And
-        </h1>
+          <section className="relative flex flex-col items-center justify-center py-8 px-4 md:px-8 bg-white text-gray-800 grass">
+      {/* About Us Heading */}
+      {/* <div className="absolute top-0 left-4 md:left-12 text-sm md:text-base uppercase tracking-wider text-gray-600">
+        <h2>About Us</h2>
       </div> */}
-      <div className="relative flex flex-col items-center justify-center mt-[5rem]">
-        {/* Words "Community Is" */}
-        <div className="absolute top-[50%] -translate-y-1/2 text-center z-10">
-          <h1 className="font-benditos text-center text-[2rem] md:text-[9rem] mb-[3rem] md:mb-[9rem] text-[#1D401D]">
-            Community Is
-          </h1>
-        </div>
 
-        {/* Animated Text */}
-        <div
-          ref={ref2}
-          className="font-lum text-[#F6B092] -space-y-[4rem] md:space-y-0 text-center text-[8rem] md:text-[19rem] md:drop-shadow-[10px_5px_0px_#1D401D] drop-shadow-[2px_2px_0px_#1D401D] -mt-[10rem] md:-mt-[7rem] flex-col md:flex-row flex z-50"
-        >
-          <div>
-            {thirdLine.split("").map((char, index) => (
-              <motion.span
-                key={`community-${index}`}
-                className="flip-animation inline-block"
-                initial={{ opacity: 0, y: 20, rotateX: 90 }}
-                animate={
-                  isInView2
-                    ? { opacity: 1, y: 0, rotateX: 0 }
-                    : { opacity: 0, y: 20, rotateX: 90 }
-                }
-                transition={{
-                  delay: 1.5 + index * 0.1, // 1-second initial delay + stagger
-                  duration: 0.4,
-                  type: "spring",
-                }}
-              >
-                {char}
-              </motion.span>
-            ))}
-          </div>
-        </div>
+      {/* Centered Text */}
+      <div className="text-center max-w-4xl px-8 my-[6rem]">
+        <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight">
+        Enjoy the authentic experience of earth-to-table dining in the vibrant Phoenix Arts and Innovation District of historic Springfield. Each bite tells a story of our dedication to local farms, artisans, and businesses, ensuring every dollar you spend fuels our community. Join us in creating a stronger, more sustainable local economy—one delicious meal at a time.
+        </p>
       </div>
-    </div>
-        
+      <div className="text-center max-w-4xl -mt-[2rem]">
+        <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight">
+       "Good Food, Makes Good Neighbors."
+        </p>
+      </div>
+      {/* Read More Button */}
+      <div className="text-center my-[4rem] text-[2rem] md:text-[4.5rem] text-[#1D401D]">
+                                        <Button className="uppercase text-center" children="LEARN MORE" onClick={handleAbout} />
+                                    </div>
+    </section>
         <div className="md:px-[30rem] grass1 shadow-xl max-w-full mx-auto">
           <div className="grass3 py-[5rem]">
             <blockquote

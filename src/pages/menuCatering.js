@@ -6,7 +6,7 @@ import CateringHero from "../components/MenuHero/catering";
 import LunchDinnerNext from "../components/NextMenu/lunchDinner";
 import BreakfastNext from "../components/NextMenu/breakfast";
 import PdfViewerCater from "../components/PDF/catering";
-import Carousel from "../components/Carousel";
+// import Carousel from "../components/Carousel";
 
 const MenuCatering = () => {
 
@@ -35,9 +35,9 @@ const MenuCatering = () => {
                     <div className="m-2 md:mx-[18rem] mb-[5rem]">
                         <PdfViewerCater />
                     </div>
-                    <div>
+                    {/* <div>
                         <Carousel />
-                    </div>
+                    </div> */}
                 </section>
                 <section className="grid grid-cols-2 h-[20rem] md:h-auto">
                     <div className="border-r-2 border-[#e3b505]">
