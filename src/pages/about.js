@@ -50,7 +50,7 @@ const About = () => {
             </div>
             <div></div>
           </div>
-          <div className="font-lum text-[#F6B092] text-center text-[8rem] md:text-[19rem] drop-shadow-[10px_5px_0px_#1D401D] -mt-[15rem] md:-mt-[17rem] flex-col md:flex-row flex">
+          <div className="font-summer text-[#FD3E31] text-center text-[9rem] md:text-[20rem] drop-shadow-[10px_5px_0px_#0B1B69] -mt-[15rem] md:-mt-[17rem] flex-col md:flex-row flex">
           <div>
           {firstLine.split("").map((char, index) => (
             <span

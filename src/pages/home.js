@@ -12,7 +12,7 @@ import Navbar from "../components/Navbar";
 // import TwoColumn from "../components/TwoColumn";
 import Button from "../components/Button/button";
 import { useNavigate } from "react-router-dom";
-import LazyLoad from "react-lazy-load";
+// import LazyLoad from "react-lazy-load";
 // import HoveringImageButton from "../components/HoveringImageButton";
 // import CarouselComponent from "../components/Carousel";
 // import { useMediaQuery } from "react-responsive";
@@ -33,25 +33,6 @@ const Home = () => {
   function handleAbout() {
       navigate("/about")
   }
-
-  const handleScroll = () => {
-    setScrollY(window.scrollY);
-  };
-
-  useEffect(() => {
-    const scrollListener = () => {
-      handleScroll();
-    };
-
-    window.addEventListener('scroll', scrollListener);
-
-    return () => {
-      window.removeEventListener('scroll', scrollListener);
-    };
-  }, []);
-
-  const scrollAmount = scrollY * .01; // Adjust the multiplier to control scroll speed
-
   const firstLine = "naked";
   const secondLine = "kitchen";
   // const thirdLine = "medicine";
@@ -59,15 +40,12 @@ const Home = () => {
   return (
     <>
     <main className="h-screen">
-    
       <div
-        style={{ transform: `translateY(${scrollAmount}px)` }}
         className="w-full min-h-screen"
       >
         <section className="z-50">
           <Navbar />
         </section>
-       
         <section preserveAspectRatio="none" className="grid grid-rows-2 w-screen h-screen md:h-[75rem] md:pb-[15rem] z-40 px-[.5rem] md:px-[1rem] md:pt-[25rem] bg-fixed flex-1 grass">
           <div className="grid md:grid-cols-2  md:-mb-[25rem] md:mb-0 items-end">
             <div className="md:text-start text-[#dbe7e8] items-end ml-[2.8rem] md:ml-[1rem] font-benditos tracking-wide md:tracking-widest mt-[12rem] md:mt-0 text-[1.2rem] md:text-[2.8rem] uppercase">
@@ -79,7 +57,7 @@ const Home = () => {
             </div>
             <div></div>
           </div>
-          <div className="font-lum text-[#F6B092] -space-y-[4rem] md:space-y-0 text-center text-[8rem] md:text-[19rem] md:drop-shadow-[10px_5px_0px_#1D401D] drop-shadow-[2px_2px_0px_#1D401D] -mt-[10rem] md:-mt-[7rem] flex-col md:flex-row flex">
+          <div className="font-summer text-[#FD3E31] -space-y-[9rem] md:space-y-0 text-center text-[11rem] md:text-[19rem] md:drop-shadow-[10px_5px_0px_#0B1B69] drop-shadow-[2px_2px_0px_#0B1B69] -mt-[10rem] md:-mt-[7rem] flex-col md:flex-row flex">
           <div>
           {firstLine.split("").map((char, index) => (
             <span
@@ -199,7 +177,7 @@ const Home = () => {
             </blockquote>
           </div>
         </div>
-        <section className="relative h-[428rem] md:h-[430rem] bg-[#dbe7e8] grass">
+        <section className="relative h-[428rem] md:h-[480rem] bg-[#dbe7e8] grass">
 
           <motion.section className="w-screen h-screen absolute inset-0"
             initial={{ y: 20 }}
@@ -287,17 +265,13 @@ const Home = () => {
             {/* <hr className="border-black border-b-1 md:mx-[6rem] mx-[1rem] mt-[8rem] md:mt-[8rem] mb-[8rem]" /> */}
 
             <div className="mb-10">
-              <LazyLoad>
                 <BoxTwo />
-              </LazyLoad>
             </div>
             <div className="grass4 h-[24rem] md:h-[80rem]">
 
             </div>
             <div>
-              <LazyLoad>
                 <Footer />
-              </LazyLoad>
             </div>
           </motion.section>
         </section>
