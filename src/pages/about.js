@@ -41,13 +41,13 @@ const About = () => {
                     </section>
                    <section preserveAspectRatio="none" className="grid grid-rows-2 w-screen h-[75rem] z-40 px-[.5rem] md:px-[1rem] md:pt-[25rem] bg-fixed flex-1 about">
           <div className="grid md:grid-cols-2 md:-mb-[25rem] md:mb-0 items-end">
-            <div className="md:text-start text-[#F6B092] drop-shadow-[2px_2px_0px_#1D401D] md:drop-shadow-[10px_5px_0px_#1D401D] items-end ml-[8rem] md:ml-[1rem] mt-[13rem] md:mt-[1rem] font-benditos text-[3.2rem] md:text-[5.8rem] uppercase">
+            {/* <div className="md:text-start text-[#F6B092] drop-shadow-[2px_2px_0px_#1D401D] md:drop-shadow-[10px_5px_0px_#1D401D] items-end ml-[8rem] md:ml-[1rem] mt-[13rem] md:mt-[1rem] font-benditos text-[3.2rem] md:text-[5.8rem] uppercase">
               <motion.p
                 initial={{ y: -810, opacity: 0 }}
                 animate={{ y: 10, opacity: 1 }}
                 transition={{ duration: .75, delay: .8 }}>
                 About</motion.p>
-            </div>
+            </div> */}
             <div></div>
           </div>
           <div className="font-summer text-[#FD3E31] text-center text-[9rem] md:text-[20rem] drop-shadow-[10px_5px_0px_#0B1B69] -mt-[15rem] md:-mt-[17rem] flex-col md:flex-row flex">
