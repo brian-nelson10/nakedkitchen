@@ -35,8 +35,6 @@ const Home = () => {
   }
   const firstLine = "naked";
   const secondLine = "kitchen";
-  // const thirdLine = "medicine";
-
   return (
     <>
     <main className="h-screen">
@@ -50,7 +48,7 @@ const Home = () => {
           <div className="grid md:grid-cols-2  md:-mb-[25rem] md:mb-0 items-end">
             <div className="md:text-start text-[#dbe7e8] items-end ml-[2.8rem] md:ml-[1rem] font-benditos tracking-wide md:tracking-widest mt-[12rem] md:mt-0 text-[1.2rem] md:text-[2.8rem] uppercase">
               <motion.p
-                initial={{ y: -810, opacity: 0 }}
+                initial={{ y: 338, opacity: 0 }}
                 animate={{ y: 338, opacity: 1 }}
                 transition={{ duration: .75, delay: .8 }}>
                 "Good Food, Makes Good Neighbors"</motion.p>
@@ -63,7 +61,7 @@ const Home = () => {
             <span
               key={`first-${index}`}
               className="flip-animation"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              style={{ animationDelay: `${index * .3}s` }}
             >
               {char}
             </span>
@@ -74,7 +72,7 @@ const Home = () => {
             <span
               key={`second-${index}`}
               className="flip-animation"
-              style={{ animationDelay: `${(firstLine.length + index) * 0.1}s` }}
+              style={{ animationDelay: `${(firstLine.length + index) * 0.2}s` }}
             >
               {char}
             </span>
