@@ -35,7 +35,7 @@ function App() {
     const timeoutId = setTimeout(() => {
       setIsLoading(false);
       window.removeEventListener('load', handlePageLoad); // Remove event listener if the timeout triggers
-    }, 3000);
+    }, 4000);
 
     // Cleanup event listener and timeout on component unmount
     return () => {
