@@ -89,7 +89,7 @@ const Home = () => {
       {/* Centered Text */}
       <div className="text-center max-w-4xl px-8 my-[6rem]">
         <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight">
-        Enjoy the authentic experience of earth-to-table dining in the vibrant Phoenix Arts and Innovation District of historic Springfield. Each bite tells a story of our dedication to local farms, artisans, and businesses, ensuring every dollar you spend fuels our community. Join us in creating a stronger, more sustainable local economy—one delicious meal at a time.
+        Born from the two beliefs that food is medicine and community is medicine. Our mission also goes far beyond serving great food. We are a local, family-owned restaurant deeply rooted in the community. Naked Kitchen is owned by Alexandra and Brian, along with their three children, Eleanor, Penny, and Clementine, who inspire our commitment to creating a better future. We aim to foster a culture of respect, teamwork, and sustainability, both within our team and in our broader community.
         </p>
       </div>
       <div className="text-center max-w-4xl -mt-[2rem]">

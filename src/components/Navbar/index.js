@@ -48,7 +48,7 @@ const Navbar = () => {
     <AnimatePresence mode="wait">
     <motion.nav
         style={{
-            backgroundColor: isTransparent ? "transparent" : "#F6B092",
+            backgroundColor: isTransparent ? "transparent" : "#FD3E31",
          
             className: isTransparent ? "aa" : "ab"
         }}
