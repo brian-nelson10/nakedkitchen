@@ -30,8 +30,8 @@ const Home = () => {
   const [scrollY, setScrollY] = useState(0);
   const navigate = useNavigate();
 
-  function handleAbout() {
-      navigate("/about")
+  function handleContact() {
+      navigate("/contact")
   }
   const firstLine = "naked";
   const secondLine = "kitchen";
@@ -99,7 +99,7 @@ const Home = () => {
       </div>
       {/* Read More Button */}
       <div className="text-center my-[4rem] text-[2rem] md:text-[4.5rem] text-[#1D401D]">
-                                        <Button className="uppercase text-center" children="LEARN MORE" onClick={handleAbout} />
+                                        <Button className="uppercase text-center" children="CONTACT US" onClick={handleContact} />
                                     </div>
     </section>
         <div className="md:px-[30rem] grass1 shadow-xl max-w-full mx-auto">

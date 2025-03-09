@@ -150,7 +150,9 @@ import photo5 from '../../assets/images/gnocchi.png';
 import photo6 from '../../assets/images/ceviche.png';
 import photo7 from '../../assets/images/chipped.png';
 import photo8 from '../../assets/images/hoisinPnutTaco.png';
-import photo9 from '../../assets/images/porkBelly-min.png'
+import photo9 from '../../assets/images/porkBelly-min.png';
+import photo10 from '../../assets/images/riceandBeans.jpeg';
+import photo11 from '../../assets/images/onigiri2.png';
 
 // import './Carousel.css'; // Import your custom Tailwind CSS styles
 
@@ -166,7 +168,9 @@ const images = [
   `${photo6}`,
   `${photo7}`,
   `${photo8}`,
-  `${photo9}`
+  `${photo9}`,
+  `${photo10}`,
+  `${photo11}`
 ];
 const Box = () => {
   return (
