@@ -171,17 +171,17 @@ const About = () => {
                                     viewport={{ once: true }}
                                     initial={{ opacity: 0, x: 200 }}
                                     whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
-                                    className='font-benditos text-[#F6B092] uppercase text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem] -mb-[3rem] md:-mb-[4rem]'>Cooking</motion.p>
+                                    className='font-benditos text-[#F6B092] uppercase text-[5rem] md:text-[8rem] -mb-[3rem] md:-mb-[4rem]'>Cooking</motion.p>
                                 <motion.p
                                     viewport={{ once: true }}
                                     initial={{ opacity: 0, x: 200 }}
                                     whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
-                                    className='font-benditos text-[#F6B092] uppercase text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem] -mb-[3rem] md:-mb-[4rem]'>With</motion.p>
+                                    className='font-benditos text-[#F6B092] uppercase text-[5rem] md:text-[8rem] -mb-[3rem] md:-mb-[4rem]'>With</motion.p>
                                 <motion.p
                                     viewport={{ once: true }}
                                     initial={{ opacity: 0, x: 200 }}
                                     whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
-                                    className='font-benditos uppercase text-[#F6B092] text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem]'>conscience</motion.p>
+                                    className='font-benditos uppercase text-[#F6B092] text-[5rem] md:text-[8rem]'>conscience</motion.p>
                                 <motion.div
                                     viewport={{ once: true }}
                                     initial={{ opacity: 0 }}

@@ -53,10 +53,10 @@ function App() {
         {/* You can use a spinner or any loading animation here */}
         <l-quantum
     size="245"
-    speed="4.5" 
+    speed="3.5" 
     color="#F6B092" 
   ></l-quantum>
-  <p className='font-benditos text-[#F6B092] text-center text-[3.5rem] tracking-wide md:text-[4rem]'>loading</p>
+  <p className='font-benditos text-[#F6B092] text-center text-[3.5rem] tracking-wide md:text-[4rem]'>loading duuude</p>
       </div>
     ) : (
       <div className="main-content">
