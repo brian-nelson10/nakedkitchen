@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const LunchDinnerNext = () => {
     const navigate = useNavigate();
     function handleLunchDinner() {
-        navigate("/lunch&dinner");
+        navigate("/lunch");
     };
     return (
         <>

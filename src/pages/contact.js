@@ -7,7 +7,6 @@ import LunchDinnerNext from "../components/NextMenu/lunchDinner";
 import BreakfastNext from "../components/NextMenu/breakfast";
 import ContactHero from "../components/MenuHero/contact";
 const Contact = () => {
-
     return (
         <main className="bg-[#dbe7e8]">
             <div className="h-[100%] w-[100%] overflow-hidden">

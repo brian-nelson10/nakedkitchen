@@ -16,9 +16,13 @@ import { useNavigate } from "react-router-dom";
 // import HoveringImageButton from "../components/HoveringImageButton";
 // import CarouselComponent from "../components/Carousel";
 // import { useMediaQuery } from "react-responsive";
+import photo1 from "../assets/images/liberty.png";
+
+const images = [
+  `${photo1}`,
+]
 
 const Home = () => {
-
   useEffect(() => {
     // Load the Instagram embed script
     const script = document.createElement('script');
@@ -87,6 +91,16 @@ const Home = () => {
       </div> */}
 
       {/* Centered Text */}
+      <div className="">
+      {images.map((image, index) => (
+        <img
+          key={index}
+          src={image}
+          alt={`Image ${index + 1}`}
+          className="md:p-3 md:m-3 sm:h-auto"
+        />
+      ))}
+      </div>
       <div className="text-center max-w-4xl px-8 my-[6rem]">
         <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight">
         Born from the two beliefs that food is medicine and community is medicine. Our mission also goes far beyond serving great food. We are a local, family-owned restaurant deeply rooted in the community. Naked Kitchen is owned by Alexandra and Brian, along with their three children, Eleanor, Penny, and Clementine, who inspire our commitment to creating a better future. We aim to foster a culture of respect, teamwork, and sustainability, both within our team and in our broader community.
@@ -175,8 +189,7 @@ const Home = () => {
             </blockquote>
           </div>
         </div>
-        <section className="relative h-[428rem] md:h-[480rem] bg-[#dbe7e8] grass">
-
+        <section className="relative h-[440rem] md:h-[480rem] bg-[#dbe7e8] grass">
           <motion.section className="w-screen h-screen absolute inset-0"
             initial={{ y: 20 }}
             whileInView={{ y: '10%' }}
@@ -184,9 +197,7 @@ const Home = () => {
           >
             <div className="mb-[6rem] card col col-auto splitContent container px-[1rem] md:px-[4rem] md:flex md:flex-col">
               <div className="">
-
                 <Box />
-
               </div>
               {/* <div className="col col-auto md:mx-[4rem] relative" id="dividerWrap">
                                 <div className="contentDivider ">
@@ -261,12 +272,10 @@ const Home = () => {
                             </div>
                         </div> */}
             {/* <hr className="border-black border-b-1 md:mx-[6rem] mx-[1rem] mt-[8rem] md:mt-[8rem] mb-[8rem]" /> */}
-
-            <div className="mb-10">
+            <div className="grass">
                 <BoxTwo />
             </div>
             <div className="grass4 h-[24rem] md:h-[80rem]">
-
             </div>
             <div>
                 <Footer />

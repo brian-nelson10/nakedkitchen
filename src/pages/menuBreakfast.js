@@ -4,9 +4,9 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 // import Button from "../components/Button/button";
 import BreakfastHero from "../components/MenuHero/breakfast";
-import BreakfastSubmenu from "../components/Submenu/breakfast";
 import LunchDinnerNext from "../components/NextMenu/lunchDinner";
 import DrinksNext from "../components/NextMenu/drinks";
+import PdfViewerBreakfast from "../components/PDF/breakfast";
 
 const MenuBreakfast = () => {
 
@@ -20,9 +20,9 @@ const MenuBreakfast = () => {
                     <section className="grid grid-rows-3 w-screen text-center h-[67rem] z-40 px-[2rem] pt-[20rem] bg-fixed -space-y-[10rem] grass">
                         <BreakfastHero />
                     </section>
-                    <section className="relative h-fit overflow-hidden bg-[#020202]">
-                        <div className="-mt-10 mb-[20rem]">
-                            <BreakfastSubmenu />
+                    <section className="relative h-fit overflow-hidden grass">
+                        <div className="mt-2 ml-[3rem] md:mx-[45rem] mb-[5rem]">
+                            <PdfViewerBreakfast />
                         </div>
                     </section>
                     <section className="grid grid-cols-2 h-[20rem] md:h-auto">

@@ -6,15 +6,9 @@ import Navbar from "../components/Navbar";
 // import Button from "../components/Button/button";
 import CateringNext from "../components/NextMenu/catering";
 import PopUpHero from "../components/MenuHero/popup";
-import PopUpSubmenu from "../components/Submenu/popup";
-import Carousel from "../components/Carousel";
-
 // import PDF from "../assets/images/popupMenu2.0.pdf"
-
-
 const PopUpMenu = () => {
   //   const pdfPath = "../assets/images/popupMenu2.0.pdf";
-
   return (
     <main className="">
       <div className="scroll h-[100%] w-[100%] overflow-hidden">

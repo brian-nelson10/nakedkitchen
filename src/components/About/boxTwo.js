@@ -9,10 +9,10 @@ import Marquee from "../Marquee";
 const BoxTwo = () => {
     const navigate = useNavigate();
     function handleBreakfast() {
-        navigate("/popup");
+        navigate("/breakfast");
     };
     function handleLunchDinner() {
-        navigate("/popup");
+        navigate("/lunch");
     };
     function handleDrinks() {
         navigate("/popup");

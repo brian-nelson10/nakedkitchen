@@ -11,17 +11,15 @@ import MenuCatering from './pages/menuCatering';
 import NotFound from './pages/NotFound';
 import Contact from './pages/contact';
 import Merch from './pages/merch';
-import MenuPorch from './pages/porch';
 import ScrollToTop from './components/scrollToTop';
 import PopUpMenu from './pages/popupmenu';
 import { quantum } from 'ldrs';
 // import HoveringImageButton from './components/HoveringImageButton';
 import Bread from './pages/bread';
+import Gallery from './pages/gallery';
 // import ScrollTop from './components/ScrollTop';
-
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-
   useEffect(() => {
     const handlePageLoad = () => {
       setIsLoading(false);
@@ -36,16 +34,13 @@ function App() {
       setIsLoading(false);
       window.removeEventListener('load', handlePageLoad); // Remove event listener if the timeout triggers
     }, 4000);
-
     // Cleanup event listener and timeout on component unmount
     return () => {
       window.removeEventListener('load', handlePageLoad);
       clearTimeout(timeoutId);
     };
   }, []);
-
   quantum.register()
-  
   return (
     <div>
     {isLoading ? (
@@ -89,7 +84,7 @@ function App() {
           element={<MenuBreakfast />}
         />
         <Route
-          path='/lunch&dinner'
+          path='/lunch'
           element={<MenuLunchDinner />}
         />
         <Route
@@ -117,10 +112,6 @@ function App() {
             element={<Merch />}
             />
             <Route
-            path='/porchfest'
-            element={<MenuPorch />}
-            />
-            <Route
             path='/popup'
             element={<PopUpMenu />}
             />
@@ -128,6 +119,10 @@ function App() {
             path='/popupmenu'
             element={<PopUpMenu />}
             />
+            <Route
+            path='/gallery'
+            element={<Gallery />}
+              />
             <Route
                     path="*"
                     element={<NotFound />}
