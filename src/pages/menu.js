@@ -13,7 +13,7 @@ const columns = [
   {
     header: 'LUNCH & DINNER',
     image: 'menu1',
-    link: "/lunch&dinner"
+    link: "/lunch"
   },
   {
     header: 'DRINKS',

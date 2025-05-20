@@ -12,7 +12,7 @@ import Navbar from "../components/Navbar";
 // import TwoColumn from "../components/TwoColumn";
 import Button from "../components/Button/button";
 import { useNavigate } from "react-router-dom";
-// import LazyLoad from "react-lazy-load";
+import LazyLoad from "react-lazy-load";
 // import HoveringImageButton from "../components/HoveringImageButton";
 // import CarouselComponent from "../components/Carousel";
 // import { useMediaQuery } from "react-responsive";
@@ -91,6 +91,7 @@ const Home = () => {
       </div> */}
 
       {/* Centered Text */}
+      <LazyLoad>
       <div className="">
       {images.map((image, index) => (
         <img
@@ -101,6 +102,7 @@ const Home = () => {
         />
       ))}
       </div>
+      </LazyLoad>
       <div className="text-center max-w-4xl px-8 my-[6rem]">
         <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight">
         Born from the two beliefs that food is medicine and community is medicine. Our mission also goes far beyond serving great food. We are a local, family-owned restaurant deeply rooted in the community. Naked Kitchen is owned by Alexandra and Brian, along with their three children, Eleanor, Penny, and Clementine, who inspire our commitment to creating a better future. We aim to foster a culture of respect, teamwork, and sustainability, both within our team and in our broader community.
