@@ -37,9 +37,8 @@ export default function Gallery() {
                     {menuItems.map(item => (
                         <div
                             key={item.id}
-                            className="bg-white rounded-lg shadow hover:shadow-md cursor-pointer overflow-hidden"
-                            onClick={() => setSelectedItem(item)}
-                        >
+                            className="bg-[#FFB91D] rounded-lg shadow hover:shadow-md cursor-pointer overflow-hidden"
+                            onClick={() => setSelectedItem(item)}>
                             <img src={item.image} alt={item.name} className="w-full h-28 object-cover" />
                             <div className="p-2 text-sm text-center font-medium">{item.name}</div>
                         </div>

@@ -47,14 +47,14 @@ const Menu = () => {
           transition={{ duration: 0.5, delay: index * 0.2 }}
           onClick={() => handleLinkClick(column.link)}
         >
-          <div className={`h-full flex flex-col justify-center items-center text-[#dbe7e8] text-xl ${column.image}`}>
-            <h2 className="mb-10 font-summer uppercase text-[4rem] text ">{column.header}</h2>
+          <div className={`h-full flex flex-col justify-center items-center text-[#FD3E31] text-xl ${column.image}`}>
+            <h2 className="mb-10 font-benditos uppercase text-[4rem] drop-shadow-[3px_3px_0px_#FFB91D] text ">{column.header}</h2>
             {/* Additional content can be added here */}
             <div className="button-background-move-menu hover:cursor-pointer z-50 font-gt" onClick={(e) => {
                 e.stopPropagation(); // Prevent the parent's onClick from firing
                 handleLinkClick(column.link);
               }}>
-            <span className="font-gt uppercase text-[3rem]">open menu</span>
+            <span className="font-gt uppercase text-[#dbe7e8] text-[3rem]">open menu</span>
         </div>
           </div>
         </motion.div>

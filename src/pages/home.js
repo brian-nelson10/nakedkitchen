@@ -59,7 +59,7 @@ const Home = () => {
             </div>
             <div></div>
           </div>
-          <div className="font-summer text-[#FD3E31] -space-y-[9rem] md:space-y-0 text-center text-[11rem] md:text-[19rem] md:drop-shadow-[10px_5px_0px_#0B1B69] drop-shadow-[2px_2px_0px_#0B1B69] -mt-[10rem] md:-mt-[7rem] flex-col md:flex-row flex">
+          <div className="font-summer text-[#FD3E31] -space-y-[9rem] md:space-y-0 text-center text-[11rem] md:text-[19rem] md:drop-shadow-[10px_5px_0px_#FFB91D] drop-shadow-[2px_2px_0px_#FFB91D] -mt-[10rem] md:-mt-[7rem] flex-col md:flex-row flex">
           <div>
           {firstLine.split("").map((char, index) => (
             <span
