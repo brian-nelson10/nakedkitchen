@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import DrinksHero from "../components/MenuHero/drinks";
 import BreakfastNext from "../components/NextMenu/breakfast";
 import LunchDinnerNext from "../components/NextMenu/lunchDinner";
+import PdfViewerCoffee from "../components/PDF/coffee";
 
 const MenuDrinks = () => {
     
@@ -19,11 +20,11 @@ const MenuDrinks = () => {
                     <section className="grid grid-rows-3 w-screen text-center h-[67rem] z-40 px-[2rem] pt-[20rem] bg-fixed -space-y-[10rem] grass">
                         <DrinksHero />
                     </section>
-                    {/* <section className="relative h-fit overflow-hidden bg-[#020202]">
-                        <div className="-mt-10 mb-[20rem]">
-                            
+                    <section className="relative h-fit overflow-hidden grass">
+                        <div className="mt-2 ml-[3rem] md:mx-[45rem] mb-[5rem]">
+                            <PdfViewerCoffee />
                         </div>
-                    </section> */}
+                    </section>
                     <section className="grid grid-cols-2">
                         <div className="border-r-2 border-[#e3b505]">
                             <BreakfastNext />

@@ -9,7 +9,7 @@ const CateringHero = () => {
         navigate("/contact")
     }
     return (
-        <><div className="text-[#dbe7e8] items-end font-benditos text-[5.8rem] md:text-[10rem] uppercase">
+        <><div className="text-[#dbe7e8] mt-[3.5rem] md:mt-0 items-end font-benditos text-[5.8rem] md:text-[10rem] uppercase">
             <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

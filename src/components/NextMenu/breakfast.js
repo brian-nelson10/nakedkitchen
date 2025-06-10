@@ -11,7 +11,7 @@ const BreakfastNext = () => {
     return (
         <>
         <div className="h-full flex flex-col justify-center items-center menu md:p-8" >
-        <div className="text-[#dbe7e8] items-end font-gt text-[2rem] md:text-[8rem] uppercase">
+        <div className="drop-shadow-[3px_3px_0px_#FFB91D] text-[#FD3E31] items-end font-gt text-[2rem] md:text-[8rem] uppercase">
             <motion.p
                 initial={{ y: 310, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}

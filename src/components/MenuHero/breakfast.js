@@ -9,14 +9,14 @@ const BreakfastHero = () => {
         navigate("/contact")
     }
     return (
-        <><div className="text-[#FD3E31] items-end font-benditos text-[5.8rem] md:text-[10rem] uppercase">
+        <><div className="text-[#FD3E31] mt-[2rem] md:mt-0 font-benditos text-[5.5rem] md:text-[10rem] uppercase">
             <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: .5, delay: .2 }}
-                className=" drop-shadow-[4px_4px_0px_#FFB91D]">
+                className="drop-shadow-[4px_4px_0px_#FFB91D]">
                 BREAKFAST</motion.p>
-        </div><div className="font-summer text-[8rem] text-[#47b9c3]">
+        </div><div className="font-summer text-[4rem] md:text-[8rem] text-[#47b9c3]">
                 <motion.p
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}

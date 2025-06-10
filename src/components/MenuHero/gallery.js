@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const GalleryHero = () => {
     return (
-        <><div className="text-[#FD3E31] items-end font-benditos text-[9rem] md:text-[15rem] uppercase">
+        <><div className="text-[#FD3E31] mt-[3.5rem] md:mt-0 items-end font-benditos text-[9rem] md:text-[15rem] uppercase">
             <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
