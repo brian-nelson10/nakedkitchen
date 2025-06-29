@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { delay, motion, useAnimation, useInView } from 'framer-motion';
+import { motion, useAnimation, useInView } from 'framer-motion';
 import "./home.css";
 import Box from "../components/About";
 // import ImageBox from "../components/ImageBox";
@@ -12,7 +12,7 @@ import Navbar from "../components/Navbar";
 // import TwoColumn from "../components/TwoColumn";
 import Button from "../components/Button/button";
 import { useNavigate } from "react-router-dom";
-import LazyLoad from "react-lazy-load";
+// import LazyLoad from "react-lazy-load";
 // import HoveringImageButton from "../components/HoveringImageButton";
 // import CarouselComponent from "../components/Carousel";
 // import { useMediaQuery } from "react-responsive";
