@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { motion } from 'framer-motion';
+import React, { useEffect, useState, useRef } from "react";
+import { delay, motion, useAnimation, useInView } from 'framer-motion';
 import "./home.css";
 import Box from "../components/About";
 // import ImageBox from "../components/ImageBox";
@@ -18,11 +18,45 @@ import LazyLoad from "react-lazy-load";
 // import { useMediaQuery } from "react-responsive";
 import photo1 from "../assets/images/liberty.png";
 
+
 const images = [
   `${photo1}`,
 ]
 
 const Home = () => {
+  // Image animation
+  const imgControls = useAnimation();
+  const imgRef = useRef(null);
+  const imgInView = useInView(imgRef, { once: true });
+
+  // Paragraph animation
+  const textControls = useAnimation();
+  const textRef = useRef(null);
+  const textInView = useInView(textRef, { once: true });
+
+  useEffect(() => {
+    if (imgInView) imgControls.start("visible");
+    if (textInView) textControls.start("visible");
+  }, [imgInView, textInView, imgControls, textControls]);
+
+
+  const variants = {
+    hidden: {
+      opacity: 0,
+      y: 40,
+      scale: 0.95,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        delay: .9,
+        duration: 1,
+        ease: "easeOut",
+      },
+    },
+  };
   useEffect(() => {
     // Load the Instagram embed script
     const script = document.createElement('script');
@@ -59,7 +93,7 @@ const Home = () => {
             </div>
             <div></div>
           </div>
-          <div className="font-summer text-[#FD3E31] -space-y-[9rem] md:space-y-0 text-center text-[11rem] md:text-[19rem] md:drop-shadow-[10px_5px_0px_#FFB91D] drop-shadow-[2px_2px_0px_#FFB91D] -mt-[10rem] md:-mt-[7rem] flex-col md:flex-row flex">
+          <div className="font-summer -space-y-[9rem] md:space-y-0 text-center text-[11rem] md:text-[19rem] md:drop-shadow-[10px_5px_0px_#FFB91D] drop-shadow-[2px_2px_0px_#FFB91D] text-[#FD3E31] -mt-[10rem] md:-mt-[7rem] flex-col md:flex-row flex">
           <div>
           {firstLine.split("").map((char, index) => (
             <span
@@ -84,15 +118,13 @@ const Home = () => {
         </div>
           </div>
           </section>
-          <section className="relative flex flex-col items-center justify-center py-8 px-4 md:px-8 bg-white text-gray-800 grass">
-      {/* About Us Heading */}
-      {/* <div className="absolute top-0 left-4 md:left-12 text-sm md:text-base uppercase tracking-wider text-gray-600">
-        <h2>About Us</h2>
-      </div> */}
-
-      {/* Centered Text */}
-      <LazyLoad>
-      <div className="">
+          <section className="relative flex flex-col items-center justify-center py-8 px-4 md:px-8 bg-white text-gray-800 grass">    
+      <motion.div 
+      ref={imgRef}
+      initial="hidden"
+      animate={imgControls}
+      variants={variants}
+      className="overflow-hidden mb-8">
       {images.map((image, index) => (
         <img
           key={index}
@@ -101,20 +133,26 @@ const Home = () => {
           className="md:p-3 md:m-3 sm:h-auto"
         />
       ))}
-      </div>
-      </LazyLoad>
+      </motion.div>
+      
       <div className="text-center max-w-4xl px-8 my-[6rem]">
         <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight">
         Born from the two beliefs that food is medicine and community is medicine.</p>
-        <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight mt-8">We serve western classics transformed with asian ingredients. A fresh, new perspective of asian american food. </p>
-         <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight mt-8">At Naked Kitchen, we use food to tell stories, honor local farmers, and create space for people to slow down and engage. It’s not just about what’s on the plate, but who you’re sharing it with and where it came from. We see our kitchen as a gathering place, a catalyst for conversation, and a way to strengthen the fabric of our neighborhood. That’s the bigger vision — food as a connector, a healer, and a way to build something lasting.
+        <p className="font-benditos text-[1.5rem] md:text-[2.5rem] leading-tight mt-8">We serve western classics transformed with asian ingredients. Asian American food, reinvented with edge, soul, and streetwise creativity. </p>
+         <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight mt-8">At Naked Kitchen, we use food to tell stories, honor local farmers, and create space for people to slow down and engage. It’s not just about what’s on the plate, but who you’re sharing it with and where it came from. 
           <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight mt-8">Naked Kitchen is owned by Alexandra and Brian, along with their three children, Eleanor, Penny, and Clementine, who inspire our commitment to creating a better sutainable future.</p>
         </p>
       </div>
       <div className="text-center max-w-4xl -mt-[2rem]">
-        <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight">
-       "Good Food, Makes Good Neighbors."
-        </p>
+        <motion.p
+  ref={textRef}
+  initial="hidden"
+  animate={textControls}
+  variants={variants}
+  className="font-benditos text-[1.5rem] md:text-[3rem] drop-shadow-[2px_2px_0px_#FFB91D] text-[#FD3E31] leading-tight text-center"
+>
+  "Good Food, Makes Good Neighbors."
+</motion.p>
       </div>
       {/* Read More Button */}
       <div className="text-center my-[4rem] text-[2rem] md:text-[4.5rem] text-[#1D401D]">
@@ -204,79 +242,10 @@ const Home = () => {
               <div className="">
                 <Box />
               </div>
-              {/* <div className="col col-auto md:mx-[4rem] relative" id="dividerWrap">
-                                <div className="contentDivider ">
-                                    <div className="dividedText text-[#1b3d38]"><strong>NAKED</strong></div>
-                                </div>
-                            </div>
-                            <div className="mt-[4rem] md:col-span-6">
-                                <LazyLoad>
-                                    <ImageBox />
-                                </LazyLoad>
-                            </div> */}
             </div>
             <div>
             </div>
             <hr className="border-black border-b-1 md:mx-[6rem] mx-[1rem] mb-[8rem]" />
-            {/* <div className="-mt-10"><Marquee1 /></div>
-                        <div className="grid md:grid-cols-3 mt-[1rem] mb-[6rem] card col col-auto splitContent container px-[1rem] md:px-[4rem] flex flex-col">
-                            <div className="md:w-[45rem] md:h-[57rem] wborder border-black">
-                                <motion.video
-                                    viewport={{ once: true }}
-                                    autoPlay={!isMobile} // Disable autoPlay for mobile
-                                    loop
-                                    muted
-                                    initial={{ opacity: 0, x: -200 }}
-                                    whileInView={{ opacity: 1, x: 0, transition: { duration: 0.8, delay: 0.2 } }}
-                                    className="md:w-[45rem] md:h-[57rem] w-[22rem] h-[30rem]"
-                                >
-                                    <source src={myVideo} type="video/mp4" />
-                                </motion.video>
-                            </div>
-                            <div className="col col-auto md:mx-[4rem] relative" id="dividerWrap2">
-                                <div className="contentDivider">
-                                    <div className="dividedText text-[#1b3d38]"><strong>NAKED KITCHEN</strong></div>
-                                </div>
-                            </div>
-                            <div className="mt-[3rem] w-full md:w-1/2 -p-1 items-center">
-                                <motion.p
-                                    viewport={{ once: true }}
-                                    initial={{ opacity: 0, x: 200 }}
-                                    whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
-                                    className='font-gt text-[#008080] uppercase text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem] -mb-[3rem] md:-mb-[4rem]'>Cooking</motion.p>
-                                <motion.p
-                                    viewport={{ once: true }}
-                                    initial={{ opacity: 0, x: 200 }}
-                                    whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
-                                    className='font-gt text-[#008080] uppercase text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem] -mb-[3rem] md:-mb-[4rem]'>With</motion.p>
-                                <motion.p
-                                    viewport={{ once: true }}
-                                    initial={{ opacity: 0, x: 200 }}
-                                    whileInView={{ opacity: 1, x: 0, transition: { duration: .8 } }}
-                                    className='font-gt uppercase text-[#008080] text-[5rem] drop-shadow-[6px_6px_0px_#e3b505] md:drop-shadow-[4px_4px_0px_#e3b505] stroke md:text-[8rem]'>conscience</motion.p>
-                                <motion.div
-                                    viewport={{ once: true }}
-                                    initial={{ opacity: 0 }}
-                                    whileInView={{ opacity: 1, transition: { duration: 1, delay: .2 } }}
-                                    className="text-lg border-2 border-black p-6 m-4 md:w-[32rem] h-[30rem] font-poppins">
-                                    <motion.p
-                                        viewport={{ once: true }}
-                                        initial={{ opacity: 0 }}
-                                        whileInView={{ opacity: 1, transition: { duration: 1, delay: .4 } }}>
-                                        Alongside a warm, inviting and social
-                                        atmosphere our guests will enjoy comforting, healthy, and delicious scratch food from a
-                                        menu of traditional and new favorites done in a nourishing health-conscience manner. Taking
-                                        ingredients from around the world and accessing a “food is medicine” mentality, we
-                                        have created a vision to deliver a truly unique experience for our community. “Cooking
-                                        with Conscience” is the forefront of our brand’s standard.
-                                    </motion.p>
-                                    <div className="text-center my-[4rem] text-[2rem] md:text-[4.5rem] text-[#1b3d38]">
-                                        <Button className="uppercase text-center" children="LEARN MORE" onClick={handleAbout} />
-                                    </div>
-                                </motion.div>
-                            </div>
-                        </div> */}
-            {/* <hr className="border-black border-b-1 md:mx-[6rem] mx-[1rem] mt-[8rem] md:mt-[8rem] mb-[8rem]" /> */}
             <div className="grass">
                 <BoxTwo />
             </div>
