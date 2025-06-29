@@ -27,7 +27,7 @@ const About = () => {
     const navigate = useNavigate();
 
     function handleAbout() {
-        navigate("/popup")
+        navigate("/menus")
     }
     const firstLine = "naked";
     const secondLine = "kitchen";

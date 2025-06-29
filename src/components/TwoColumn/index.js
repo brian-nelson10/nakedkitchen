@@ -8,7 +8,7 @@ const TwoColumn = () => {
   const navigate = useNavigate();
   
   function handleReserve() {
-    navigate("/about")
+    navigate("/menus")
   }
   return (
     <div className="grid md:grid-cols-2 md:mx-[1rem] -ml-[.5rem] mb-[5rem] justify-items-center">

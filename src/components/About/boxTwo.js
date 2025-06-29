@@ -15,7 +15,7 @@ const BoxTwo = () => {
         navigate("/lunch");
     };
     function handleDrinks() {
-        navigate("/popup");
+        navigate("/drinks");
     };
     return (
         <>

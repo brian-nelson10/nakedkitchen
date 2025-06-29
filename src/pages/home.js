@@ -105,7 +105,10 @@ const Home = () => {
       </LazyLoad>
       <div className="text-center max-w-4xl px-8 my-[6rem]">
         <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight">
-        Born from the two beliefs that food is medicine and community is medicine. Our mission also goes far beyond serving great food. We are a local, family-owned restaurant deeply rooted in the community. Naked Kitchen is owned by Alexandra and Brian, along with their three children, Eleanor, Penny, and Clementine, who inspire our commitment to creating a better future. We aim to foster a culture of respect, teamwork, and sustainability, both within our team and in our broader community.
+        Born from the two beliefs that food is medicine and community is medicine.</p>
+        <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight mt-8">We serve western classics transformed with asian ingredients. A fresh, new perspective of asian american food. </p>
+         <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight mt-8">At Naked Kitchen, we use food to tell stories, honor local farmers, and create space for people to slow down and engage. It’s not just about what’s on the plate, but who you’re sharing it with and where it came from. We see our kitchen as a gathering place, a catalyst for conversation, and a way to strengthen the fabric of our neighborhood. That’s the bigger vision — food as a connector, a healer, and a way to build something lasting.
+          <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight mt-8">Naked Kitchen is owned by Alexandra and Brian, along with their three children, Eleanor, Penny, and Clementine, who inspire our commitment to creating a better sutainable future.</p>
         </p>
       </div>
       <div className="text-center max-w-4xl -mt-[2rem]">
