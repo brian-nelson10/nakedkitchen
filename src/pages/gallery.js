@@ -40,7 +40,7 @@ export default function Gallery() {
                             className="bg-[#FFB91D] rounded-lg shadow hover:shadow-md cursor-pointer overflow-hidden"
                             onClick={() => setSelectedItem(item)}>
                             <img src={item.image} alt={item.name} className="w-full h-28 object-cover" />
-                            <div className="p-2 text-sm text-center font-medium">{item.name}</div>
+                            <div className="p-2 text-sm text-center text-[#F] font-medium">{item.name}</div>
                         </div>
                     ))}
                 </div>
