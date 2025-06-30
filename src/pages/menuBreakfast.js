@@ -21,7 +21,7 @@ const MenuBreakfast = () => {
                         <BreakfastHero />
                     </section>
                     <section className="relative h-fit overflow-hidden grass">
-                        <div className="mt-2 ml-[3rem] md:mx-[45rem] mb-[5rem]">
+                        <div className="mt-[5rem] md:ml-[3rem] md:mx-[38rem] mb-[5rem]">
                             <PdfViewerBreakfast />
                         </div>
                     </section>

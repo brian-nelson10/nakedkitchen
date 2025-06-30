@@ -21,7 +21,7 @@ const MenuLunchDinner = () => {
                         <LunchDinnerHero />
                     </section>
                     <section className="relative h-fit overflow-hidden grass">
-                        <div className="mt-2 md:mx-[25rem] mb-[5rem]">
+                        <div className="mt-[5rem] md:mx-[5rem] mb-[5rem]">
                             <PdfViewerLunch />
                         </div>
                     </section>
