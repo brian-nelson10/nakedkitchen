@@ -112,7 +112,7 @@ function App() {
             element={<Merch />}
             />
             <Route
-            path='/popup'
+            path='/POPUP'
             element={<PopUpMenu />}
             />
             <Route
