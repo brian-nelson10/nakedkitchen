@@ -35,10 +35,10 @@ const MenuCatering = () => {
                     </section> */}
                 <section className="relative h-fit overflow-hidden bg-transparent grass">
                 <div className="m-2 md:mx-[18rem] mb-[5rem]">
-                        <PdfViewerCater2 />
+                        <PdfViewerCater />
                     </div>
                     <div className="m-2 md:mx-[18rem] mb-[5rem]">
-                        <PdfViewerCater />
+                        <PdfViewerCater2 />
                     </div>
                     <div className="mb-[2rem]">
                         <CateringImages />
