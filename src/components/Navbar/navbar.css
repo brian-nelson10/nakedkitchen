@@ -22,6 +22,18 @@
     transition: all 0.3s ease-in-out;
 }
 
+.abc {
+    background-image: linear-gradient(to right, #DE3926, #DE3926 50%, #DE3926 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 18px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
 .aa:hover {
     background-position: 0;
 }
