@@ -17,6 +17,7 @@ import { quantum } from 'ldrs';
 // import HoveringImageButton from './components/HoveringImageButton';
 import Bread from './pages/bread';
 import Gallery from './pages/gallery';
+import OniBoi from './pages/oniboi';
 // import ScrollTop from './components/ScrollTop';
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -122,6 +123,10 @@ function App() {
             <Route
             path='/gallery'
             element={<Gallery />}
+              />
+              <Route
+            path='/ONIBOI'
+            element={<OniBoi />}
               />
             <Route
                     path="*"
