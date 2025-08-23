@@ -37,10 +37,10 @@
   .oni {
     background: url("../assets/images/godzillaBranded.png");
     background-color: black;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     opacity: 1;
     -webkit-background-size: contain;
     -moz-background-size: cover;

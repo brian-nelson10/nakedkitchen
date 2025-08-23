@@ -48,7 +48,7 @@ const OniNavbar = () => {
     <AnimatePresence mode="wait">
     <motion.nav
         style={{
-            backgroundColor: isTransparent ? "transparent" : "#FFB91D",
+            backgroundColor: isTransparent ? "transparent" : "transparent",
          
             className: isTransparent ? "aa" : "ab"
         }}
