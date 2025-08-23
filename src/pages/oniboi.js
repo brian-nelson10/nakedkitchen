@@ -187,7 +187,7 @@ export default function OniBoi() {
               <h3 className="text-[#CFA434] text-3xl md:text-5xl font-bold uppercase font-roboto mb-8 text-center px-4">Our Menu</h3>
               <motion.img
                 style={{ y: yImage }}
-                // src={oniMenu}
+                src={oniMenu}
                 alt="Menu placeholder"
                 className="w-11/12 md:w-2/3 rounded-xl shadow-lg"
                 loading="lazy"

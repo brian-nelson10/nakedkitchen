@@ -37,7 +37,7 @@
   .oni {
     background: url("../assets/images/godzillaBranded.png");
     background-color: black;
-    background-size: cover;
+    background-size: covera;
     background-position: center;
     background-attachment: fixed;
     background-repeat: repeat-x;
@@ -50,7 +50,10 @@
 @media only screen and (max-width: 600px) {
     .oni {
         background-attachment: scroll;
-        background-size: cover;
+        background-size: 120%;
+        background-position-y: -5%;
+        background-position-x: 50%;
+
     }
 }
 
