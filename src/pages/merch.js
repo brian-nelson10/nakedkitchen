@@ -19,7 +19,7 @@ const Merch = () => {
                     </section>
                     <section className="relative h-fit overflow-hidden bg-[#020202] merch">
                         <div className="text-[#e3b505] font-poppins text-center mt-[4rem] bg-black md:mx-[42rem] py-10 rounded bg-opacity-75">
-                            <p className="mb-2">Shipping Included!</p>
+                            <p className="mb-2">Shipping Included! Tax Included!</p>
                             <p className="mb-2">Recieve a FREE ENTREE gift card for every purchase!</p>
                             <p className="mb-2">(Redeemable at our Restaurant Only.)</p>
                             <p className="mb-2">(Once we open of course.)</p>
