@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 // import Button from "../components/Button/button";
 import CateringNext from "../components/NextMenu/catering";
-import PopUpHero from "../components/MenuHero/popup";
+import PopUpHero from "../components/MenuHero/takeout";
 import PopUpSubmenu from "../components/Submenu/popup";
 import Carousel from "../components/Carousel";
 

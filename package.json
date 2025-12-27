@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://www.nakedkitchenjax.com",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@headlessui/react": "^2.2.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

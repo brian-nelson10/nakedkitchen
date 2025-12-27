@@ -5,10 +5,10 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 // import Button from "../components/Button/button";
 import CateringNext from "../components/NextMenu/catering";
-import PopUpHero from "../components/MenuHero/popup";
-// import PDF from "../assets/images/popupMenu2.0.pdf"
-const PopUpMenu = () => {
-  //   const pdfPath = "../assets/images/popupMenu2.0.pdf";
+import PopUpHero from "../components/MenuHero/takeout";
+// import PDF from "../assets/images/Takeout2.0.pdf"
+const Takeout = () => {
+  //   const pdfPath = "../assets/images/Takeout2.0.pdf";
   return (
     <main className="">
       <div className="scroll h-[100%] w-[100%] overflow-hidden">
@@ -40,4 +40,4 @@ const PopUpMenu = () => {
   )
 };
 
-export default PopUpMenu;
+export default Takeout;

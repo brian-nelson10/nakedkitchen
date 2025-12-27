@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from 'framer-motion';
-import Button from "../Button/button";
+import NewButton from "../Button/newbutton";
 import { useNavigate } from "react-router-dom";
 
 const CateringHero = () => {
@@ -28,7 +28,9 @@ const CateringHero = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: .5, delay: .6 }}>
-                    <Button className="" children="CONTACT US" onClick={handleContact}/>
+                    <NewButton onClick={() => navigate("/contact")}>
+                        Contact Us
+                    </NewButton>
                 </motion.p>
             </div></>
     )

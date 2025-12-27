@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import NewButton from '../components/Button/newbutton';
 import "./home.css"
 
 const columns = [
@@ -16,25 +17,24 @@ const columns = [
     link: "/lunch"
   },
   {
-    header: 'COFFEE, ECT',
+    header: 'TAKE OUT',
     image: 'menu2',
-    link: "/drinks"
+    link: "/takeout"
   },
 ];
 
 const Menu = () => {
-    const navigate = useNavigate();
-    const handleLinkClick = (link) => {
-        navigate(link);
-    };
+  const navigate = useNavigate();
+  const handleLinkClick = (link) => {
+    navigate(link);
+  };
   return (
     <div className="flex flex-col h-screen overflow-hidden">
       {columns.map((column, index) => (
         <motion.div
           key={index}
-          className={`flex-1 h-full border-l-2 border-r-2 border-black ${
-            index < columns.length - 1 ? 'border-solid' : ''
-          }`}
+          className={`flex-1 h-full border-l-2 border-r-2 border-b-2 border-black ${index < columns.length - 1 ? 'border-solid' : ''
+            }`}
           style={{
             backgroundImage: `${column.image}`,
             backgroundSize: 'cover',
@@ -50,12 +50,17 @@ const Menu = () => {
           <div className={`h-full flex flex-col justify-center items-center text-[#FD3E31] text-xl ${column.image}`}>
             <h2 className="mb-10 font-benditos uppercase text-[4rem] drop-shadow-[3px_3px_0px_#FFB91D] text ">{column.header}</h2>
             {/* Additional content can be added here */}
-            <div className="button-background-move-menu hover:cursor-pointer z-50 font-gt" onClick={(e) => {
+            {/* <div className="button-background-move-menu hover:cursor-pointer z-50 font-gt" onClick={(e) => {
                 e.stopPropagation(); // Prevent the parent's onClick from firing
                 handleLinkClick(column.link);
               }}>
             <span className="font-gt uppercase text-[#dbe7e8] text-[3rem]">open menu</span>
-        </div>
+        </div> */}
+            <div className="hover:cursor-pointer z-50">
+              <NewButton onClick={() => navigate(column.link)}>
+                Open Menu
+              </NewButton>
+            </div>
           </div>
         </motion.div>
       ))}

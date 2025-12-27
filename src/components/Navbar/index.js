@@ -1,98 +1,124 @@
-import React, { useState, useEffect } from 'react';
-import { motion, useAnimation, AnimatePresence } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
-import logo from "../../assets/images/logo8.png";
-import "./navbar.css";
-const wordVariants = {
-  hovered: {
-    y: [0, -2, 0, 2, 0],
-    transition: { duration: .5, ease: 'easeInOut' }
-  }
-}
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+
+const menuItems = [
+  { label: "Menus", path: "/menus" },
+  { label: "Order", path: "/order" },
+  { label: "Catering", path: "/catering" },
+  { label: "Merch", path: "/merch" },
+  { label: "About Us", path: "/about" },
+  { label: "Contact", path: "/contact" },
+];
+
 const Navbar = () => {
-  const [scrolling, setScrolling] = useState(false);
-  const controls = useAnimation();
-  const [isTransparent, setIsTransparent] = useState(false);
   const navigate = useNavigate();
-  const handleScroll = () => {
-    if (window.scrollY > 315) {
-      setScrolling(true);
-    } else {
-      setScrolling(false);
-    }
-  };
+  const [scrolling, setScrolling] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
+  /* Scroll hide effect */
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-
+    const handleScroll = () => {
+      setScrolling(window.scrollY > 315);
     };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    if (scrolling) {
-      controls.start({ opacity: 0, y: -300 });
-      setIsTransparent(false)
-    } else {
-      controls.start({ opacity: 1, y: 0 });
-      setTimeout(() => {
-        setIsTransparent(true);
-      }, 2000); // Delay the background color change by 1 second
-    }
-  }, [scrolling, controls]);
-   function handleHome() {
+  const handleHome = () => {
+    setMenuOpen(false);
     navigate("/");
-   };
+  };
+
   return (
-    <AnimatePresence mode="wait">
-    <motion.nav
-        style={{
-            backgroundColor: isTransparent ? "transparent" : "#FFB91D",
-         
-            className: isTransparent ? "aa" : "ab"
-        }}
-      className={`fixed top-0 left-0 w-full bg-white p-4 flex items-center justify-between transition-all duration-300 font-benditos ${
-        scrolling ? 'opacity-0' : 'opacity-100'
-      }`}
-      initial={{ opacity: 0, y: -300 }}
-      animate={controls}
-     
-    >
-      <div className="grid grid-cols-3 md:space-x-4 md:pt-2 mt-2 text-2xl md:text-[3rem] w-full flex items-center">
-        <div className=''>
-        <p onClick={handleHome} className={isTransparent ? 'font-summer -mt-6 w-[1rem] md:w-max md:visible text-[2rem] md:text-[6rem] text-[#FD3E31] hover:cursor-pointer md:drop-shadow-[2px_3px_0px_#FFB91D]' : 'font-summer text-[#FD3E31] -mt-3 w-[1rem] md:w-max text-[2rem] md:text-[6rem] hover:cursor-pointer md:drop-shadow-[2px_3px_0px_#FFB91D]'}>naked kitchen</p>
-        </div>
-        <div className='text-start -ml-8 md:ml-8 space-x-12 md:space-x-[13rem] text-xl md:text-[3rem] flex flex-row'>
-          <div className='w-[2rem] h-[2rem] pl-6 md:pl-0 text-center'>
-        <a href="/menus" className={isTransparent ? "md:hover:text-[3.2rem] aa" : "md:hover:text-[5.2rem] ab"}>
-            Menu
-        </a>
-        </div>
-        <div className='w-[2rem] h-[2rem]'>
-        <a href="/catering" className={isTransparent ? "md:hover:text-[3.2rem] aa" : "md:hover:text-[5.2rem] ab"}>
-          Catering
-        </a>
-        </div>
-        <div className='w-[2rem] h-[2rem] z-50'>
-        <a href="/merch" className={isTransparent ? "md:hover:text-[3.2rem] aa" : "md:hover:text-[5.2rem] ab"}>
-          Merch
-        </a>
-        </div>
-        </div>
-        <div className='items-end text-end justify-end flex z-10'>
-        <a href="/about" className="">
-        <img
-        src={logo}
-        alt="Icon"
-        className="w-[3rem] h-[3rem] md:w-[5rem] md:h-[5rem] object-contain items-end text-end justify-end drop-shadow-[5px_4px_3px_rgba(0,0,0)]"
-        />
-        </a>
-      </div>
-      </div>
-    
-    </motion.nav>
-    </AnimatePresence>
+    <>
+      {/* NAV BAR */}
+      <motion.nav
+        initial={{ y: -300, opacity: 0 }}
+        animate={{ y: scrolling ? -300 : 0, opacity: scrolling ? 0 : 1 }}
+        transition={{ duration: 0.4 }}
+        className="fixed top-0 left-0 w-full z-50 bg-[#FFB91D] px-6 py-4 flex items-center justify-between"
+      >
+        {/* HOME */}
+        <button
+          onClick={handleHome}
+          className="font-summer text-[#FD3E31] text-3xl md:text-6xl"
+        >
+          naked kitchen
+        </button>
+
+        {/* HAMBURGER */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="relative w-10 h-10 flex items-center justify-center z-50"
+        >
+          {/* TOP LINE */}
+          <motion.span
+            className="absolute w-8 h-[3px] bg-black"
+            animate={{
+              rotate: menuOpen ? 45 : 0,
+              y: menuOpen ? 0 : -8,
+            }}
+            transition={{ duration: 0.2 }}
+          />
+
+          {/* MIDDLE LINE */}
+          <motion.span
+            className="absolute w-8 h-[3px] bg-black"
+            animate={{
+              opacity: menuOpen ? 0 : 1,
+            }}
+            transition={{ duration: 0.2 }}
+          />
+
+          {/* BOTTOM LINE */}
+          <motion.span
+            className="absolute w-8 h-[3px] bg-black"
+            animate={{
+              rotate: menuOpen ? -45 : 0,
+              y: menuOpen ? 0 : 8,
+            }}
+            transition={{ duration: 0.2 }}
+          />
+        </button>
+      </motion.nav>
+      {/* FULL SCREEN MENU */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-40 bg-black/70 backdrop-blur-lg flex items-center justify-center"
+          >
+            <div className="flex flex-col gap-6 text-center">
+              {menuItems.map((item, i) => (
+                <motion.button
+                  key={item.label}
+                  initial={{ y: 40, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: i * 0.08 }}
+                  onClick={() => {
+                    setMenuOpen(false);
+                    navigate(item.path);
+                  }}
+                  className="
+                    font-benditos
+                    text-4xl md:text-6xl
+                    text-white
+                    transition-colors duration-200
+                    hover:text-[#FFB91D]
+                    active:text-[#FD3E31]
+                  "
+                >
+                  {item.label}
+                </motion.button>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 };
 
