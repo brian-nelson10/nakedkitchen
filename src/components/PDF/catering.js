@@ -1,5 +1,5 @@
 import React from 'react';
-import PDF from "../../assets/images/cateringMenu.png"
+import PDF from "../../assets/images/lunchMenu.png"
 const PdfViewerCater = () => {
   return (
     <div>

@@ -141,6 +141,11 @@ const Home = () => {
                 Order Now
               </NewButton>
             </div>
+            <div className="text-center md:-mt-[4rem] text-[2rem] md:text-[4.5rem] text-[#1D401D]">
+              <NewButton onClick={() => navigate("/cateringform")}>
+                Request Catering
+              </NewButton>
+            </div>
           </section>
           <div className="md:px-[30rem] grass1 shadow-xl max-w-full mx-auto">
             <div className="grass3 py-[5rem]">
