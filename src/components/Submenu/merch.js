@@ -35,7 +35,7 @@ const products = [
 const MerchPage = () => {
 
     return (
-        <div className="merch min-h-screen p-6">
+        <div className="contact min-h-screen p-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
                 {products.map((product) => (
                     <div key={product.id} className="bg-white p-4 rounded-2xl shadow-lg items-center text-center">

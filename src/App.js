@@ -150,13 +150,14 @@ import FamilyMealOrder from './components/Order/familystyleorder';
 import Confirmation from './components/Order/confirmation';
 
 import { quantum } from 'ldrs';
+import CateringForm from './pages/cateringForm';
 
 /* -------------------------------
    Layout wrapper (route-aware)
 -------------------------------- */
 function Layout({ children }) {
   const location = useLocation();
-  const hideOnRoutes = ['/order', '/menus', '/catering', '/family', '/confirmation'];
+  const hideOnRoutes = ['/order', '/menus', '/catering', '/family', '/confirmation', '/cateringform'];
   const hideHoverButton = hideOnRoutes.includes(location.pathname);
 
   return (
@@ -232,18 +233,19 @@ function App() {
                 <Route path="/Takeout" element={<Takeout />} />
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/ONIBOI" element={<OniBoi />} />
+                <Route path="/cateringform" element={<CateringForm />} />
 
                 {/* REGULAR ORDER */}
-                <Route
+                {/* <Route
                   path="/order"
                   element={<Order setConfirmedOrder={setConfirmedOrder} />}
-                />
+                /> */}
 
                 {/* FAMILY MEAL ORDER */}
-                <Route
+                {/* <Route
                   path="/family"
                   element={<FamilyMealOrder setConfirmedOrder={setConfirmedOrder} />}
-                />
+                /> */}
 
                 {/* CONFIRMATION */}
                 <Route

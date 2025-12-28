@@ -8,6 +8,7 @@ import BreakfastNext from "../components/NextMenu/breakfast";
 import PdfViewerCater from "../components/PDF/catering";
 import PdfViewerCater2 from "../components/PDF/cateringTwo";
 import CateringImages from "../components/MenuImages/cateringImages";
+import CateringLanding from "../components/Catering/cateringLanding";
 // import Carousel from "../components/Carousel";
 
 const MenuCatering = () => {
@@ -21,19 +22,8 @@ const MenuCatering = () => {
                 <section className="grid grid-rows-3 w-screen text-center h-[67rem] z-40 px-[2rem] pt-[20rem] bg-fixed -space-y-[10rem] catering">
                     <CateringHero />
                 </section>
-                {/* <section className="relative h-fit bg-[#020202] catering">
-                        <div className="-mt-10 mb-[20rem]">
-                            <LazyLoad>
-                            <CateringSubmenu />
-                            </LazyLoad>
-                        </div>
-                    <div className="-mt-[10rem] mb-10">
-                        <LazyLoad>
-                        <CateringImages/>
-                        </LazyLoad>
-                    </div>
-                    </section> */}
                 <section className="relative h-fit overflow-hidden bg-transparent grass">
+                    <CateringLanding />
                 <div className="m-2 md:mx-[18rem] mb-[5rem]">
                         <PdfViewerCater />
                     </div>
