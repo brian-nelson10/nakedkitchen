@@ -2,63 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-    font-family: "Mentra";
-    src: url("../src/assets/fonts/MENTRA.otf");
-    font-display: swap;
-}
-@font-face {
-    font-family: "Webcomic";
-    src: url("../src/assets/fonts/Webcomic.otf");
-    font-display: swap;
-}
-@font-face {
-    font-family: "Lostar";
-    src: url("../src/assets/fonts/Lostar.ttf");
-    font-display: swap;
-}
-@font-face {
     font-family: "Poppins";
     src: url("../src/assets/fonts/Poppins-Light.ttf");
     font-display: swap;
 }
 @font-face {
-    font-family: "GT Flexa";
-    src: url("../src/assets/fonts/GT-Flexa-Compressed-Bold-Trial.otf");
-    font-display: swap;
-}
-@font-face {
     font-family: "Summer Loving";
     src: url("../src/assets/fonts/summer-loving-solid-regular.otf");
-    font-display: swap;
-}
-@font-face {
-    font-family: "Fifth Grader";
-    src: url("../src/assets/fonts/Fifth-Grader.ttf");
-    font-display: swap;
-}
-@font-face {
-    font-family: "TF Spermo";
-    src: url("../src/assets/fonts/TF\ Spermo.otf");
-    font-display: swap;
-}
-@font-face {
-    font-family: "Psych";
-    src: url("../src/assets/fonts/JMH\ Psychedelic\ CAPS.ttf");
-    font-display: swap;
-}
-@font-face {
-    font-family: "Entuista";
-    src: url("../src/assets/fonts/Entuista\ Regular.ttf");
-    font-display: swap;
-}
-@font-face {
-    font-family: "Fifty";
-    src: url("../src/assets/fonts/56thStreet-Regular.otf");
-    font-display: swap;
-}
-@font-face {
-    font-family: "Afro";
-    src: url("../src/assets/fonts/WTF\ Afroboy.ttf");
     font-display: swap;
 }
 @font-face {
@@ -69,10 +19,5 @@
 @font-face {
     font-family: "Tay Benditos";
     src: url("../src/assets/fonts/TAYBenditos.otf");
-    font-display: swap;
-}
-@font-face {
-    font-family: "Luminaire";
-    src: url("../src/assets/fonts/Luminaire.otf");
     font-display: swap;
 }
