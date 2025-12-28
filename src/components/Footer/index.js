@@ -30,7 +30,7 @@ const Footer = () => {
           {/* First Column */}
           <div className="flex flex-col pt-[4rem] border-r-2 border-[#dbe7e8]">
             <div className='justify-items-start'>
-            <h3 className="text-[5rem] font-gt uppercase mb-2 tracking-widest">Naked Kitchen</h3>
+            <h3 className="text-[5rem] font-benditos uppercase mb-2 tracking-widest">Naked Kitchen</h3>
             {/* <img
               src={logo} 
               alt="Company Logo"
@@ -47,7 +47,7 @@ const Footer = () => {
               className="w-[6rem] h-auto"
             />
             <div className='mt-[1rem]'>
-            <p className='font-bold '>Questions? &nbsp;</p>
+            <p className=' '>Questions? &nbsp;</p>
             <p>brian.nelson@nakedkitchenjax.com</p>
             </div>
           </div>
@@ -55,7 +55,7 @@ const Footer = () => {
           
 
           {/* Second Column */}
-          <div className="grid grid-rows-4 px-4 gap-4 border-r-2 border-[#dbe7e8] font-gt uppercase text-[3rem]">
+          <div className="grid grid-rows-4 px-4 gap-4 border-r-2 border-[#dbe7e8] font-benditos uppercase text-[3rem]">
           <motion.div 
         initial={{opacity: 0, y: 200}}
         whileInView={{opacity: 1, y: 0, transition: {duration: .5, delay: .1}}}
@@ -64,7 +64,7 @@ const Footer = () => {
         <div onClick={handleMenu} className='flip-innerFoot'>
           <div className='flip-frontFoot grid grid-cols-2 mx-4 mt-4'>
         <div>
-        <h2 className="md:md:text-[4.5rem] font-bold text-[#dbe7e8]">MENU</h2>
+        <h2 className="md:md:text-[4.5rem] text-[#dbe7e8]">MENU</h2>
         </div>
         
         <div className="flex justify-end items-center text-end">
@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
         <div className='flip-backFoot bg-black grid grid-cols-2 -mt-16 mx-4'>
           <div>
-        <h2 className="md:md:text-[4.5rem] font-bold">MENU</h2>
+        <h2 className="md:md:text-[4.5rem] ">MENU</h2>
         </div>
         
         <div className="flex justify-end items-center text-end">
@@ -90,7 +90,7 @@ const Footer = () => {
         <div onClick={handleCatering} className='flip-innerFoot'>
           <div className='flip-frontFoot grid grid-cols-2 mx-4 mt-4 p-'>
         <div>
-        <h2 className="md:text-[4.5rem] font-bold text-[#dbe7e8]">Catering</h2>
+        <h2 className="md:text-[4.5rem]  text-[#dbe7e8]">Catering</h2>
         </div>
         
         <div className="flex justify-end items-center text-end">
@@ -99,7 +99,7 @@ const Footer = () => {
         </div>
         <div className='flip-backFoot bg-black grid grid-cols-2 -mt-16 mx-4'>
           <div>
-        <h2 className="md:text-[4.5rem] font-bold">Catering</h2>
+        <h2 className="md:text-[4.5rem] ">Catering</h2>
         </div>
         
         <div className="flex justify-end items-center text-end">
@@ -116,7 +116,7 @@ const Footer = () => {
         <div onClick={handleAbout} className='flip-innerFoot'>
           <div className='flip-frontFoot grid grid-cols-2 mx-4 mt-4 p-'>
         <div>
-        <h2 className="md:text-[4.5rem] font-bold text-[#dbe7e8]">About</h2>
+        <h2 className="md:text-[4.5rem]  text-[#dbe7e8]">About</h2>
         </div>
         
         <div className="flex justify-end items-center text-end">
@@ -125,7 +125,7 @@ const Footer = () => {
         </div>
         <div className='flip-backFoot bg-black grid grid-cols-2 -mt-16 mx-4'>
           <div>
-        <h2 className="md:text-[4.5rem] font-bold">About</h2>
+        <h2 className="md:text-[4.5rem] ">About</h2>
         </div>
         
         <div className="flex justify-end items-center text-end">
@@ -142,7 +142,7 @@ const Footer = () => {
         <div onClick={handleContact} className='flip-innerFoot'>
           <div className='flip-frontFoot grid grid-cols-2 mx-4 mt-4 p-'>
         <div>
-        <h2 className="md:text-[4.5rem] font-bold text-[#dbe7e8]">Contact</h2>
+        <h2 className="md:text-[4.5rem]  text-[#dbe7e8]">Contact</h2>
         </div>
         
         <div className="flex justify-end items-center text-end">
@@ -151,7 +151,7 @@ const Footer = () => {
         </div>
         <div className='flip-backFoot bg-black grid grid-cols-2 -mt-16 mx-4'>
           <div>
-        <h2 className="md:text-[4.5rem] font-bold">Contact</h2>
+        <h2 className="md:text-[4.5rem] ">Contact</h2>
         </div>
         
         <div className="flex justify-end items-center text-end">

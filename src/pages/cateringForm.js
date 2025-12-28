@@ -8,7 +8,7 @@ export default function CateringForm() {
     const navigate = useNavigate();
 
     const [submitted, setSubmitted] = useState(false);
-    const [countdown, setCountdown] = useState(5);
+    const [countdown, setCountdown] = useState(10);
 
     const sendEmail = (e) => {
         e.preventDefault();
