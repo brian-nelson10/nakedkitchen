@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const CateringHero = () => {
     const navigate = useNavigate();
     return (
-        <><div className="text-[#FD3E31] -mt-[2rem] md:-mt-[6rem] items-end font-benditos text-[5.8rem] md:text-[10rem] uppercase">
+        <><div className="text-[#FD3E31] -mt-[2rem] md:-mt-[7rem] items-end font-benditos text-[5.8rem] md:text-[10rem] uppercase">
             <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
