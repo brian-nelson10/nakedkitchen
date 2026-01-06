@@ -13,14 +13,6 @@ const CateringHero = () => {
                 className="drop-shadow-[4px_4px_0px_#FFB91D]">
                 Catering</motion.p>
         </div>
-        {/* <div className="font-summer text-[8rem] text-[#47b9c3]">
-                <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: .5, delay: .4 }}
-                    className="drop-shadow-[4px_4px_0px_rgba(0,0,0)]">
-                    information</motion.p>
-            </div> */}
             <div className="font-benditos text-[#dbe7e8] text-center text-[3rem] md:text-[5rem]">
                 <motion.p
                     initial={{ opacity: 0 }}
