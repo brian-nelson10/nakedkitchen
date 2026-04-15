@@ -20,7 +20,7 @@ const Contact = () => {
                     <section className="relative h-fit overflow-hidden contact">
                         <div className="text-[#47b9c3] text-center space-y-8 font-poppins text-[1.2rem] md:text-[5rem] md:p-[5rem] md:mx-[5rem] p-8 mb-[5rem] flex flex-col bg-[#020202] rounded-xl bg-opacity-80">
                            <div><a href="mailto:brian.nelson@nakedkitchenjax.com">Email: brian.nelson@nakedkitchenjax.com</a></div>
-                            <div>Phone: (407) - 864 - 0404</div>
+                            <div>Phone: (904) - 208 - 3864</div>
                         </div>
                     </section>
                     <section className="grid grid-cols-2 h-[20rem] md:h-auto">
