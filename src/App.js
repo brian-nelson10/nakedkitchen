@@ -242,10 +242,10 @@ function App() {
                 /> */}
 
                 {/* FAMILY MEAL ORDER */}
-                {/* <Route
+                <Route
                   path="/family"
                   element={<FamilyMealOrder setConfirmedOrder={setConfirmedOrder} />}
-                /> */}
+                />
 
                 {/* CONFIRMATION */}
                 <Route
