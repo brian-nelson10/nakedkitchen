@@ -4,7 +4,7 @@ export const MENU = [
     id: 1,
     name: "Kung Pao Brussels",
     description: "Almond Chimichurri, Gochujang Mayo, Crunchy Garlic",
-    price: 8,
+    price: 8.5,
     category: "For Sharing",
   },
   // {
@@ -53,7 +53,7 @@ export const MENU = [
     id: 8,
     name: "Kung Pao Brussels Sprouts",
     description: "Almond Chimichurri, Gochujang Mayo, Crunchy Garlic",
-    price: 4,
+    price: 5,
     category: "Sides",
   },
   {
@@ -106,7 +106,7 @@ export const MENU = [
     category: "Bowls",
   },
    {
-    id: 15,
+    id: 17,
     name: "Steak N, Kimchi Fried Rice",
     description: "Wok Seared Beef, Kimchi, Egg, Onion, Kung pao, Gochujang, Sesame Seeds",
     price: 15,
@@ -130,7 +130,7 @@ export const MENU = [
     id: 18,
     name: "Orange Beignets",
     description: "Chili Garlic Honey",
-    price: 5,
+    price: 6,
     category: "Dessert",
   },
   {
@@ -151,7 +151,7 @@ export const MENU = [
     id: 21,
     name: "Slow Roasted Pork Shoulder",
     description: "Korean BBQ Glaze, Side of BBQ Sauce",
-    price: 50,
+    price: 60,
     category: "Main",
   },
 ];
