@@ -59,7 +59,7 @@ export const MENU = [
   {
     id: 9,
     name: "Smashed Potatoes",
-    description: "Crispy gold poato, kimchi buter, pecorino romano",
+    description: "Crispy gold poato, kimchi butter, pecorino romano",
     price: 4,
     category: "Sides",
   },
@@ -115,7 +115,7 @@ export const MENU = [
    {
     id: 16,
     name: "Plant Bibimbap Bowl",
-    description: "Rice, Sauteed Dino Kale, Kung Pao Brussels, Cherry Tomato, Pickled Shallots, Lentil Tabouleh, Almond Chimichurri, Avocado, Garlic Crunch, Fried Egg, Gochujang",
+    description: "Crispy Rice, Sauteed Dino Kale, Kung Pao Brussels, Cherry Tomato, Pickled Veggies, Sesame Lentil Tabouleh, Almond Chimichurri, Sesame Seed, Fried Egg, Gochujang",
     price: 14,
     category: "Bowls",
   },
