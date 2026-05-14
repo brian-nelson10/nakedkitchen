@@ -32,7 +32,7 @@ export const MENU = [
     id: 5,
     name: "Miso Bean Toast",
     description: "Miso Leeks, Cannelini Beans, Thicc Foccacia, Soft Boiled Egg, Chili Crisp",
-    price: 14,
+    price: 15,
     category: "Handhelds",
   },
   {
@@ -116,14 +116,14 @@ export const MENU = [
     id: 16,
     name: "Plant Bibimbap Bowl",
     description: "Crispy Rice, Sauteed Dino Kale, Kung Pao Brussels, Cherry Tomato, Pickled Veggies, Sesame Lentil Tabouleh, Almond Chimichurri, Sesame Seed, Fried Egg, Gochujang",
-    price: 14,
+    price: 15,
     category: "Bowls",
   },
    {
     id: 17,
     name: "Pork Belly Bowl",
     description: "Korean BBQ Pork Belly, Cold Sesame Egg Noodles, Pickled Veggies",
-    price: 15,
+    price: 16,
     category: "Bowls",
   },
    {
