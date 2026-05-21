@@ -64,6 +64,7 @@ const Home = () => {
             <Navbar />
           </section>
           <section preserveAspectRatio="none" className="grid grid-rows-2 w-screen h-screen md:h-[75rem] md:pb-[15rem] z-40 px-[.5rem] md:px-[1rem] md:pt-[25rem] bg-fixed flex-1 grass">
+            
             <div className="grid md:grid-cols-2  md:-mb-[25rem] md:mb-0 items-end">
               <div className="md:text-start text-[#dbe7e8] items-end ml-[2.8rem] md:ml-[1rem] font-benditos tracking-wide md:tracking-widest mt-[12rem] md:mt-0 text-[1.2rem] md:text-[2.8rem] uppercase">
                 <motion.p
@@ -117,6 +118,12 @@ const Home = () => {
             </motion.div>
 
             <div className="text-center max-w-4xl px-8 my-[6rem]">
+              <div className="my-[3rem] drop-shadow-[2px_2px_0px_#FFB91D] text-[#FD3E31]">
+              <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
+                NOW OPEN 9AM - 8PM</p>
+                <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
+                CLOSED TUESDAYS</p>
+                </div>
               <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight">
                 Born from the two beliefs that food is medicine and community is medicine.</p>
               <p className="font-benditos text-[1.5rem] md:text-[2.5rem] leading-tight mt-8">We serve western classics transformed with asian ingredients. Asian American food, reinvented with edge, soul, and streetwise creativity. </p>

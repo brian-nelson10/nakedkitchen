@@ -21,7 +21,14 @@ const Contact = () => {
                         <div className="text-[#47b9c3] text-center space-y-8 font-poppins text-[1.2rem] md:text-[5rem] md:p-[5rem] md:mx-[5rem] p-8 mb-[5rem] flex flex-col bg-[#020202] rounded-xl bg-opacity-80">
                            <div><a href="mailto:brian.nelson@nakedkitchenjax.com">Email: brian.nelson@nakedkitchenjax.com</a></div>
                             <div>Phone: (904) - 208 - 3864</div>
+                             <div className="my-[3rem] drop-shadow-[2px_2px_0px_#FFB91D] text-[#FD3E31]">
+              <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
+                NOW OPEN 9AM - 8PM</p>
+                <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
+                CLOSED TUESDAYS</p>
+                </div>
                         </div>
+                        
                     </section>
                     <section className="grid grid-cols-2 h-[20rem] md:h-auto">
                         <div className="border-r-2 border-[#e3b505]">
