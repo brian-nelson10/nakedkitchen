@@ -37,8 +37,8 @@ export const MENU = [
   },
   {
     id: 6,
-    name: "Steak N' Cheese Sliders",
-    description: "Thin Sliced, Grilled Onion, Havarti Cheese, Garlic Mayo, on Japanese Milkbread",
+    name: "Pork Belly Sliders",
+    description: "Korean Bbq Pork Belly, Cilantro Mayo, Quickles, on Fresh Japanese Milk Bread",
     price: 16,
     category: "Handhelds",
   },
