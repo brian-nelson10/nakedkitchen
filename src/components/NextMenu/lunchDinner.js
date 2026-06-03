@@ -12,7 +12,7 @@ const LunchDinnerNext = () => {
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: .5, delay: .2 }}
                         viewport={{ once: true }}>
-                        Lunch</motion.p>
+                        Lunch / Dinner</motion.p>
                 </div>
                 <div className="font-benditos text-[#dbe7e8] text-center md:text-[5rem]">
                     <motion.p

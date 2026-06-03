@@ -11,7 +11,7 @@ const LunchDinnerHero = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: .5, delay: .2 }}
                 className=" drop-shadow-[4px_4px_0px_#FFB91D]">
-                LUNCH</motion.p>
+                LUNCH / DINNER</motion.p>
         </div><div className="font-summer text-[4rem] md:text-[8rem] text-[#47b9c3]">
                 <motion.p
                     initial={{ opacity: 0 }}

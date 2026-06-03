@@ -75,7 +75,7 @@ export default function CateringLanding() {
                     </h2>
 
                     <ul className="grid md:grid-cols-2 gap-4 text-neutral-300">
-                        <li>• Build-your-own bowl spreads</li>
+                        <li>• Plant & Meat Bowl Options</li>
                         <li>• Street-inspired handhelds</li>
                         <li>• Grazing boards for mixers & happy hours</li>
                         <li>• Seasonal vegetables & bold sauces</li>
