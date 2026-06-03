@@ -120,9 +120,17 @@ const Home = () => {
             <div className="text-center max-w-4xl px-8 my-[6rem]">
               <div className="my-[3rem] drop-shadow-[2px_2px_0px_#FFB91D] text-[#FD3E31]">
               <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
-                NOW OPEN 9AM - 8PM</p>
+                NOW OPEN</p>
+                <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
+                MONDAY 9AM - 9PM</p>
                 <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
                 CLOSED TUESDAYS</p>
+                 <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
+                WEDNESDAY 9AM - 9PM</p>
+                 <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
+                THURSDAY - SATURDAY 9AM - 10PM</p>
+                 <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
+                SUNDAY 9AM - 7PM</p>
                 </div>
               <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight">
                 Born from the two beliefs that food is medicine and community is medicine.</p>
