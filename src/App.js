@@ -224,7 +224,7 @@ function App() {
                 <Route path="/menus" element={<Menu />} />
                 <Route path="/breakfast" element={<MenuBreakfast />} />
                 <Route path="/lunch" element={<MenuLunchDinner />} />
-                <Route path="/drinks" element={<MenuDrinks />} />
+                {/* <Route path="/drinks" element={<MenuDrinks />} /> */}
                 <Route path="/catering" element={<MenuCatering />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/milkbread" element={<Bread />} />

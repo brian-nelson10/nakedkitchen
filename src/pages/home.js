@@ -135,6 +135,7 @@ const Home = () => {
               <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight">
                 Born from the two beliefs that food is medicine and community is medicine.</p>
               <p className="font-benditos text-[1.5rem] md:text-[2.5rem] leading-tight mt-8">We serve western classics transformed with asian ingredients. Asian American food, reinvented with edge, soul, and streetwise creativity. </p>
+              <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight mt-8">Sandwiches on fresh baked bread, pasta with fresh egg noodles, scratch everything, no filler, no fuss</p>
               <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight mt-8">At Naked Kitchen, we use food to tell stories, honor local farmers, and create space for people to slow down and engage. It’s not just about what’s on the plate, but who you’re sharing it with and where it came from.
                 <p className="font-benditos text-[1rem] md:text-[2rem] leading-tight mt-8">Naked Kitchen is owned by Alexandra and Brian, along with their three children, Eleanor, Penny, and Clementine, who inspire our commitment to creating a better sutainable future.</p>
               </p>

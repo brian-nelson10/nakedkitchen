@@ -6,7 +6,7 @@ import './styles.css';
 
 const HoveringImageButton = () => {
   const handleButtonClick = () => {
-    window.location.href = '/order';
+    window.location.href = 'https://order.toasttab.com/online/naked-kitchen-2336-north-liberty-street';
   };
 
   return (

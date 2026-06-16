@@ -4,7 +4,11 @@ import { useNavigate } from "react-router-dom";
 
 const menuItems = [
   { label: "Menus", path: "/menus" },
-  { label: "Order", path: "/order" },
+  {
+    label: "Order",
+    external: true,
+    url: "https://order.toasttab.com/online/naked-kitchen-2336-north-liberty-street",
+  },
   { label: "Catering", path: "/catering" },
   { label: "Merch", path: "/merch" },
   { label: "About Us", path: "/about" },
@@ -21,6 +25,7 @@ const Navbar = () => {
     const handleScroll = () => {
       setScrolling(window.scrollY > 315);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -28,6 +33,16 @@ const Navbar = () => {
   const handleHome = () => {
     setMenuOpen(false);
     navigate("/");
+  };
+
+  const handleMenuClick = (item) => {
+    setMenuOpen(false);
+
+    if (item.external) {
+      window.location.href = item.url;
+    } else {
+      navigate(item.path);
+    }
   };
 
   return (
@@ -82,6 +97,7 @@ const Navbar = () => {
           />
         </button>
       </motion.nav>
+
       {/* FULL SCREEN MENU */}
       <AnimatePresence>
         {menuOpen && (
@@ -98,10 +114,7 @@ const Navbar = () => {
                   initial={{ y: 40, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: i * 0.08 }}
-                  onClick={() => {
-                    setMenuOpen(false);
-                    navigate(item.path);
-                  }}
+                  onClick={() => handleMenuClick(item)}
                   className="
                     font-benditos
                     text-4xl md:text-6xl
