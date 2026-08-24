@@ -120,15 +120,19 @@ const Home = () => {
             <div className="text-center max-w-4xl px-8 my-[6rem]">
               <div className="my-[3rem] drop-shadow-[2px_2px_0px_#FFB91D] text-[#FD3E31]">
               <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
-                NOW OPEN</p>
+                2336 NORTH LIBERTY STREET JACKSONVILLE, FLORIDA</p>
+                <br/>
+                <br/>
                 <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
                 MONDAY 9AM - 9PM</p>
                 <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
                 CLOSED TUESDAYS</p>
                  <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
-                WEDNESDAY 9AM - 9PM</p>
+                WEDNESDAY 9AM - 9PM </p>
+                <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
+                THURSDAY 9AM - 9PM </p>
                  <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
-                THURSDAY - SATURDAY 9AM - 10PM</p>
+                FRIDAY - SATURDAY 9AM - 10PM </p>
                  <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
                 SUNDAY 9AM - 7PM</p>
                 </div>
