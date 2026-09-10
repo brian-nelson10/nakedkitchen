@@ -122,6 +122,8 @@ const Home = () => {
               <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
                 2336 NORTH LIBERTY STREET JACKSONVILLE, FLORIDA</p>
                 <br/>
+                <hr className="border-t-4 border-[#FD3E31]"/>
+                <br/>
                 <br/>
                 <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
                 MONDAY 9AM - 9PM</p>
