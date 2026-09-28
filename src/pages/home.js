@@ -126,7 +126,7 @@ const Home = () => {
                 <br/>
                 <br/>
                 <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
-                MONDAY 9AM - 9PM</p>
+                CLOSED MONDAYS</p>
                 <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
                 CLOSED TUESDAYS</p>
                  <p className="font-benditos text-[2rem] md:text-[4rem] leading-tight">
